@@ -67,6 +67,29 @@ body {
   margin-bottom: 80px;
 }
 
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
+}
+
+.image{
+   min-height: 370px ;
+   object-fit: cover;
+   position: relative;
+}
+
+.image1{
+    position: absolute;
+    bottom: 0;
+    height: auto;
+}
+
+
 /* .index-links{
     margin-top: 10rem;
 } */
