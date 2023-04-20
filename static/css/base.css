@@ -86,7 +86,9 @@ body {
 .image1{
     position: absolute;
     bottom: 0;
-    height: auto;
+    width: auto;
+    height: 300px;
+
 }
 
 
