@@ -17,24 +17,24 @@
                 Everyday Backpacks
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="everyday-link">
-                <a href="" class="dropdown-item">School Backpacks</a>
-                <a href="" class="dropdown-item">Commuter Backpacks</a>
-                <a href="" class="dropdown-item">Laptop Backpacks</a>
-                <a href="" class="dropdown-item">Mini Backpacks</a>
-                <a href="" class="dropdown-item">All Everyday Backpacks</a>
+                <a href="{% url 'products' %}?category=school_backpacks" class="dropdown-item">School Backpacks</a>
+                <a href="{% url 'products' %}?category=computer_backpacks" class="dropdown-item">Commuter Backpacks</a>
+                <a href="{% url 'products' %}?category=laptop_backpacks" class="dropdown-item">Laptop Backpacks</a>
+                <a href="{% url 'products' %}?category=mini_backpacks" class="dropdown-item">Mini Backpacks</a>
+                <a href="{% url 'products' %}?category=school_backpacks,computer_backpacks,laptop_backpacks,mini_backpacks" class="dropdown-item">All Everyday Backpacks</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="travel-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Travel & Outdoor
+                Travel &amp; Outdoor
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="travel-link">
-                <a href="" class="dropdown-item">Suitcases</a>
-                <a href="" class="dropdown-item">Hiking Backpacks</a>
-                <a href="" class="dropdown-item">Duffels</a>
-                <a href="" class="dropdown-item">Skate Backpacks</a>
-                <a href="" class="dropdown-item">All Travel & Outdoor Backpacks</a>
+                <a href="{% url 'products' %}?category=suitcases" class="dropdown-item">Suitcases</a>
+                <a href="{% url 'products' %}?category=hiking_backpacks" class="dropdown-item">Hiking Backpacks</a>
+                <a href="{% url 'products' %}?category=duffels" class="dropdown-item">Duffels</a>
+                <a href="{% url 'products' %}?category=skate_backpacks" class="dropdown-item">Skate Backpacks</a>
+                <a href="{% url 'products' %}?category=suitcases,hiking_backpacks,duffels,skate_backpacks" class="dropdown-item">All Travel & Outdoor Backpacks</a>
             </div>
         </li>
 
@@ -43,9 +43,9 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
                 <a href="" class="dropdown-item">All Specials</a>
             </div>
         </li>
