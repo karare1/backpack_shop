@@ -51,7 +51,7 @@ body {
     color: white;
 }
 
-.text-black {
+.text-color {
     color:#3b6181 !important;
 }
 
@@ -91,6 +91,10 @@ body {
 
 }
 
+a.category-title > span.badge:hover {
+    background:#3b6181 !important;
+    color: #fff !important;
+}
 
 /* .index-links{
     margin-top: 10rem;

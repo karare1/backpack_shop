@@ -15,6 +15,7 @@
         <div class="row">
             <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
                 <div class="image-container my-5">
+                    <!-- Image -->
                     {% if product.image %}
                         <a href="{{ product.image.url }}" target="_blank">
                             <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
@@ -28,8 +29,19 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="product-details-container mb-5 mt-md-5">
+                   <!-- Name -->
                     <p class="mb-3 h3"><strong lg>{{ product.name }}</strong lg></p>
+                    <!-- Price -->
                     <p class="lead mb-3 text-left font-weight-bold">£{{ product.price }}</p>
+                    <!-- Category -->
+                    {% if product.category %}
+                    <p class="small mt-1 mb-1">
+                        <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
+                            <i class="fas fa-folder mr-1"></i>{{ product.category.friendly_name }}
+                        </a>
+                    </p>
+                    {% endif %}
+                     <!-- Rating -->
                     {% if product.rating %}
                         <p class="mb-3"><small class="text-muted mb-3"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small></p>
                     {% else %}

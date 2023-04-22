@@ -1,24 +1,24 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-color mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
                 <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
-                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
+                <!-- <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a> -->
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="everyday-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-color mr-5" href="#" id="everyday-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Everyday Backpacks
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="everyday-link">
                 <a href="{% url 'products' %}?category=school_backpacks" class="dropdown-item">School Backpacks</a>
-                <a href="{% url 'products' %}?category=computer_backpacks" class="dropdown-item">Commuter Backpacks</a>
+                <a href="{% url 'products' %}?category=commuter_backpacks" class="dropdown-item">Commuter Backpacks</a>
                 <a href="{% url 'products' %}?category=laptop_backpacks" class="dropdown-item">Laptop Backpacks</a>
                 <a href="{% url 'products' %}?category=mini_backpacks" class="dropdown-item">Mini Backpacks</a>
                 <a href="{% url 'products' %}?category=school_backpacks,computer_backpacks,laptop_backpacks,mini_backpacks" class="dropdown-item">All Everyday Backpacks</a>
@@ -26,20 +26,20 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="travel-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-color mr-5" href="#" id="travel-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Travel &amp; Outdoor
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="travel-link">
                 <a href="{% url 'products' %}?category=suitcases" class="dropdown-item">Suitcases</a>
                 <a href="{% url 'products' %}?category=hiking_backpacks" class="dropdown-item">Hiking Backpacks</a>
-                <a href="{% url 'products' %}?category=duffels" class="dropdown-item">Duffels</a>
+                <a href="{% url 'products' %}?category=travel_backpacks" class="dropdown-item">Travel Backpacks</a>
                 <a href="{% url 'products' %}?category=skate_backpacks" class="dropdown-item">Skate Backpacks</a>
                 <a href="{% url 'products' %}?category=suitcases,hiking_backpacks,duffels,skate_backpacks" class="dropdown-item">All Travel & Outdoor Backpacks</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-color" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">

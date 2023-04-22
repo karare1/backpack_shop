@@ -22,7 +22,8 @@ def all_products(request):
             if sortkey == 'name':
                 sortkey = 'lower_name'
                 products = products.annotate(lower_name=Lower('name'))
-
+            # if sortkey == 'category':
+            #     sortkey = 'category__name'
             if 'direction' in request.GET:
                 direction = request.GET['direction']
                 if direction == 'desc':
@@ -44,13 +45,13 @@ def all_products(request):
             queries1 = Q(name__icontains=query1) | Q(description__icontains=query1)
             products = products.filter(queries1)
 
-    current_sorting = f'{sort}_{direction}'
+    sorting_by = f'{sort}_{direction}'
 
     context = {
         'products': products,
         'query_expression': query1,
         'actual_categories': categories,
-        'current_sorting': current_sorting,
+        'sorting_by': sorting_by,
     }
 
     return render(request, 'products/products.html', context)
