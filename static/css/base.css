@@ -96,6 +96,20 @@ a.category-title > span.badge:hover {
     color: #fff !important;
 }
 
+.up-btn {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.up-btn-click {
+    cursor: pointer;
+}
+
+
+
 /* .index-links{
     margin-top: 10rem;
 } */
