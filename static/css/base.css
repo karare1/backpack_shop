@@ -108,7 +108,28 @@ a.category-title > span.badge:hover {
     cursor: pointer;
 }
 
+.btn-outline-black {
+    background: white;
+    color:#3b6181  !important; /* use important to override link colors for <a> elements */
+    border: 1px solid black;
+}
 
+/* .btn-outline-black:hover,
+.btn-outline-black:active,
+.btn-outline-black:focus {
+    background: #3b6181;
+    color: white !important;
+} */
+
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus,
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background:#3b6181 ;
+    color: white;
+}
 
 /* .index-links{
     margin-top: 10rem;
