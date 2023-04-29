@@ -104,7 +104,9 @@ a.category-title > span.badge:hover {
     right: 10px;
 }
 
-.up-btn-click {
+.up-btn-click,
+.update-link,
+.remove-item {
     cursor: pointer;
 }
 
@@ -135,6 +137,9 @@ a.category-title > span.badge:hover {
     width: 80px;
 }
 
+.quant-cart {
+    width: 12%;
+}
 .today {
     vertical-align: middle;
 }
@@ -142,6 +147,8 @@ a.category-title > span.badge:hover {
 .btn-outline-secondary:hover {
     background-color: #3b6181 ;
 }
+
+
 
 /* .index-links{
     margin-top: 10rem;
