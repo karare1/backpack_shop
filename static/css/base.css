@@ -131,6 +131,18 @@ a.category-title > span.badge:hover {
     color: white;
 }
 
+.cart_img {
+    width: 80px;
+}
+
+.today {
+    vertical-align: middle;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #3b6181 ;
+}
+
 /* .index-links{
     margin-top: 10rem;
 } */
