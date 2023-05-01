@@ -22,7 +22,7 @@ def cart_contents(request):
         })
 
     if subtotal < settings.FREE_DELIVERY_THRESHOLD:
-        delivery = Decimal(3.99)
+        delivery = Decimal(settings.STANDARD_DELIVERY)
         free_delivery_confirmed = settings.FREE_DELIVERY_THRESHOLD - subtotal
     else:
         delivery = 0
