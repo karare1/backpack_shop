@@ -41,7 +41,7 @@ def all_products(request):
         if 'query' in request.GET:
             query1 = request.GET['query']
             if not query1:
-                messages.error(request, "You didn't enter any search criteria!")
+                messages.error(request, "Please enter search criteria!")
                 return redirect(reverse('products'))
             queries1 = Q(name__icontains=query1) | Q(description__icontains=query1)
             products = products.filter(queries1)
