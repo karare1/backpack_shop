@@ -14,6 +14,10 @@ import os
 import dj_database_url
 from pathlib import Path
 
+if os.path.exists(".env"):
+    from dotenv import load_dotenv
+    load_dotenv()
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -26,7 +30,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY', ' ')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = 'DEVELOPMENT' in os.environ
-DEBUG = 'True'
+DEBUG = int(os.environ.get("DEVELOPMENT", default=0))
+# DEBUG = 'True'
 
 ALLOWED_HOSTS = ['backpack-shop.herokuapp.com', 'localhost']
 
@@ -48,6 +53,7 @@ INSTALLED_APPS = [
     'products',
     'cart',
     'checkout',
+    'profiles',
 
     # Other
     'crispy_forms',
@@ -123,6 +129,7 @@ WSGI_APPLICATION = 'backpack_shop.wsgi.application'
 
 
 if 'DATABASE_URL' in os.environ:
+    # print("connected to PostgreSQL")
     DATABASES = {
         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
