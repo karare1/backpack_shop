@@ -21,7 +21,6 @@ if os.path.exists(".env"):
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
@@ -31,7 +30,6 @@ SECRET_KEY = os.environ.get('SECRET_KEY', ' ')
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = 'DEVELOPMENT' in os.environ
 DEBUG = int(os.environ.get("DEVELOPMENT", default=0))
-# DEBUG = 'True'
 
 ALLOWED_HOSTS = ['backpack-shop.herokuapp.com', 'localhost']
 
@@ -221,4 +219,5 @@ STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 
+DEFAULT_FROM_EMAIL = 'backpackaround@example.com'
 ACCOUNT_EMAIL_VERIFICATION = 'none'
