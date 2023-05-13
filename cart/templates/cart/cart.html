@@ -41,9 +41,9 @@
                                 <tr class="border-bottom">
                                     <td class="p-3">
                                         {% if item.product.image %}
-                                        <img class="img-fluid rounded" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
+                                        <img class="img-fluid rounded cart_img" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
                                         {% else %}
-                                        <img class="img-fluid rounded" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
+                                        <img class="img-fluid rounded cart_img" src="{{ MEDIA_URL }}No-Image.png" alt="{{ item.product.name }}">
                                         {% endif %}
                                     </td>
                                     <td class="py-5">
