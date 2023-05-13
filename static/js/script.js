@@ -60,3 +60,6 @@ $('.remove-item').click(function(e) {
          location.reload();
      });
 })
+
+
+
