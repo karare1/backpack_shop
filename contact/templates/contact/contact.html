@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'contact/css/contact.css' %}">
+{% endblock %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <hr>
+                <h2 class="logo-font mb-4 text-color">Contact Us</h2>
+                <hr>
+            </div>
+        </div>
+
+        <!-- <form action="{% url 'contact' %}" method="POST">
+            {% csrf_token %}
+            {{ form }}
+            <input type="submit" value="Submit">
+        </form> -->
+    <!-- </div> -->
+    {% if submitted %}
+        <p>Your message was submitted successfully"</p>
+
+    {% else %}
+        <div class="col-md-6 mx-auto">
+            <div class="container-fluid">
+                <div>
+                    <form method="post" enctype="multipart/form-data" id="contactform">
+                        {% csrf_token %}
+                        {{ form|crispy}}
+                        <div class="text-center">
+                            <button class="btn msg-btn" type="submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endif %}
+
+{% endblock %}
+
+
+ 
