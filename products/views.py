@@ -1,9 +1,13 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
+from .forms import ReviewForm
+from django.http import HttpResponse
 from django.db.models import Q
 from django.contrib.auth.decorators import login_required
-from .models import Product, Category
+from .models import Product, Category, Review
 from django.db.models.functions import Lower
+from profiles.models import UserProfile
+from django.core.exceptions import PermissionDenied
 
 from .forms import ProductForm
 
@@ -65,9 +69,10 @@ def individual_product(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
-
+    reviews = Review.objects.filter(product_id=product.id, status=True) #new
     context = {
         'product': product,
+        'reviews': reviews, #new
     }
 
     return render(request, 'products/individual_product.html', context)
@@ -142,3 +147,70 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+
+def reviews_views(request, product_id):
+    """ A view to show all available reviews for current product """
+    product = get_object_or_404(Product, pk=product_id)
+    review = Review.objects.create(product=product, user=request.user, rating=rating, review=review)
+    # reviews = Review.objects.filter(product=product)
+    template = 'products/individual_product.html'
+
+    context = {
+        'reviews': reviews,
+        'product': product,
+    }
+
+    return render(request, template, context)
+
+
+def submit_review(request, product_id):
+    """
+    Renders a form to allow users to add a review and provide feedback
+    to user actions via toasts
+    """
+    if not request.user.is_authenticated:
+        messages.error(request,
+                       'Sorry, you need to be logged in to add a review.')
+        return redirect(reverse('account_login'))
+
+    user = UserProfile.objects.get(user=request.user)
+    product = Product.objects.get(id=product_id)
+    if request.method == "POST":
+        form = ReviewForm(request.POST)
+
+        if form.is_valid():
+            rating = form.save()
+            review = form.save()
+            review.product = product
+            review.user = request.user
+            review.save()
+            messages.info(request, "New product review added.")
+            return redirect(reverse('individual_product', args=[product.id]))
+        else:
+            messages.error(request, "Form invalid, please try again.")
+            return redirect(reverse('individual_product', args=[product.id]))
+    else:
+        form = ReviewForm()
+
+    template = 'products/individual_product.html'
+
+    context = {
+        'form': form,
+        'product': product,
+        'review': review,
+        'rating': rating,
+    }
+
+    return render(request, template, context)
+
+    def product_review(request, product_id, user_id):
+        product = get_object_or_404(Product, pk=product_id)
+        product = get_object_or_404(UserProfile, pk=user_id)
+        # Get the reviews posted by the user for this product
+        user_review = Product.product.filter(user=request.user)
+
+        if request.method == 'POST':
+            if user_review:
+                # If there is/are any reviews, raise an error
+                raise PermissionDenied('You have already given your review on this post.')
