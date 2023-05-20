@@ -7,6 +7,7 @@ body {
     background-size:cover;
     height: calc(100vh - 164px);
     color: #555;
+    color: #000;
     /* background-color: #dc3545; */
 }
 
@@ -222,19 +223,124 @@ input[name='query']::placeholder {
     overflow-y: auto;
 }
 
+/* _____________________________Contact */
+.msg-btn {
+    background-color: #3b6181;
+    color: white;
+}
 
+.cont-form {
+    border: 1.5px solid;
+    color:#3b6181;
+}
+
+footer {
+    /* background-color: #3b6181; */
+    /* background:#3b6181 */
+    /* background:#0c3b61; */
+    background: #283a4d;
+    padding-top: 3%
+}
+
+.copy-foot {
+    background: #111c28;
+}
+
+.foot-sub {
+    margin-left: 100px;
+}
+/* .today {
+    border: #000 solid 1px;
+} */
+/* ____________________________________ */
 
 /* .index-links{
     margin-top: 10rem;
 } */
 
+
+
+
+
+/* -------------------------------------------------- */
+/* Hide Radio button */
+.rate > input{
+    display: none;
+  }
+  
+  .rate{
+    display: inline-block;;
+    border: 0;
+  }
+  
+  .rate > label{
+    float: right;
+  }
+  
+  /* Showing the stars */
+  .rate > label:before{
+    display: inline-block;
+    font-size: 1.2rem;
+    font-family: FontAwesome;
+    content: "\f005";
+    margin:0;
+    padding:0.3rem .2rem;
+    cursor: pointer;
+  }
+  
+  /* Half star */
+  .rate .half:before{
+    content: "\f089";
+    position: absolute;
+    padding-right: 0;
+  }
+  
+  /* Click and hover */
+  input:checked ~ label, label:hover ~ label{
+    color: #ffb503;
+  }
+  
+  /* hover hightlight */
+  input:checked + label:hover, input:checked ~ label:hover,input:checked ~ label:hover ~ label,
+  label:hover ~ input:checked ~ label{
+    color: #cc9000;
+  }
+  
+  .rating-star i{
+    color: #ffb503 !important;
+  }
+  
+  ul.thumb{
+    margin:0 auto;
+    padding: 0;
+    float: left;
+  }
+  ul.thumb li{
+    list-style: none;
+    margin: 10px;
+  }
+  ul.thumb li img{
+    width: 80px;
+    height: 80px;
+    border: 1px solid grey;
+  }
+
+/* ---------------------------------------------------------------------- */
+
+
+
+
+
+
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
+
+
 @media (min-width: 1200px) {
   .container {
     max-width: 80%;
-  }
 }
 
 /* Allauth form formatting */
@@ -320,6 +426,7 @@ input[name='query']::placeholder {
     border-radius: 0;
 }
 
+}
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
@@ -344,5 +451,52 @@ input[name='query']::placeholder {
 
     body {
         height: calc(100vh - 116px);
+    }
+
+   .delivery-ban {
+        font-size: 0.9rem;
+    }
+
+    .main-title {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .index-links-mob {
+      margin-bottom: 0px!important;
+      
+    }
+
+    .nav-link {
+        padding: 0.15rem;
+    }
+
+    .nav-link i.fa-lg {
+        font-size: 1rem;
+    }
+
+    .navbar-toggler {
+        padding: .6rem .6rem;
+        font-size: 1rem;
+    }
+
+    #delivery-banner h4 {
+        font-size: .9rem;
+    }
+
+    .btn.btn-outline-black.rounded-0,
+    .btn.btn-black.rounded-0 {
+        padding: .375rem .375rem;
+    }
+
+    .btn.btn-outline-black.rounded-0.btn-lg,
+    .btn.btn-black.rounded-0.btn-lg {
+        padding: .375rem .375rem;
+        font-size: .75rem;
+    }
+
+    .increment-qty, .decrement-qty {
+        padding: .25rem .5rem !important;
     }
 }
