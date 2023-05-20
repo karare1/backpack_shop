@@ -1,0 +1,60 @@
+<!-- Footer -->
+<br>
+<hr>
+<footer id="footer" class="footer bg-setup main-bg-desktop main-bg-mobile text-center mt-3">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="footer-text">
+                    <h5 class="text-white mb-2">USEFUL LINKS</h5>
+                    <div class="mb-2 useful-link"><a href="{% url 'home' %}" aria-label="Link to Home page" role="button">Home</a></div>
+                    <div class="mb-2 useful-link"><a href="{% url 'products' %}?category=new_arrivals" aria-label="Link to New Arrivals" role="button">New Arrivals</a></div>
+                    <div class="mb-2 useful-link"><a href="{% url 'products' %}" aria-label="Link to All Products" role="button">All Products</a></div>
+                    <div class="mb-2 useful-link"><a href="{% url 'products' %}?category=school_backpacks,computer_backpacks,laptop_backpacks,mini_backpacks"  aria-label="Link to Everyday Backpacks" role="button">Everyday Backpacks</a></div>
+                    <div class="mb-2 useful-link"><a href="{% url 'products' %}?category=suitcases,hiking_backpacks,duffels,skate_backpacks"  aria-label="Link to Travel & Outdoor backpacks" role="button">Travel & Outdoor</a></div>
+                    <div class="mb-0 useful-link"><a href="{% url 'contact' %}" aria-label="Link to Contact Us" role="button">Contact Us</a></div>
+                    <br>
+                </div>
+            </div>
+            <!--Contact Details-->
+            <div class="col-md-3 mb-3">
+                <div class="contact">
+                    <h5 class="text-white mb-3">CONTACT</h5>
+                    <p class="text-white"><i class="fa-solid fa-location-dot fa-lg" style="color: #ffffff;"></i>&nbsp;71 Lordship Lane, Tottenham<br>N17 6RS London</p>
+                    <p class="text-white"><i class="fa-solid fa-mobile-retro fa-lg" style="color: #ffffff;"></i></i>&nbsp;&nbsp;+44 20 7946 0482 </p>
+                    <p class="text-white"><i class="fa-solid fa-at fa-lg" style="color: #ffffff;"></i>&nbsp;backpackaround@example.com</p>
+                </div>
+
+                <div class="social mb-4">
+                    <a href="https://www.facebook.com" style="color: #3b5998;" target="_blank" rel="noopener noreferrer"
+                        aria-label="Link to Facebook" role="button" >
+                        <i class="fa-brands fa-square-facebook fa-2xl" style="color: #ffffff;"></i>
+                    </a>&nbsp;&nbsp;
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Link to Twitter" role="button">
+                        <i class="fa-brands fa-square-twitter fa-2xl" style="color: #ffffff;"></i>
+                    </a>&nbsp;&nbsp;
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                        aria-label="Link to Instagram" role="button">
+                    <i class="fa-brands fa-square-instagram fa-2xl" style="color: #ffffff;"></i>                
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="newsletter mx-auto">
+                    <h5 class="text-white mb-3">Newsletter</h5>
+                    <p class="text-white">Subscribe to our newsletter and get <br>15% discount for your first purchase!</p>
+                    <form>
+                        <div class="form-group col-md-8 foot-sub">
+                            <label for="inputEmail4"></label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="name@example.com" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-2">Subscribe</button>
+                    </form>
+                </div>
+                </div>
+            </div>           
+        </div>
+    </div>
+    <!-- <hr> -->
+    <p class="m-0 text-center text-white copy-foot pb-3 pt-3">&nbsp; &copy; karare 2023 &nbsp;<i class="fa-solid fa-paw"></i></p>
+</footer>

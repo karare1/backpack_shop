@@ -235,9 +235,6 @@ input[name='query']::placeholder {
 }
 
 footer {
-    /* background-color: #3b6181; */
-    /* background:#3b6181 */
-    /* background:#0c3b61; */
     background: #283a4d;
     padding-top: 3%
 }
@@ -248,6 +245,15 @@ footer {
 
 .foot-sub {
     margin-left: 100px;
+}
+
+.useful-link a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    
+}
+.useful-link a:hover {
+    color: white;
 }
 /* .today {
     border: #000 solid 1px;
