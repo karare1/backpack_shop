@@ -75,6 +75,7 @@
                                     <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
                                 {% endif %}
                                 <a href="{% url 'my_profile' %}" class="dropdown-item">My Profile</a>
+                                <a href="{% url 'wishlist_view' %}" class="dropdown-item">Wishlist</a>
                                 <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
                             {% else %}
                                 <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
@@ -112,7 +113,7 @@
         </div>
         <div id="delivery-banner" class="row text-center">
             <div class="col bg-black text-white">
-                <h5 class="logo-font my-1"><i class="fa-solid fa-truck-fast"></i> Free delivery on orders over £{{ free_delivery_threshold }}!</h5>                
+                <h5 class="logo-font my-1 delivery-ban"><i class="fa-solid fa-truck-fast"></i> Free delivery on orders over £{{ free_delivery_threshold }}!</h5>                
             </div>            
         </div>
     </header>
@@ -140,6 +141,8 @@
 
     {% block content %}
     {% endblock %}
+
+    {% include 'includes/footer.html' %}
 
     {% block postloadjs %}
     <script type="text/javascript">
