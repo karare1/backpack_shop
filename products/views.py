@@ -16,7 +16,6 @@ from .forms import ProductForm
 
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
-
     products = Product.objects.all()
     query1 = None
     categories = None
@@ -180,6 +179,22 @@ def submit_review(request, product_id):
         form = ReviewForm(request.POST)
 
         if form.is_valid():
+            # if not rating:
+            #     messages.error(request, "Rating is required")
+            #     return redirect(reverse('individual_product', args=[product.id]))
+            # rating = form.save()
+            # review = form.save()
+            # review.product = product
+            # review.user = request.user
+            # review.save()
+
+            user = request.user
+            product = get_object_or_404(Product, pk=product_id)
+            existing = Review.objects.filter(product=product, user=user).exists()
+            if existing:
+                messages.error(request, f'You have already reviewed {product.name}!')
+                return redirect(reverse('individual_product', args=[product.id]))
+
             rating = form.save()
             review = form.save()
             review.product = product
@@ -188,7 +203,7 @@ def submit_review(request, product_id):
             messages.info(request, "New product review added.")
             return redirect(reverse('individual_product', args=[product.id]))
         else:
-            messages.error(request, "Form invalid, please try again.")
+            messages.error(request, "Please rate the product.")
             return redirect(reverse('individual_product', args=[product.id]))
     else:
         form = ReviewForm()
@@ -204,13 +219,13 @@ def submit_review(request, product_id):
 
     return render(request, template, context)
 
-    def product_review(request, product_id, user_id):
-        product = get_object_or_404(Product, pk=product_id)
-        product = get_object_or_404(UserProfile, pk=user_id)
-        # Get the reviews posted by the user for this product
-        user_review = Product.product.filter(user=request.user)
+    # def product_review(request, product_id):
+    #     product = get_object_or_404(Product, pk=product_id)
+    #     user = get_object_or_404(UserProfile, user=user.request)
+    #     # Get the reviews posted by the user for this product
+    #     user_review = Review.object.filter(user=user, product=product)
 
-        if request.method == 'POST':
-            if user_review:
-                # If there is/are any reviews, raise an error
-                raise PermissionDenied('You have already given your review on this post.')
+    #     if request.method == 'POST':
+    #         if user_review:
+    #             # If there is/are any reviews, raise an error
+    #             raise PermissionDenied('You have already given your review on this post.')
