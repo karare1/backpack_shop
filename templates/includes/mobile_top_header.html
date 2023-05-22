@@ -42,14 +42,14 @@
       </div>
   </li>
   <li class="list-inline-item">
-      <a class="{% if cart_items %}text-primary font-weight-bold{% else %}text-color{% endif %} nav-link d-block d-lg-none" href="{% url 'shop_cart' %}">
+      <a class="{% if cart_items %}text-info font-weight-bold{% else %}text-color{% endif %} nav-link d-block d-lg-none" href="{% url 'shop_cart' %}">
           <div class="text-center">
-              <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+              <div><i class="fa-solid fa-cart-shopping fa-lg"></i></div>
               <p class="my-0">
                   {% if cart_items %}
-                      ${{ subtotal|floatformat:2 }}
+                      £{{ subtotal|floatformat:2 }}
                   {% else %}
-                      $0.00
+                      £0.00
                   {% endif %}
               </p>
           </div>
