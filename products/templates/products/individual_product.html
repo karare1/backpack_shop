@@ -52,27 +52,27 @@
                         </a>
                     </p>
                     {% endif %}
-                     <!-- Rating -->
-                    <!-- {% if review.rating %} -->
+                  
 
-                    <div class="review-feedback">
-                        <span class="fa fa-star {% if product_detail.averagereview > 0 %} checked {% endif %}"></span>
-                        <span class="fa fa-star {% if product_detail.averagereview > 1 %} checked {% endif %}"></span>
-                        <span class="fa fa-star {% if product_detail.averagereview > 2 %} checked {% endif %}"></span>
-                        <span class="fa fa-star {% if product_detail.averagereview > 3 %} checked {% endif %}"></span>
-                        <span class="fa fa-star {% if product_detail.averagereview > 4 %} checked {% endif %}"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        {{product_detail.averagereview | stringformat:".2f"}}
-                    </div>
+                    <!-- <div class="review-feedback"> -->
+                        <!-- <span class="fa fa-star {% if product.averagereview > 0 %} checked {% endif %}"></span>
+                        <span class="fa fa-star {% if product.averagereview > 1 %} checked {% endif %}"></span>
+                        <span class="fa fa-star {% if product.averagereview > 2 %} checked {% endif %}"></span>
+                        <span class="fa fa-star {% if product.averagereview > 3 %} checked {% endif %}"></span>
+                        <span class="fa fa-star {% if product.averagereview > 4 %} checked {% endif %}"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+                        <!-- {{product.averagereview | stringformat:".2f"}} -->
+                    <!-- </div> -->
 
 
 
                     <div class="rating-star">
                         <span>
-                            <i class="fa fa-star{% if product.averageReview < 0 %}-o{% elif product.averageReview >= 0.5 and product.averageReview < 1 %}-half-o {% endif %}" aria-hidden="true"></i>
-                            <i class="fa fa-star{% if product.averageReview < 1 %}-o{% elif product.averageReview >= 1.5 and product.averageReview < 2 %}-half-o {% endif %}" aria-hidden="true"></i>
-                            <i class="fa fa-star{% if product.averageReview < 2 %}-o{% elif product.averageReview >= 2.5 and product.averageReview < 3 %}-half-o {% endif %}" aria-hidden="true"></i>
-                            <i class="fa fa-star{% if product.averageReview < 3 %}-o{% elif product.averageReview >= 3.5 and product.averageReview < 4 %}-half-o {% endif %}" aria-hidden="true"></i>
-                            <i class="fa fa-star{% if product.averageReview < 4 %}-o{% elif product.averageReview >= 4.5 and product.averageReview < 5 %}-half-o {% endif %}" aria-hidden="true"></i>
+                            <!-- <i class="fa fa-star{% if product.averageReview < 0.5 %}-o{% elif product.averageReview >= 0 and product.averageReview < 1 %}-o {% endif %}" aria-hidden="true"></i>
+                            <i class="fa fa-star{% if product.averageReview < 1.5 %}-o{% elif product.averageReview >= 1 and product.averageReview < 2 %}-o {% endif %}" aria-hidden="true"></i>
+                            <i class="fa fa-star{% if product.averageReview < 2.5 %}-o{% elif product.averageReview >= 2 and product.averageReview < 3 %}-o {% endif %}" aria-hidden="true"></i>
+                            <i class="fa fa-star{% if product.averageReview < 3.5 %}-o{% elif product.averageReview >= 3 and product.averageReview < 4 %}-o {% endif %}" aria-hidden="true"></i>
+                            <i class="fa fa-star{% if product.averageReview < 4.5 %}-o{% elif product.averageReview >= 4 and product.averageReview < 5 %}-o {% endif %}" aria-hidden="true"></i> -->
+                            <span>{{product.averageReview}} / 5</span>
                             <span>{{product.countReview}} reviews</span>
                         </span>
                     </div>
@@ -84,9 +84,9 @@
 
 
                         <!-- <p class="mb-3"><small class="text-muted mb-3"><i class="fas fa-star mr-1"></i>{{ review.rating }} / 5</small></p> -->
-                    <!-- {% else %} -->
+                 
                         <!-- <p class="mb-3"><small class="text-muted">No Rating</small></p> -->
-                    <!-- {% endif %} -->
+                    
                     
                     {% if request.user.is_superuser %}
                     <small>
@@ -131,7 +131,7 @@
                                     </span>
                                     <span class="text-uppercase">Keep Shopping</span>
                                 </a>
-                                <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" value="Add to Bag">
+                                <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" value="Add to Cart">
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         </div>
@@ -183,7 +183,7 @@
 							<h6 class="mb-1">{{review.user}} </h6>
 							<div class="rating-star">
 								<span>
-									<i class="fa fa-star{% if review.rating == 1 %}-o{% elif review.rating < 1 %}-o {% endif %}" aria-hidden="true"></i>
+									<i class="fa fa-star{% if review.rating == 0 %}-o{% elif review.rating < 1 %}-o {% endif %}" aria-hidden="true"></i>
 									<i class="fa fa-star{% if review.rating == 1 %}-o{% elif review.rating < 2 %}-o {% endif %}" aria-hidden="true"></i>
 									<i class="fa fa-star{% if review.rating == 2 %}-o{% elif review.rating < 3 %}-o {% endif %}" aria-hidden="true"></i>
 									<i class="fa fa-star{% if review.rating == 3 %}-o{% elif review.rating < 4 %}-o {% endif %}" aria-hidden="true"></i>
