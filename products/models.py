@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
-from django.db.models import Avg
+from django.db.models import Avg, Count
 
 
 class Category(models.Model):
@@ -32,7 +32,7 @@ class Product(models.Model):
         reviews = Review.objects.filter(product=self, status=True).aggregate(average=Avg('rating'))
         avg = 0
         if reviews['average'] is not None:
-            avg = float(reviews['average'])
+            avg = round(float(reviews['average']), 1)
         return avg
 
     def countReview(self):
@@ -50,9 +50,9 @@ class Review(models.Model):
     product = models.ForeignKey(Product, related_name='review', null=True, blank=True, on_delete=models.CASCADE)
     user = models.ForeignKey(User, related_name='review', null=True, blank=True, on_delete=models.CASCADE)
     review = models.TextField(max_length=1000, blank=True, null=True)
-    rating = models.FloatField(blank=False, null=False, default=5)
+    rating = models.FloatField(blank=False, null=False)
     time = models.DateTimeField(auto_now_add=True)
     status = models.BooleanField(default=True)
 
     def __str__(self):
-        return f'Review {self.review} by {self.user}'
+        return f'Review {self.product} by {self.user}'
