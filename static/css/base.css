@@ -34,6 +34,7 @@ body {
     color: white;
     background:#3b6181;
     min-width: 240px;
+    font-size: 1.5rem;
 }
 
 .btn-black {
@@ -255,6 +256,13 @@ footer {
 .useful-link a:hover {
     color: white;
 }
+
+#id_country {
+    height: 45px!important;
+}
+
+
+
 /* .today {
     border: #000 solid 1px;
 } */
