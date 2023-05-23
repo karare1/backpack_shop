@@ -1,12 +1,216 @@
+##User Stories
+
+As a user, I would like to understand the purpose of the website and what it offers.<br>
+As a user, I would like to intuitively navigate through the website so I can see the required content.<br>
+As a user, I would like to use the website and see the content clearly on any device.<br>
+As a user, I would like to be informed of any changes I have made in order to fully understand what has been done; i.e notifications when adding items to a shopping bag or making payments.<br>
+As a user, I would like to see all of the products that are available for purchase.<br>
+As a user, I would like to find detailed information about individual products.<br>
+As a user, I would like to have an option to see the products of a particular category for more efficient shopping.<br>
+As a user, I would like to sort the products by price, rating and alphabetical order.<br>
+As a user, I would like to search products by key words.<br>
+As a user, I would like to see a breakdown of my shopping cart and be able to make changes if necessary.<br>
+As a user, I would like to create an account and log in easily.<br>
+As a user, I would like to save products in a wishlist, if I need more time to make purchase decision.<br>
+As a user, I would like to see my order history in my profile.<br>
+As a user I would like to save my default shipping details so that I can save time making my next purchase.<br>
+As a user, I would like to receive an order confirmation to make sure that my order was processed.<br>
+As a user, I would like to process my order by making a secure payment by card.<br>
+As a user I would like to purchase products without registering (as a guest).<br>
+As a user, I would like to rate and review products.<br>
+As a user, I would like to contact the shop customer service with the contact form.<br>
+<br>
+As a superuser, I would like to log in to see the product management page.<br>
+As a superuser, I would like to be able to add products to the database.<br>
+As a superuser, I would like to edit products in the database.<br> 
+As a superuser, I would like to delete products from the database.<br>
+
+##User Stories Testing
+
+As a user, I would like to understand the purpose of the website and what it offers
+- The main page contains a landing image that gives a user a clear idea of what the website is about
+- 'Shop now' button will redirect a user to the page with all backpacks so they can see all range of products the website offers
+- navbar shows different backpack categories to enable a user to see what type of backpack products the shop sells
+- the website title also gives an indication of what kind of products are sold on the website
+Clicking on the website, a user instantly knows what the website is about and what offers
+<br>
+<br>
+As a user, I would like to intuitively navigate through the website so I can see the required content.
+- header and footer are the same on each page
+- a user can find the most imporatnt links easily on each page
+- log in and register links accessed from each site as well as other links to various products and categories
+- search bar is placed on the header and then easily accessed from each page
+- also 'sort by' option on all products site will help a user quickly find what they are looking for
+Website is easy to navigate and a user can promply find the products they whish
+<br>
+<br>
+As a user, I would like to use the website and see the content clearly on any device.
+- all pages have been tested on devices of a different size
+- all content is clear and website is fully functional on all devices
+<br>
+<br>
+As a user, I would like to be informed of any changes I have made in order to fully understand what has been done; i.e notifications when adding items to a shopping bag or making payments.
+- a user is notified of changes on website by using info, success and error messages
+- adding a product to a shopping bag, removing a product from a shopping bag, adding a product to wishlist, remove a product from wishlist, clicking on links they have no access to, when sign up, sign in, log out, when send a contact form, add a review, add more then one review, processing an order, making payment
+All notifications tested and worked as expected
+<br>
+<br>
+As a user, I would like to see all of the products that are available for purchase.
+- all products are accessible for viewing by clicking on 'Shop now' button on the main page or via navbar links 
+- specific products could be find using navbar or links placed on the footer, using searching bart or sorting by option on the all  products site
+A user can find a product range promptly
+<br>
+<br>
+As a user, I would like to find detailed information about individual products.
+- clicking on the product image in all product site a user is navigated to a page with all product details
+- a user can find information about, product name, category, price, rating, detailed product description, customers reviews
+A user finds all product detail on an indivudual site to help them decide about the purchase
+<br>
+<br>
+As a user, I would like to have an option to see the products of a particular category for more efficient shopping.
+- a user can find links to a different product categories in a navbar or footer accessible from each page
+A user can shop efficiently by links to a specific products categories
+<br>
+<br>
+As a user, I would like to sort the products by price, rating and by alphabetical order.
+- on all products page, a user is able to sort products by price(ascending/descending) rating (acsending/descending)
+and by product name (alphabetically)
+A user can sort products by various criteria
+<br>
+<br>
+As a user, I would like to search products by key words.
+- a search bar in the header is accessible from each page and a user can search for products using key words in product description or name
+A user can search for products
+<br>
+<br>
+As a user, I would like to see a breakdown of my shopping cart and be able to make changes if necessary.
+- a user can see the following product info in a shopping bag: item description with sku, product image, price, quantity, subtotal
+- a user have also an option to update the quantity
+- the cart summary includes: subtotal of order value excluding delivery, delivery charge, if applicable and the final total to be charged for the order
+A user can see a breakdown in their shopping cart
+<br>
+<br>
+As a user, I would like to create an account and log in easily.
+- links for registering and logging into an account are in navbar and accessible from each page
+- a user is also prompted to create an account or log in for better shopping experience e.g saving products to wishlist, keeping records of their purchase history, or adding a review
+A user can easily sign up or log in 
+<br>
+<br>
+As a user, I would like to save products in a wishlist, if I need more time to make purchase decision.
+- a user have an option to save items into their wishlist when registered 
+- they can add or remove item from wishlist ot add items from wishlist to shopping bag
+A registered users can save items in a wishlist
+<br>
+<br>
+As a user, I would like to see my order history in my profile.
+- when registered, a user will have their profile with their order history
+A user can keep trach of their past purchases.
+<br>
+<br>
+As a user I would like to save my default shipping details so that I can save time making my next purchase.
+- a registered users have an option to save their shipping details in their profile
+For more efficient shopping, a user have an option to store their delivery details
+<br>
+<br>
+As a user, I would like to receive an order confirmation to make sure that my order was processed.
+- once an order has been processed successfully, a customer will be notified and the order confirmed on the website, the order will be saved in their profile, if they are registered
+- also an email notification will be sent to an email provided in the checkout 
+A user's order will be confirmed on website and by an email.
+<br>
+<br>
+As a user, I would like to process my order by making a secure payment by card.
+- a card payment is processed by secure Stripe payment method
+A user order is processed by secure payment by card
+<br>
+<br>
+As a user I would like to purchase products without registering (as a guest).
+- a user can make a purchase without being registered
+<br>
+<br>
+As a user, I would like to rate and review products.
+- only registered users can add a review; they cannot add more than one for the same product
+- rating is a required field
+A registered user can add a review
+<br>
+<br>
+As a user, I would like to contact the shop customer service with the contact form.
+- all website users can contact the shop by fill in a contact form
+- after successfully submitting the contact form, a user will receive an email confirmation
+A user can send a query using a contact form
+<br>
+<br>
+As a superuser, I would like to log in to see the product management page.
+- log in with superuser credentials will give an access to Product management page
+<br>
+<br>
+As a superuser, I would like to be able to add products to the database.
+- a superuser can manipulate the data in the database, they can add a new product to the database via Product management page
+<br>
+<br>
+As a superuser, I would like to edit products in the database. 
+- a superuser can also edit existing products in a database via Product management page
+<br>
+<br>
+As a superuser, I would like to delete products from the database. 
+- a superuser can delete products permanantly from the database
 
 
+## Home Page 
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| BACKPACK AROUND logo | click | redirect a user to Home page | works as expected |
+| Search bar | insert a keyword| searching by keywords from product name and description | Works as expected |
+| Search bar | a keyword missing  | error message (enter search criteria) | Works as expected |
+| Account icon| click | dropdown menu; not logged-in user: Register, Log In;  logged in user: Profile, Wishlist, Log out; superuser: Product management, Profile, Wishlist, Log out | Works as expected |
+| Register | click | redirect to Sign Up form | Works as expected |
+| Login | click | redirect to Sign In form | Works as expected |
+| Login | toast | Login notification  | Works as expected |
+| Product management | click | redirect to Product management page| Works as expected |
+| Profile | click | redirect to Profile page| Works as expected |
+| Wishlist | click | redirect to Wishlist page| Works as expected |
+| Log out | click | redirect to Confirmation page| Works as expected |
+| Log out | toast |Sign out notification| Works as expected |
+| Sign Out | click | redirect to Home page| Works as expected |
+| Shopping cart icon | click | redirect to Shopping cart page| Works as expected |
+| All Products | click | dropdown menu: By Price, By Rating, All Products| Works as expected |
+| By Price | click | redirect to Products page and sort products by price| Works as expected |
+| By Rating | click | redirect to Products page and sort products by rating| Works as expected |
+| All Products | click | redirect to Products page | Works as expected |
+| Everyday Backpacks | click | dropdown menu: School, Commuter, Laptop, Mini, All Everyday Backpacks | Works as expected |
+| School, Commuter, Laptop, Mini Backpacks | click | redirect to products page but display only products of a specific category: School, Commuter, Laptop, Mini| Works as expected |
+| All Everyday Backpacks| click | redirect to Products page, display Everyday Backpacks | Works as expected |
+| Travel & Outdoor | click | dropdown menu: Suitcases, Hiking, Travel, Skate, All Travel & Outdoor Backpacks | Works as expected |
+| Suitcases, Hiking, Travel, Skate | click | redirect to products page but display only products of a specific category: Suitcases, Hiking, Travel, Skate | Works as expected |
+| All Travel & Outdoor Backpacks| click | redirect to Products page, display Travel & Outdoor Backpacks | Works as expected |
+| Special offers | click | dropdown menu: New Arrivals, Deals, Clearence,  All specials | Works as expected |
+| New Arrivals, Deals, Clearence | click | redirect to products page but display only products of a specific category: New Arrivals, Deals, Clearence | Works as expected |
+| All Specials| click | redirect to Products page, display only products of all Specials categories | Works as expected |
+| Contact Us| click | redirect to Contact Us form | Works as expected |
+| Shop Now| click | redirect to products page | Works as expected |
+| Shop Now| click | redirect to products page | Works as expected |
+| Home (Footer)| click | redirect to Home page | Works as expected |
+| Home (Footer)| click | redirect to Home page | Works as expected |
+| New Arrivals (Footer)| click | redirect to Products, display only New Arrivals category products | Works as expected |
+| All Products (Footer)| click | redirect to Products| Works as expected |
+| Everyday Backpcks (Footer)| click | redirect to Products, display only Everyday Backpacks category products | Works as expected |
+| Travel & Outdoor (Footer)| click | redirect to Products, display only Travel & Outdoor category products | Works as expected |
+| Contact Us (Footer)| click | redirect to Contact Us form | Works as expected |
+| Privacy Policy (Footer)| click | redirect to Privacy Policy Page | Works as expected |
 
 
+## Products Page 
 
-
-
-
-
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+| Products Home | click | redirect a user to all products | works as expected |
+| Counting products | check number | counting products displayed on the page | works as expected |
+| Sort by price (low to high) | select an option | products on page sorting by price (ascending) | works as expected |
+| Sort by price (high to low) | select an option | products on page sorting by price (descending)| works as expected |
+| Sort by rating (low to high) | select an option | products on page sorting by rating (ascending) | works as expected |
+| Sort by rating (high to low) | select an option | products on page sorting by rating (descending) | works as expected |
+| Sort by name (A to Z) | select an option | products on page sorting by alphabetically from A-Z | works as expected |
+| Sort by name (Z to A) | select an option | products on page sorting by alphabetically from Z-A | works as expected |
+| product image | click | redirect to individual/single product page  | works as expected |
 
 
 
