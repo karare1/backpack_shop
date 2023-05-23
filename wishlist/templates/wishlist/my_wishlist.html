@@ -38,9 +38,13 @@
                                 <tr class="border-bottom">
                                     <td class="p-3">
                                         {% if product.product.image %}
+                                        <!-- <a href="{% url 'individual_product' product.id %}"></a> -->
                                         <img class="img-fluid rounded cart_img" src="{{ product.product.image.url }}" alt="{{ product.product.name }}">
+                                        <!-- </a> -->
                                         {% else %}
+                                        <!-- <a href="{% url 'individual_product' product.id %}"> -->
                                         <img class="img-fluid rounded cart_img" src="{{ MEDIA_URL }}No-Image.png" alt="{{ product.product.name }}">
+                                        <!-- </a> -->
                                         {% endif %}
                                     </td>
                                     <td class="py-5">
@@ -55,7 +59,19 @@
                                             <!-- <i class="fas fa-trash alt-text-muted"></i> -->
                                             <i class="fa-solid fa-xmark fa-lg text-color"></i>
                                         </a>
-                                    </td>  
+                                    </td> 
+                                    <td>
+                                        <div class="col-12 col-md-4 text-center">
+                                            <form action="{% url 'add_items' product.product.id %}" method="POST">
+                                                {% csrf_token %}
+                                                <select class="d-none" name="quantity">
+                                                    <option>1</option>
+                                                </select>
+                                                <button class="btn btn-link text-danger" type="submit">Add to cart</button>
+                                                <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                                            </form>
+                                        </div>
+                                    </td>
                                 </tr>
                             {% endfor %}
                         </table>

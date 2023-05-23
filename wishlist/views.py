@@ -26,7 +26,7 @@ def wishlist_view(request):
 
 def wishlist_on(request, product_id):
     if not request.user.is_authenticated:
-        messages.error(request,
+        messages.info(request,
                        'Please log in to add this product into your Wishlist.')
         return redirect(reverse('account_login'))
 
