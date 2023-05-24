@@ -211,6 +211,120 @@ As a superuser, I would like to delete products from the database.
 | Sort by name (A to Z) | select an option | products on page sorting by alphabetically from A-Z | works as expected |
 | Sort by name (Z to A) | select an option | products on page sorting by alphabetically from Z-A | works as expected |
 | product image | click | redirect to individual/single product page  | works as expected |
+| Edit link | click | only visible to superuser - redirect to Product management (Edit a Product) page | works as expected |
+| Delete link | click | only visible to superuser - delete confirmation (modal) + Close button (go back without deleting) /Delete button (delete the product) + info message (toast) | works as expected |
+
+
+
+## Individual Product 
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+| Category link | click | redirect a user to Products page,  display all products of the same category  | works as expected |
+| Wishlist | click | non-registered user - redirect to log in (sign up) page  | works as expected |
+| Wishlist | click | registered user - add the product into wishlist  | works as expected |
+| Wishlist | click | registered user - add the product into wishlist  | works as expected |
+| Submit Review | click | empty star rating - review should not be send  | works as expected |
+| Submit Review | click | if a user has already reviewed a product (review not send and error message) | works as expected |
+| Submit Review | click | if a user input a rating and they have not reviewed the product already - rating + review (optional) submitted (+ info message)  | works as expected |
+| Edit link | click | only visible to superuser - redirect to Product management (Edit a Product) page | works as expected |
+| Delete link | click | only visible to superuser - delete confirmation (modal) + Close button (go back without deleting) /Delete button (delete the product) + info message (toast) | works as expected |
+| Quantity box | click | click on minus and plus, increase and decrease the product quantity  | works as expected |
+| Keep Shopping button | click | redirect to all products page | works as expected |
+| Add to cart | click | product added to shopping bag | works as expected |
+
+## Individual Product 
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+| Keep Shopping button | click | redirect to all products page | works as expected |
+| Quantity box | click | click on minus and plus, increase and decrease the product quantity  | works as expected |
+| Update link | click | update the product quantity | works as expected |
+| Remove link | click | remove a product from the cart | works as expected |
+| Values | calculation | correct calculation of subtotal, order value, free delivery and final total  | works as expected |
+| Continue to checkout | click | redirect to checkout page | works as expected |
+
+## Contact Form
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+| Send Message button | click | validation on all fields as all firlds required, not send without input | works as expected |
+| Send Message button | click | all fields filled in correctly - query sent + info message (toast) + email confirmation sent to a customer | works as expected |
+
+## Product Management (only superuser)
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+| Add product button | click | Name, Description, Price (all required) - if empty fields - validation applied, a product not added| works as expected |
+| Add product button | click | All required fields input correctly - a product added to the database + info message (toast) + redirect to a newly added product (individual product page) | works as expected |
+| Edit a product (click button from all products or individual product) | automatic |  data in the form, retrieved from the database | works as expected |
+| Select image button | click | redirect to internal folders to upload an image | works as expected |
+| Cancel button  | click | redirect to all products page | works as expected |
+| Update product button  | click |update added to the database and redirect to the updated product (individual product) + info message | works as expected |
+
+
+## Profile (registered user)
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+| Order number link | click | redirect to past order confirmation + info message (toast) | works as expected |
+| Back to Profile | click | redirect to profile page | works as expected |
+| Update information button | click | save/update users delivery information| works as expected |
+
+## Wishlist (registered user)
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+| Remove icon | click | remove product from a wishlist | works as expected |
+| Shopping cart icon | click | add the poduct to the shopping cart | works as expected |
+| Keep Shopping button | click | redirect to all products | works as expected |
+
+## Registration & Log In
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+| Back to Log In button | click | redirect to Log In page | works as expected |
+| Sign Up button | click | all fields requited, validation applied if fields not fill in correctly (not able to register with an email address already used, user name at least 4 char. password 8 char.) | works as expected |
+| Sign Up button | click | all fields correct - confirmation page, verification email, success message (toast) | works as expected |
+| Sign In link | click | redirect to Sign In page | works as expected |
+| Confirm link | click | confirm email + success message (toast) | works as expected |
+
+| Home link | click | redirect Home page | works as expected |
+| Sign In | click | both fields required, if one of the fields empty / or wrong details input - validation applied, not log in to an account | works as expected |
+| Sign Up link | click | redirect to Sign Up page | works as expected |
+| Forgot your password link | click | email sent + link to change password page  | works as expected |
+| Change your password link | click | if criteria not met - validation applied | works as expected |
+| Change your password link | click | password meets criteria - password changed + success message  | works as expected |
+| Forgot your password link | click | email sent + link to change password page  | works as expected |
+
+## Checkout
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+| Adjust cart button | click | redirect to a shopping cart | works as expected |
+| Complete Order link | click | required fields empty or not input correctly - validation applied | works as expected |
+| Complete Order link | click | required fields input correctly -  order/payment processed, order confirmation + summary, confirmation email, success message (toast| works as expected |
+| Latest deals link | click | redirect to all specials categories| works as expected |
+
+
+
+### Existing Features
+
+- __Home Page__
+
+<br><br>
+    <p align="center">
+      <img src="static/img/Home-readme.png">
+    </p>
+   
+
+- The home page is the screen the end user is presented with on page load. <br>
+  All webpages have the same gray-colour background with white navigation bar and pale brown footer. Two colors have been used for fonts: brown and blue. The whole project is using warm brownish (coffee) design to fit the purpose of the website.
+
+  Base.html template has been used as a parent template; it includes the basic html structure with all important links for frameworks and libraries needed for the website to function properly. 
+  The parent template also includes the navigation bar and footer that are consistent across all web pages.
+  This support the intuitiveness of the entire website and enhances the user experience and makes the website easy to use.
+  
+  Home Page includes a theme picture that fits the overall layout of the website. This coffee image has been used to attract potential users and give them a hint on what the website is about. The aim is also to make the website useful and interesting for the users that are already signed up to come back and share their new delicious coffee recipes. 
+  The home page also contains a message attached to the background image that explains why a user should register and the benefits they receive.
+  The main purposure of this website is to share coffee recipies but it also gives sign-up users the opportunity to create their own online coffee book - and save the recipes they like. 
+  Overall the Home page has been created to give a pleasant first impression and encourage a new visitors to click on sign up button and contribute with their coffee recipes.
+
+
+
+
 
 
 
