@@ -197,11 +197,12 @@ As a superuser, I would like to delete products from the database.
 | Travel & Outdoor (Footer)| click | redirect to Products, display only Travel & Outdoor category products | Works as expected |
 | Contact Us (Footer)| click | redirect to Contact Us form | Works as expected |
 | Privacy Policy (Footer)| click | redirect to Privacy Policy Page | Works as expected |
-
+<br>
 
 ## Products Page 
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
 | Products Home | click | redirect a user to all products | works as expected |
 | Counting products | check number | counting products displayed on the page | works as expected |
 | Sort by price (low to high) | select an option | products on page sorting by price (ascending) | works as expected |
@@ -219,6 +220,7 @@ As a superuser, I would like to delete products from the database.
 ## Individual Product 
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
 | Category link | click | redirect a user to Products page,  display all products of the same category  | works as expected |
 | Wishlist | click | non-registered user - redirect to log in (sign up) page  | works as expected |
 | Wishlist | click | registered user - add the product into wishlist  | works as expected |
@@ -235,6 +237,7 @@ As a superuser, I would like to delete products from the database.
 ## Individual Product 
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
 | Keep Shopping button | click | redirect to all products page | works as expected |
 | Quantity box | click | click on minus and plus, increase and decrease the product quantity  | works as expected |
 | Update link | click | update the product quantity | works as expected |
@@ -245,12 +248,14 @@ As a superuser, I would like to delete products from the database.
 ## Contact Form
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
 | Send Message button | click | validation on all fields as all firlds required, not send without input | works as expected |
 | Send Message button | click | all fields filled in correctly - query sent + info message (toast) + email confirmation sent to a customer | works as expected |
 
 ## Product Management (only superuser)
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
 | Add product button | click | Name, Description, Price (all required) - if empty fields - validation applied, a product not added| works as expected |
 | Add product button | click | All required fields input correctly - a product added to the database + info message (toast) + redirect to a newly added product (individual product page) | works as expected |
 | Edit a product (click button from all products or individual product) | automatic |  data in the form, retrieved from the database | works as expected |
@@ -262,6 +267,7 @@ As a superuser, I would like to delete products from the database.
 ## Profile (registered user)
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
 | Order number link | click | redirect to past order confirmation + info message (toast) | works as expected |
 | Back to Profile | click | redirect to profile page | works as expected |
 | Update information button | click | save/update users delivery information| works as expected |
@@ -269,6 +275,7 @@ As a superuser, I would like to delete products from the database.
 ## Wishlist (registered user)
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
 | Remove icon | click | remove product from a wishlist | works as expected |
 | Shopping cart icon | click | add the poduct to the shopping cart | works as expected |
 | Keep Shopping button | click | redirect to all products | works as expected |
@@ -276,6 +283,7 @@ As a superuser, I would like to delete products from the database.
 ## Registration & Log In
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
 | Back to Log In button | click | redirect to Log In page | works as expected |
 | Sign Up button | click | all fields requited, validation applied if fields not fill in correctly (not able to register with an email address already used, user name at least 4 char. password 8 char.) | works as expected |
 | Sign Up button | click | all fields correct - confirmation page, verification email, success message (toast) | works as expected |
@@ -293,6 +301,7 @@ As a superuser, I would like to delete products from the database.
 ## Checkout
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
 | Adjust cart button | click | redirect to a shopping cart | works as expected |
 | Complete Order link | click | required fields empty or not input correctly - validation applied | works as expected |
 | Complete Order link | click | required fields input correctly -  order/payment processed, order confirmation + summary, confirmation email, success message (toast| works as expected |
@@ -305,22 +314,146 @@ As a superuser, I would like to delete products from the database.
 - __Home Page__
 
 <br><br>
-    <p align="center">
+    <!-- <p align="center">
       <img src="static/img/Home-readme.png">
-    </p>
-   
+    </p> -->
+
 
 - The home page is the screen the end user is presented with on page load. <br>
-  All webpages have the same gray-colour background with white navigation bar and pale brown footer. Two colors have been used for fonts: brown and blue. The whole project is using warm brownish (coffee) design to fit the purpose of the website.
+- The main colours of the website are dark blue and white. According to web design research, blue color has been shown to increase feelings of trust and means your consumers can put their faith in you. Font colours used: blue, white, black.
 
-  Base.html template has been used as a parent template; it includes the basic html structure with all important links for frameworks and libraries needed for the website to function properly. 
+- Base.html template has been used as a parent template; it includes the basic html structure with all important links for frameworks   and libraries needed for the website to function properly. 
   The parent template also includes the navigation bar and footer that are consistent across all web pages.
   This support the intuitiveness of the entire website and enhances the user experience and makes the website easy to use.
-  
-  Home Page includes a theme picture that fits the overall layout of the website. This coffee image has been used to attract potential users and give them a hint on what the website is about. The aim is also to make the website useful and interesting for the users that are already signed up to come back and share their new delicious coffee recipes. 
-  The home page also contains a message attached to the background image that explains why a user should register and the benefits they receive.
-  The main purposure of this website is to share coffee recipies but it also gives sign-up users the opportunity to create their own online coffee book - and save the recipes they like. 
-  Overall the Home page has been created to give a pleasant first impression and encourage a new visitors to click on sign up button and contribute with their coffee recipes.
+
+- The home page has an image with the selling products, a catchy slogan and logo, all of which are strong indicators of the type of products available within the website. Also, there is some textual content describing the site's purpose in the footer. A user can start shopping just by clicking on 'Shop Now' button placed in the middle of the home page.
+  The aim is to make the website useble, effective, but also visually engaging to attract new and retain existing customers. 
+- Navbar and footer offers all important links for users to easily navigate throught the page. Links to products of a specific category, links to log in and register, links to user's cart, profile and wislist.
+
+- __Products Page__
+
+<br><br>
+    <!-- <p align="center">
+      <img src="static/img/Home-readme.png">
+    </p> -->
+
+- Products page as default, displays all products range available for users to buy. Each product card contains a short product introduction (a name, price, rating and an image (very rarely without an image). Clicking on the product image, a user will be redirected to individual product page with all detailed information about the product. A user can sort the products alphabeticaly, by rating or price - this feature together with a searching bar in the header - helps improve customer's shopping experience and make shopping more effective and convinient.
+A user can search by typing keywords that are included in product name or product description. Enter keyword and search, the products displayed are those matching the search terms or none if there were no matches.
+How products are displayed on the Product page depends on the options the user has chosen from the menu bar, what category or sorting option has been selected. Category names of products displayed on the page are located at the top section, underneath the main title, so users can see what kind of products they have selected.
+For the superuser, there are additional links for editing and deleting a product.
+
+- __Individual_Product Page__
+
+<br><br>
+    <!-- <p align="center">
+      <img src="static/img/Home-readme.png">
+    </p> -->
+
+Individual product page offers a user detailed information about the product they clicked on in the products page as well as customers reviews.
+This page plays a vital role for customers when making decision about purchase. 
+It promotes a particular product in a way to be the most attractive for customers.
+This page displays all important information and features that customers need before they buy the product: 
+The product image, product name, category (to see other products of the same category), price, detailed description, quantity selector with +/- buttons, a button to add a product to the shopping cart and customers reviews with rating.
+Rating and reviews offer customers an oportunity to share their product experience.
+Good reviews allow potential customers to trust your business and feel comfortable making a purchase from you because they know others have had pleasant experiences doing so. From the shop perspective, reviews can help better understand customers and improve customer and product experience.
+Star rating is required input for submitting a review, empty star rating cannot be submitted and customer is not allowed to submit more than one review for a product. Only log in user can add a review. 
+Customers review section shows shows existing reviews. 
+There is an wishlist icon to the right of the product title, when this is clicked, the product is saved to the user's wishlist. Any product which has been selected can be viewed in the wishlist page (can be accessed from the dropdown menu within the account icon when the user is logged in).
+
+- __Contact Us Page__
+
+<br><br>
+    <!-- <p align="center">
+      <img src="static/img/Home-readme.png">
+    </p> -->
+
+All users can send a message or query to the shop customer service via Contact Us form.
+This will aid communication between the user and Backpack Around onlineshop. This could include queries on the sales process, more information on specific properties of products or questions in relation to delivery issues. When a message is submitted a confirmation email will be sent to user's email address provided in the submitted form. 
+You do not have to be a logged in user to make an enquiry, as an unregistered user who wishes to send a message could be a potential customer and it would be important to ensure the communication lines are open for everyone. 
+All fiels in the Contact Us form are required: name, email address, subject and message. If any of these fileds are empty or not input correctly, validation is applied and the form will not be submitted. 
+
+
+- __Profile Page__
+
+<br><br>
+    <!-- <p align="center">
+      <img src="static/img/Home-readme.png">
+    </p> -->
+The Profile page is accessed only when a user is logged in. On the left hand side, it has a form to update the customer's default delivery information and on the right, it saves the user's order history. Delivery infomation can be saved as well as edited in case the customer's shipping details have changed. All, some or none of the fields from delivery details form can be saved on customer's profile. This makes the future payment/order process more effective. Order history shows: order number, date, items and order total. Order number is a link which redirects a user to the page with the whole past order confirmation. So a user can easily check all details of past purchases. 
+This is a great past order tracking tool offered to a registered customers. 
+
+
+- __Wishlist Page__
+
+<br><br>
+    <!-- <p align="center">
+      <img src="static/img/Home-readme.png">
+    </p> -->
+The Page shows a collection of products a user might consider to buy. The user can add a product to a wishlist by clicking on the wishlist icon on an individual_product page. The layout of the wishlist page is similar to the shopping cart page. It contains product image, item description with sku, price, remove icon as well as add to shopping cart icon. 
+If the user changed their mind and do not like the product anymore or they decided not to buy it. They can click on remove icon and remove the product from their wishlist. If a user decides to buy a product that is in their wishlist, instead of going back to individual product page, they can click on shopping cart icon and add the product directely to the shopping cart.
+
+
+- __Shopping Bag Page__
+
+<br><br>
+    <!-- <p align="center">
+      <img src="static/img/Home-readme.png">
+    </p> -->
+
+The Page shows the products that the user has currently in their shopping cart. This will initially display no products, but as products are added, they will be displayed on the page. Any products displayed will show an image, product name with sku, the price, a quantity selector for the number of items, the subtotal and the total price for all products in the cart. You can update the number of items or remove an item if neccessary. If the product amount exceeds £70 there is no delivery cost, but if it is lower a delivery cost will be applied. There is a keep shopping button and this allows the user to return to shop for more products. There is also a Continue to checkout button and this will send the user to the checkout page where they can complete the purchasing process.
+
+
+- __Checkout Page__
+
+<br><br>
+    <!-- <p align="center">
+      <img src="static/img/Home-readme.png">
+    </p> -->
+The Checkout Page shows the form to complete the order and the order summary breakdown. If you have previously ticked the checkbox to save your delivery information to your profile, this information will be already populated. Full name, email, phone number, street address, city, post number, country and payment details are all required fields and if left empty or input incorrectly a validation will apply and the order will not be processed. A user has 2 options undeneath the checkout form; they can adjust their shopping cart by returning to the shopping cart page or they can complete their order. When the user has successfully entered all their details correctly, and click on the complete order button, a loading spinner will show while the purchase is being processed. 
+
+
+- __Checkout Confirmation Page__
+
+<br><br>
+    <!-- <p align="center">
+      <img src="static/img/Home-readme.png">
+    </p> -->
+The Page with the order confirmation is shown to the user when their order has been processed. It contains a Thank you message and includes the order details and delivery and payment information, and underneath the form, there is a link to the latest deals page. There is also a success message displayed informing the user that their order has been processed successfully and a confirmation email will be sent to the email address provided on the checkout form.
+
+
+- __Add Product Page__
+
+<br><br>
+    <!-- <p align="center">
+      <img src="static/img/Home-readme.png">
+    </p> -->
+The Add Product page in Product Management accessed from dropdown menu when clicking on the account in the navbar is restricted only for the superuser. They can add a product in the frontend as well as in the admin panel. It can be accessed via the account icon This page has a form where the superuser can add product details and a product image, if an image is not added a generic image will be applied. Name, price and decription are required firnds for adding a new product. If these fields left empty of input incorrectly, the product will not be added. When the form fill in correctly, the product is added to the the user is redirected to the products page.
+
+
+- __Edit Product Page__
+
+<br><br>
+    <!-- <p align="center">
+      <img src="static/img/Home-readme.png">
+    </p> -->
+The same as Add product page, Edit product page is restricted only for the superuser. The page is accessed by clicking on the edit link in an image card in products page or in the individual product page.
+The Edit product page has a form which allows the superuser to edit product details for individual products. When clicking on edit link existing product information from the database will be populated in the form. When the product details have been edited and the form is submitted, the superuser will be redirected to the individual product page for that edited product.
+
+- __Sign Up Page__
+
+<br><br>
+    <!-- <p align="center">
+      <img src="static/img/Home-readme.png">
+    </p> -->
+On the Sign up page, a new user can sign up for the account by filling in and submitting the sign up form. All fields in the form are required and if any of these fields are left empty or input incorrectly a validation will apply and the form will not be submitted. Once successfully registered, a email verification message will be sent to the email address provided in the form. the user will be assigned a Profile for their account.
+
+- __Sign In Page__
+
+<br><br>
+    <!-- <p align="center">
+      <img src="static/img/Home-readme.png">
+    </p> -->
+A registered user can log in to their Backpack Around account by inputting their username/email and password. They will have full access to all the logged in features within the site. If they are logged in and are a superuser they will have an extra functionality for adding, editing and deleting products in the database. If the user forgets their email they can choose the forget password link and they will be sent an email to reset their password. They can then login with their new password. They can use the checkout box to be remembered, to make it easier for them to log in the next time.
 
 
 
