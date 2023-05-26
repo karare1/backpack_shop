@@ -40,8 +40,6 @@
                                 </a>
                             </p>
                         </div>
-
-
                     <!-- Price -->
                     <p class="lead mb-3 text-left font-weight-bold">£{{ product.price }}</p>
                     <!-- Category -->
@@ -52,46 +50,47 @@
                         </a>
                     </p>
                     {% endif %}
-                  
-
-                    <!-- <div class="review-feedback"> -->
-                        <!-- <span class="fa fa-star {% if product.averagereview > 0 %} checked {% endif %}"></span>
-                        <span class="fa fa-star {% if product.averagereview > 1 %} checked {% endif %}"></span>
-                        <span class="fa fa-star {% if product.averagereview > 2 %} checked {% endif %}"></span>
-                        <span class="fa fa-star {% if product.averagereview > 3 %} checked {% endif %}"></span>
-                        <span class="fa fa-star {% if product.averagereview > 4 %} checked {% endif %}"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
-                        <!-- {{product.averagereview | stringformat:".2f"}} -->
-                    <!-- </div> -->
-
-
-
+<!-- ---------------------------------------------------------------------------------------------- -->
                     <div class="rating-star">
                         <span>
-                            <!-- <i class="fa fa-star{% if product.averageReview < 0.5 %}-o{% elif product.averageReview >= 0 and product.averageReview < 1 %}-o {% endif %}" aria-hidden="true"></i>
-                            <i class="fa fa-star{% if product.averageReview < 1.5 %}-o{% elif product.averageReview >= 1 and product.averageReview < 2 %}-o {% endif %}" aria-hidden="true"></i>
-                            <i class="fa fa-star{% if product.averageReview < 2.5 %}-o{% elif product.averageReview >= 2 and product.averageReview < 3 %}-o {% endif %}" aria-hidden="true"></i>
-                            <i class="fa fa-star{% if product.averageReview < 3.5 %}-o{% elif product.averageReview >= 3 and product.averageReview < 4 %}-o {% endif %}" aria-hidden="true"></i>
-                            <i class="fa fa-star{% if product.averageReview < 4.5 %}-o{% elif product.averageReview >= 4 and product.averageReview < 5 %}-o {% endif %}" aria-hidden="true"></i> -->
-                            <span>{{product.averageReview}} / 5</span>
-                            <span>{{product.countReview}} reviews</span>
+                            {% if product.averageReview > 0 %}
+                                <span>{{product.averageReview}} / 5</span>&nbsp;&nbsp;
+                            {% else %}
+                                <small class="text-muted">No Rating</small>&nbsp;&nbsp;
+                            {% endif %}
+                            <span>({{product.countReview}} reviews)</span>
                         </span>
-                    </div>
-
-
-
-
-
-
-
-                        <!-- <p class="mb-3"><small class="text-muted mb-3"><i class="fas fa-star mr-1"></i>{{ review.rating }} / 5</small></p> -->
-                 
-                        <!-- <p class="mb-3"><small class="text-muted">No Rating</small></p> -->
-                    
-                    
+                    </div>  
+ <!-- ----------------------------------------------------------------------------------------------------                                    -->
                     {% if request.user.is_superuser %}
                     <small>
                         <a href="{% url 'edit_product' product.id %}">Edit</a> | 
-                        <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                        <!-- <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a> -->
+                        
+                        <a type="button" class="text-danger" data-toggle="modal" data-target="#deleteModal">
+                            Delete
+                        </a> 
+
+                          <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="deleteModalLabel">Warning</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  Are you sure you want to delete this product?
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-danger"><a href="{% url 'delete_product' product.id %}"></a>Delete
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                     </small>
                     {% endif %}
 
