@@ -1,3 +1,114 @@
+## Introduction 
+
+The Backpack Around website is an E-commerce platform developed using the Django Framework, Python, jQuery, CSS, and Bootstrap4. It integrates Stripe payments and incorporates user authentication and full CRUD functionality for product management accessible to the superuser. Please note that this website has been created solely for educational purposes.
+
+The website primarily focuses on selling backpacks and travel luggage, appealing to individuals across various age groups and interests. However, its main target audience consists of those seeking more than just an ordinary backpack. They are in search of adventure and something distinctive that represents their lifestyle.
+
+Backpack Around is a small online shop based in London, dedicated to providing personalized shopping experiences for its customers. The shop's main objective is to make it quick and effortless for customers to discover and purchase their desired backpacks.
+
+As a devoted brand owner and retailer of backpacks, Backpack Around offers a carefully curated selection of styles with a strong emphasis on product quality.
+
+Their product assortment encompasses multifunctional everyday backpacks, such as those suitable for school, commuting, laptops, or compact city use, as well as a range of travel and outdoor backpacks, including suitcases, hiking packs, and skate backpacks. The company aims to offer products of premium quality, featuring excellent style and unique composition.
+
+
+
+## Bussiness Goals
+- Attain commercial success by generating sales through the e-commerce website
+- Expand the customer base
+- Foster customer loyalty and ensure a positive user experience for existing customers
+- Utilize Social Media platforms to enhance the site's visibility and strategically plan future brand growth
+- Achieve high customer satisfaction for users of the website
+- Employ effective discount and value offer strategies
+- Provide valuable content and services to facilitate customer retention
+- Promote customer and visitor communication with the business and promptly address their inquiries
+- Develop engaging content to entice users and encourage their return
+- Optimize the shopping experience to simplify management for shoppers
+- Attract visitors and convert them into satisfied customers
+- Utilize customer feedback to rectify any perceived weaknesses and leverage the knowledge gained to potentially expand the existing product range
+
+
+## Potential target audience
+- Adventurous travelers: These are people who love exploring new places, going on outdoor adventures, or traveling with a backpack. They want backpacks that are strong, practical, and adaptable for different travel situations.
+- Students and young professionals: This group includes students of all levels (school, college, university) and young professionals who need backpacks for their daily activities. They want backpacks that can hold their books, laptops, and other important things while also showing off their personal style.
+- Commuters: These are individuals who travel to work or school regularly and need a dependable backpack to carry their stuff like laptops, documents, and accessories. They want backpacks that are comfortable, well-organized, and long-lasting.
+- Tech-savvy individuals: These are people who rely heavily on technology and need backpacks with special compartments and features to safely carry and organize their laptops, tablets, smartphones, charging cables, and other electronic gadgets.
+- Fashion-conscious individuals: These are individuals who see backpacks as more than just useful items—they consider them as fashion accessories. They want trendy, stylish backpacks that go well with their outfits and show off their personal style.
+- Outdoor enthusiasts: These are people who love activities like hiking, camping, and climbing. They need backpacks specifically designed for outdoor adventures. They prioritize features like being able to carry water, durability, weather resistance, and having enough space for gear and supplies.
+- Parents and caregivers: These individuals need backpacks for themselves or their children. They want backpacks that are strong, comfortable, well-organized, and have features suitable for kids when choosing backpacks for their family.
+
+
+## Website goals
+- The website has a clear and user-friendly theme that makes it easy to understand and navigate through the content.
+- Users can utilize the search feature to find specific products by category or through a word search.
+- Users have the ability to purchase all the products available on the site.
+- Users can create and maintain their profile on the site, allowing them to easily update their profile details.
+- Users can view comprehensive details for each product, and if logged in, they can leave reviews for the products.
+- Users can contact the site owner with any queries or suggestions they may have.
+- When logged in, users can select the products they like and store them within their wishlist page.
+- Enhance User Experience: Providing a seamless and enjoyable user experience. This includes fast page loading times, intuitive navigation, clear product information, easy-to-use shopping carts, and secure checkout processes
+
+
+
+
+Regenerate response
+<img src="readme_media/palette.png">
+
+
+
+## 9. Tools and Technology 
+
+### Language Used:
+
+-   [Python 3.8.11](https://www.python.org/)
+-   [HTML5](https://en.wikipedia.org/wiki/HTML5)    
+-   [CSS3](https://en.wikipedia.org/wiki/CSS)
+-   [jQuery 3.6.4](https://https://jquery.com/)
+-   [Django 3.2.18](https://www.python.org/)
+
+### Technology Used:
+
+-   [Am I Responsive](http://ami.responsivedesign.is/) 
+-   [Bootstrap v4.6.2](https://getbootstrap.com/) 
+-   [GitHub:](https://github.com/)
+-   [Gitpod](https://gitpod.io/) 
+-   [Heroku:](https://heroku.com) 
+-   [Stripe](https://stripe.com/en-ie) 
+-   [Google Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) 
+-   [AWS](https://aws.amazon.com/) - used for images for the site.
+-   [Elephant SQL](https://www.elephantsql.com/) – deployed project on Heroku uses an Elephant SQL database. 
+-   [Favicon.io](https://favicon.io) - for making the site favicon.
+-   [Code Institute Python Linter](https://pep8ci.herokuapp.com/) - used to validate Python in Project.
+<!-- -   [Accesibility Test](https://accessibilitytest.org/) - free accessibility testing tool. -->
+-   [Temp Email Site](https://temp-mail.org/en/) - used to test emails for registering and purchasing on site.
+<!-- -   [Page Speed Insights](https://pagespeed.web.dev/) - used to test speed and performance of website. -->
+<!-- -   [Image Resizer](https://imageresizer.com/) - Used to Compress & Resize Images. -->
+-   [W3C Markup Validation Service](https://validator.w3.org/) - Used to validate HTML code.
+-   [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input) - Used to validate CSS code.
+-   [JSHint](https://jshint.com/) - Used to validate JS code.
+
+### Django Packages
+
+* [Gunicorn](https://gunicorn.org/) - As a server for Heroku.
+* [Dj_database_url 0.5.0](https://pypi.org/project/dj-database-url/) - To parse the database URL from the environment variables in Heroku.
+* [Psycopg2 2.9.6](https://pypi.org/project/psycopg2/) - As an adaptor for Python and PostgreSQL databases.
+* [Allauth](https://django-allauth.readthedocs.io/en/latest/) - For authentication, registration, account management.
+* [Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) - To style the forms used in the site.
+
+ <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ##User Stories
 
 As a user, I would like to understand the purpose of the website and what it offers.<br>
@@ -455,7 +566,11 @@ On the Sign up page, a new user can sign up for the account by filling in and su
     </p> -->
 A registered user can log in to their Backpack Around account by inputting their username/email and password. They will have full access to all the logged in features within the site. If they are logged in and are a superuser they will have an extra functionality for adding, editing and deleting products in the database. If the user forgets their email they can choose the forget password link and they will be sent an email to reset their password. They can then login with their new password. They can use the checkout box to be remembered, to make it easier for them to log in the next time.
 
-
+## Future Implementation
+There were a number of features that I would like to expand upon in the future.
+- I would like to create a blog with full CRUD functionality for registerd users and allow them to share product experience and backpack lifestyle
+- give the users an option to sign up for a newsletter
+- expand product managent page; I would like to allow the superuser to access the customers reviews on frontend without needing to access the admin panel 
 
 
 
