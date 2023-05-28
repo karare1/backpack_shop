@@ -1,0 +1,10 @@
+<!-- Cart total -->
+<h6 class="mb-0 text-color"><strong>Order value: £{{ subtotal|floatformat:2 }}</strong></h6>
+<p class="mt-0">(Excluding delivery)</p>
+<h6>Delivery: £{{ delivery|floatformat:2 }}</h6>
+<h4 class="mt-4 text-color"><strong>Total: £{{ final_total|floatformat:2 }}</strong></h4>
+{% if free_delivery_confirmed > 0 %}
+    <p class="mb-1 text-danger">
+        You could get free delivery by spending just <strong>£{{ free_delivery_confirmed }}</strong> more!
+    </p>
+{% endif %}
