@@ -6,9 +6,7 @@ body {
     background: url('/media/main-img.jpg') no-repeat center center fixed;
     background-size:cover;
     height: calc(100vh - 164px);
-    color: #555;
     color: #000;
-    /* background-color: #dc3545; */
 }
 
 /* from Bulma */
@@ -37,8 +35,7 @@ body {
     font-size: 1.5rem;
 }
 
-.btn-black {
-    /* background: black; */
+.btn-color {
     color: white;
     background:#3b6181;
 }
@@ -46,9 +43,9 @@ body {
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
+.btn-color:hover,
+.btn-color:active,
+.btn-color:focus {
     background:#0c3b61;
     /* background: #222; */
     color: white;
@@ -62,7 +59,7 @@ body {
     border: 1px solid black !important;
 }
 
-.bg-black {
+.bg-color {
     background:#3b6181 !important;
 }
 
@@ -113,10 +110,24 @@ a.category-title > span.badge:hover {
     cursor: pointer;
 }
 
-.btn-outline-black {
+.btn-outline-color {
     background: white;
     color:#3b6181  !important; /* use important to override link colors for <a> elements */
     border: 1px solid black;
+}
+
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.btt-link,
+.update-link,
+.remove-item {
+    cursor: pointer;
 }
 
 /* .btn-outline-black:hover,
@@ -129,9 +140,9 @@ a.category-title > span.badge:hover {
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
+.btn-color:hover,
+.btn-color:active,
+.btn-color:focus {
     background:#3b6181 ;
     color: white;
 }
@@ -260,6 +271,16 @@ footer {
 #id_country {
     height: 45px!important;
 }
+
+.wish-cart {
+    margin-top: 18%;
+}
+
+.wish-heart {
+    text-align: right;
+    margin-left:60%;
+}
+
 
 
 
@@ -499,13 +520,13 @@ footer {
         font-size: .9rem;
     }
 
-    .btn.btn-outline-black.rounded-0,
-    .btn.btn-black.rounded-0 {
+    .btn.btn-outline-color.rounded-0,
+    .btn.btn-color.rounded-0 {
         padding: .375rem .375rem;
     }
 
-    .btn.btn-outline-black.rounded-0.btn-lg,
-    .btn.btn-black.rounded-0.btn-lg {
+    .btn.btn-outline-color.rounded-0.btn-lg,
+    .btn.btn-color.rounded-0.btn-lg {
         padding: .375rem .375rem;
         font-size: .75rem;
     }
@@ -513,4 +534,81 @@ footer {
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
     }
+
+    .font-small {
+        font-size: 1.8rem;
+    }
+
+    .shop-now-button {
+        min-width: auto;
+        font-size: 1rem;
+    }
+    /* .navbar {
+        padding-right: 0.15rem;
+    } */
+    .dropdown-item {
+        padding-right: 0.15rem;
+        padding-left: 0.5rem;
+    }
+    .navbar-toggler {
+        padding: .6rem .6rem;
+        font-size: 1rem;
+    }
+    .custom-select {
+        width: auto;
+    }
+    .h2, h2 {
+        font-size: 1.3rem;
+    }
+    dl, ol, ul {
+        padding-left: 1.5rem;
+
+    }
+    .width-mob {
+        width: auto!important;
+    }
+    .wish-heart {
+        margin-left: 50%;
+    }
+    .ml-5, .mx-5 {
+        margin-left: 1rem!important;
+        /* margin-right: 1rem; */
+    }
+    /* .form-control {
+        width:80%;
+        margin: 0 !important;
+    } */
+
+    .btn-pad {
+        padding-top: 0.28em;
+        padding-bottom: 0.45em; ;
+    }
+
+    .wish-cart {
+        margin-top: 5%;
+    }
+    .wish-mar {
+        margin-left: 60%;
+        margin-top: 2%;
+    }
+
+    .cart_img {
+        width: 150px;
+    }
+
+    .font-order {
+        font-size: 0.9rem;
+    }
+
+    /* .container .check-mar {
+        padding-right: 0px!important;
+        
+    } */
+    /* .d-flex {
+        display:initial!important;
+        margin-left: 15%;
+    } */
+   
+
+
 }
