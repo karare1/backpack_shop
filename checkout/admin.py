@@ -1,9 +1,9 @@
 from django.contrib import admin
 from .models import Order, OrderLine
-# Register your models here.
 
 
 class OrderLineAdminInline(admin.TabularInline):
+    # Adds order line items in Django Admin
     model = OrderLine
     readonly_fields = ('line_total',)
 
@@ -27,6 +27,7 @@ class OrderAdmin(admin.ModelAdmin):
                     'order_total', 'delivery_cost',
                     'final_total',)
 
+    # reverse chronological order
     ordering = ('-date',)
 
 

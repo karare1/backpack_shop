@@ -24,7 +24,52 @@
         <div class="row">
             <div class="col">
                 {% if wishlist %}
-                    <div class="table-responsive rounded">
+                <div class="d-block d-md-none">
+                    <p class="text-muted mb-5">A summary of your wishlist is below</p>
+                       
+                    {% for product in wishlist %}
+                            <div class="row">
+                                <div class="col-12 col-sm-6 mb-2">
+                                    {% if product.product.image %}
+                                        <img class="img-fluid rounded cart_img" src="{{ product.product.image.url }}" alt="{{ product.product.name }}">
+                                        {% else %}
+                                        <img class="img-fluid rounded cart_img" src="{{ MEDIA_URL }}No-Image.png" alt="{{ product.product.name }}">
+                                        {% endif %}
+                               </div>
+                                <div class="col-12 col-sm-6 mb-2">
+                                    <p class="my-0"><strong>{{ product.product.name }}</strong></p>
+                                        <p class="my-0 small text-muted">SKU: {{ product.product.sku|upper }}</p>
+                                </div>
+                                <div class="col-12 col-sm-6 order-sm-last">
+                                    <p class="my-0">£{{ product.product.price }}</p>
+                                </div>
+                                <div class="d-inline">
+                                    <form action="{% url 'add_items' product.product.id %}" method="POST">
+                                        {% csrf_token %}
+                                        <select class="d-none" name="quantity">
+                                            <option>1</option>
+                                        </select>
+                                        <button class="btn btn-link wish-cart" type="submit"><i class="fa-solid fa-cart-shopping fa-xl" style="color: #3b6181;"></i></button>
+                                        <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                                    </form>
+                                </div>
+                                <div class="d-inline wish-mar">
+                                    <a href="{% url 'wishlist_off' product.product.id %}" aria-label="remove item from wishlist">
+                                        <i class="fa-solid fa-xmark fa-lg text-color"></i>
+                                    </a>
+                                </div>
+                              
+
+                            </div>
+                            <div class="row"><div class="col"><hr></div></div>
+                    {% endfor %}
+                    <div class="btt-button shadow-sm rounded-0 border border-black">
+                        <a class="btt-link d-flex h-100">
+                            <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
+                        </a>	
+                    </div>
+                </div>
+                    <div class="table-responsive rounded d-none d-md-block ">
                         <table class="table table-sm table-borderless">
                             <thead class="text-black border-bottom">
                                 <tr>
@@ -32,19 +77,16 @@
                                     <th scope="col">Item Description</th>
                                     <th scope="col">Price</th>
                                     <th scope="col">Remove</th>
+                                    <th scope="col">Add to cart</th>
                                 </tr>
                             </thead>
                            {% for product in wishlist %}
                                 <tr class="border-bottom">
                                     <td class="p-3">
                                         {% if product.product.image %}
-                                        <!-- <a href="{% url 'individual_product' product.id %}"></a> -->
                                         <img class="img-fluid rounded cart_img" src="{{ product.product.image.url }}" alt="{{ product.product.name }}">
-                                        <!-- </a> -->
                                         {% else %}
-                                        <!-- <a href="{% url 'individual_product' product.id %}"> -->
                                         <img class="img-fluid rounded cart_img" src="{{ MEDIA_URL }}No-Image.png" alt="{{ product.product.name }}">
-                                        <!-- </a> -->
                                         {% endif %}
                                     </td>
                                     <td class="py-5">
@@ -54,20 +96,19 @@
                                     <td class="py-5">
                                         <p class="my-0">£{{ product.product.price }}</p>
                                     </td>
-                                    <td class="py-5 text-black" data-label="Remove: ">
+                                    <td class="py-5 pl-4 text-black" data-label="Remove: ">
                                         <a href="{% url 'wishlist_off' product.product.id %}" aria-label="remove item from wishlist">
-                                            <!-- <i class="fas fa-trash alt-text-muted"></i> -->
                                             <i class="fa-solid fa-xmark fa-lg text-color"></i>
                                         </a>
                                     </td> 
                                     <td>
-                                        <div class="col-12 col-md-4 text-center">
+                                        <div class="col-12 col-md-4 text-center wish-cart">
                                             <form action="{% url 'add_items' product.product.id %}" method="POST">
                                                 {% csrf_token %}
                                                 <select class="d-none" name="quantity">
                                                     <option>1</option>
                                                 </select>
-                                                <button class="btn btn-link text-danger" type="submit">Add to cart</button>
+                                                <button class="btn btn-link wish-cart" type="submit"><i class="fa-solid fa-cart-shopping fa-xl" style="color: #3b6181;"></i></button>
                                                 <input type="hidden" name="redirect_url" value="{{ request.path }}">
                                             </form>
                                         </div>
@@ -77,29 +118,15 @@
                         </table>
                                     
                         <div>
-                                <!-- <td colspan="5" class="text-right bg-light pb-3"> -->
-                                    <a href="{% url 'products' %}" class="btn btn-outline-secondary rounded-0 btn-lg float-left">
-                                        <span class="icon">
-                                            <i class="fas fa-chevron-left"></i>
-                                        </span>
-                                        <span class="text-uppercase"></span>
-                                    </a>
-                                    <a href="{% url 'checkout' %}" class="btn btn-black rounded-0 btn-lg">
-                                        <span class="text-uppercase"></span>
-                                        <span class="icon">
-                                            <i class="fas fa-lock"></i>
-                                        </span>
-                                    </a>
-                                </div>
+                            <a href="{% url 'products' %}" class="btn btn-outline-secondary rounded-0 btn-lg float-left">
+                                <span class="icon">
+                                    <i class="fas fa-chevron-left"></i>
+                                </span>
+                                <span class="text-uppercase">Keep Shopping</span>
+                            </a>
+                        </div>
                     </div>
                 {% else %}
-                    <!-- <p class="lead mb-5">Your wishlist is empty.</p>
-                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
-                        <span class="icon">
-                            <i class="fas fa-chevron-left"></i>
-                        </span>
-                        <span class="text-uppercase">Keep Shopping</span>
-                    </a> -->
                     <p class="mt-1">Your wishlist is empty.</p>
                     <div class="col mt-4 pl-0">
                     <a href="{% url 'products' %}" class="btn btn-black rounded-0 text-uppercase mt-1">

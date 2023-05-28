@@ -3,6 +3,8 @@ from django.dispatch import receiver
 
 from .models import OrderLine
 
+# signals are sent after a model is saved or deleted
+
 
 @receiver(post_save, sender=OrderLine)
 def update_on_save(sender, instance, created, **kwargs):

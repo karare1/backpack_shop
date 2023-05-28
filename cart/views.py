@@ -1,9 +1,9 @@
-from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404
+from django.shortcuts import (
+    render, redirect, reverse, HttpResponse, get_object_or_404
+)
 from django.contrib import messages
 
 from products.models import Product
-
-# Create your views here.
 
 
 def shop_cart(request):
@@ -22,13 +22,13 @@ def add_items(request, item_id):
 
     if item_id in list(cart.keys()):
         cart[item_id] += quantity
-        messages.success(request, f'Updated {product.name} quantity to {cart[item_id]}')
+        messages.success(
+            request, f'Updated {product.name} quantity to {cart[item_id]}')
     else:
         cart[item_id] = quantity
         messages.success(request, f'Added {product.name} to your cart')
 
     request.session['cart'] = cart
-    # print(request.session['cart'])
     return redirect(redirect_url)
 
 
@@ -37,23 +37,13 @@ def amend_item(request, item_id):
 
     product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
-    # size = None
-    # if 'product_size' in request.POST:
-    #     size = request.POST['product_size']
-    cart = request.session.get('cart', {})
 
-    # if size:
-    #     if quantity > 0:
-    #         bag[item_id]['items_by_size'][size] = quantity
-    #     else:
-    #         del bag[item_id]['items_by_size'][size]
-    #         if not bag[item_id]['items_by_size']:
-    #             bag.pop(item_id)
-    # else:
+    cart = request.session.get('cart', {})
 
     if quantity > 0:
         cart[item_id] = quantity
-        messages.success(request, f'Updated {product.name} quantity to {cart[item_id]}')
+        messages.success(
+            request, f'Updated {product.name} quantity to {cart[item_id]}')
     else:
         cart.pop(item_id)
         messages.success(request, f'Removed {product.name} from your cart')
@@ -67,16 +57,7 @@ def remove_item(request, item_id):
 
     try:
         product = get_object_or_404(Product, pk=item_id)
-        # size = None
-        # if 'product_size' in request.POST:
-        #     size = request.POST['product_size']
         cart = request.session.get('cart', {})
-
-        # if size:
-        #     del bag[item_id]['items_by_size'][size]
-        #     if not bag[item_id]['items_by_size']:
-        #         bag.pop(item_id)
-        # else:
         cart.pop(item_id)
         messages.success(request, f'Removed {product.name} from your cart')
 

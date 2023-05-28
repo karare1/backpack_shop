@@ -11,8 +11,6 @@ from django.core.exceptions import PermissionDenied
 
 from .forms import ProductForm
 
-# Create your views here.
-
 
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
@@ -29,8 +27,6 @@ def all_products(request):
             if sortkey == 'name':
                 sortkey = 'lower_name'
                 products = products.annotate(lower_name=Lower('name'))
-            # if sortkey == 'category':
-            #     sortkey = 'category__name'
             if 'direction' in request.GET:
                 direction = request.GET['direction']
                 if direction == 'desc':
@@ -49,7 +45,8 @@ def all_products(request):
             if not query1:
                 messages.error(request, "Please enter search criteria!")
                 return redirect(reverse('products'))
-            queries1 = Q(name__icontains=query1) | Q(description__icontains=query1)
+            queries1 = Q(name__icontains=query1) | Q(
+                description__icontains=query1)
             products = products.filter(queries1)
 
     sorting_by = f'{sort}_{direction}'
@@ -68,10 +65,10 @@ def individual_product(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
-    reviews = Review.objects.filter(product_id=product.id, status=True) #new
+    reviews = Review.objects.filter(product_id=product.id, status=True)
     context = {
         'product': product,
-        'reviews': reviews, #new
+        'reviews': reviews,
     }
 
     return render(request, 'products/individual_product.html', context)
@@ -92,7 +89,9 @@ def add_product(request):
             messages.info(request, 'Successfully added product!')
             return redirect(reverse('individual_product', args=[product.id]))
         else:
-            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+            messages.error(
+                request, 'Failed to add product. \
+                    Please ensure the form is valid.')
     else:
         form = ProductForm()
 
@@ -120,7 +119,9 @@ def edit_product(request, product_id):
             messages.info(request, 'Successfully updated product!')
             return redirect(reverse('individual_product', args=[product.id]))
         else:
-            messages.error(request, 'Failed to update product. Please ensure the form is valid.')
+            messages.error(
+                request, 'Failed to update product.\
+                    Please ensure the form is valid.')
     else:
         form = ProductForm(instance=product)
         messages.info(request, f'You are editing {product.name}')
@@ -151,8 +152,8 @@ def delete_product(request, product_id):
 def reviews_views(request, product_id):
     """ A view to show all available reviews for current product """
     product = get_object_or_404(Product, pk=product_id)
-    review = Review.objects.create(product=product, user=request.user, rating=rating, review=review)
-    # reviews = Review.objects.filter(product=product)
+    review = Review.objects.create(
+        product=product, user=request.user, rating=rating, review=review)
     template = 'products/individual_product.html'
 
     context = {
@@ -190,10 +191,13 @@ def submit_review(request, product_id):
 
             user = request.user
             product = get_object_or_404(Product, pk=product_id)
-            existing = Review.objects.filter(product=product, user=user).exists()
+            existing = Review.objects.filter(
+                product=product, user=user).exists()
             if existing:
-                messages.error(request, f'You have already reviewed {product.name}!')
-                return redirect(reverse('individual_product', args=[product.id]))
+                messages.error(
+                    request, f'You have already reviewed {product.name}!')
+                return redirect(
+                    reverse('individual_product', args=[product.id]))
 
             rating = form.save()
             review = form.save()
@@ -218,14 +222,3 @@ def submit_review(request, product_id):
     }
 
     return render(request, template, context)
-
-    # def product_review(request, product_id):
-    #     product = get_object_or_404(Product, pk=product_id)
-    #     user = get_object_or_404(UserProfile, user=user.request)
-    #     # Get the reviews posted by the user for this product
-    #     user_review = Review.object.filter(user=user, product=product)
-
-    #     if request.method == 'POST':
-    #         if user_review:
-    #             # If there is/are any reviews, raise an error
-    #             raise PermissionDenied('You have already given your review on this post.')

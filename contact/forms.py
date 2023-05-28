@@ -18,6 +18,3 @@ class ContactForm(ModelForm):
 
     def success(request):
         return render(request, "contact/success.html")
-
-    # self.fields['title'].widget.attrs['placeholder'] = 'Write product title here'
-    # self.fields['name'].widget.attrs.update({'class': 'form-control', 'placeholder': 'Eneter your Name..'})

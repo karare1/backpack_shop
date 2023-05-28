@@ -1,10 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block extra_css %}
-    <link rel="stylesheet" href="{% static 'contact/css/contact.css' %}">
-{% endblock %}
-
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
@@ -23,13 +19,6 @@
                 <hr>
             </div>
         </div>
-
-        <!-- <form action="{% url 'contact' %}" method="POST">
-            {% csrf_token %}
-            {{ form }}
-            <input type="submit" value="Submit">
-        </form> -->
-    <!-- </div> -->
     {% if submitted %}
         <p>Your message was submitted successfully"</p>
 

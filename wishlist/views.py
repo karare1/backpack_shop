@@ -1,4 +1,5 @@
-from django.shortcuts import render, get_object_or_404, redirect, reverse, HttpResponseRedirect
+from django.shortcuts import (
+    render, get_object_or_404, redirect, reverse, HttpResponseRedirect)
 from django.conf import settings
 from django.contrib import messages
 from profiles.models import UserProfile
@@ -26,8 +27,8 @@ def wishlist_view(request):
 
 def wishlist_on(request, product_id):
     if not request.user.is_authenticated:
-        messages.info(request,
-                       'Please log in to add this product into your Wishlist.')
+        messages.info(
+            request, 'Please log in to add this product into your Wishlist.')
         return redirect(reverse('account_login'))
 
     user = get_object_or_404(UserProfile, user=request.user)
@@ -41,8 +42,8 @@ def wishlist_on(request, product_id):
     else:
         wishlist_item = Wishlist.objects.create(profile=user,
                                                 product=product)
-    messages.info(request,
-                     f'{product.name} has been added to your Wishlist!')
+    messages.info(
+        request, f'{product.name} has been added to your Wishlist!')
 
     return redirect(reverse('individual_product', args=[product.id]))
 
