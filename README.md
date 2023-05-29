@@ -9,7 +9,8 @@ Backpack Around is a small online shop based in London, dedicated to providing p
 As a devoted brand owner and retailer of backpacks, Backpack Around offers a carefully curated selection of styles with a strong emphasis on product quality.
 
 Their product assortment encompasses multifunctional everyday backpacks, such as those suitable for school, commuting, laptops, or compact city use, as well as a range of travel and outdoor backpacks, including suitcases, hiking packs, and skate backpacks. The company aims to offer products of premium quality, featuring excellent style and unique composition.
-
+<br>
+<br>
 
 
 ## Bussiness Goals
@@ -25,7 +26,8 @@ Their product assortment encompasses multifunctional everyday backpacks, such as
 - Optimize the shopping experience to simplify management for shoppers
 - Attract visitors and convert them into satisfied customers
 - Utilize customer feedback to rectify any perceived weaknesses and leverage the knowledge gained to potentially expand the existing product range
-
+<br>
+<br>
 
 ## Potential target audience
 - Adventurous travelers: These are people who love exploring new places, going on outdoor adventures, or traveling with a backpack. They want backpacks that are strong, practical, and adaptable for different travel situations.
@@ -35,7 +37,8 @@ Their product assortment encompasses multifunctional everyday backpacks, such as
 - Fashion-conscious individuals: These are individuals who see backpacks as more than just useful items—they consider them as fashion accessories. They want trendy, stylish backpacks that go well with their outfits and show off their personal style.
 - Outdoor enthusiasts: These are people who love activities like hiking, camping, and climbing. They need backpacks specifically designed for outdoor adventures. They prioritize features like being able to carry water, durability, weather resistance, and having enough space for gear and supplies.
 - Parents and caregivers: These individuals need backpacks for themselves or their children. They want backpacks that are strong, comfortable, well-organized, and have features suitable for kids when choosing backpacks for their family.
-
+<br>
+<br>
 
 ## Website goals
 - The website has a clear and user-friendly theme that makes it easy to understand and navigate through the content.
@@ -46,70 +49,10 @@ Their product assortment encompasses multifunctional everyday backpacks, such as
 - Users can contact the site owner with any queries or suggestions they may have.
 - When logged in, users can select the products they like and store them within their wishlist page.
 - Enhance User Experience: Providing a seamless and enjoyable user experience. This includes fast page loading times, intuitive navigation, clear product information, easy-to-use shopping carts, and secure checkout processes
+<br>
+<br>
 
-
-
-
-Regenerate response
-<img src="readme_media/palette.png">
-
-
-
-## 9. Tools and Technology 
-
-### Language Used:
-
--   [Python 3.8.11](https://www.python.org/)
--   [HTML5](https://en.wikipedia.org/wiki/HTML5)    
--   [CSS3](https://en.wikipedia.org/wiki/CSS)
--   [jQuery 3.6.4](https://https://jquery.com/)
--   [Django 3.2.18](https://www.python.org/)
-
-### Technology Used:
-
--   [Am I Responsive](http://ami.responsivedesign.is/) 
--   [Bootstrap v4.6.2](https://getbootstrap.com/) 
--   [GitHub:](https://github.com/)
--   [Gitpod](https://gitpod.io/) 
--   [Heroku:](https://heroku.com) 
--   [Stripe](https://stripe.com/en-ie) 
--   [Google Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) 
--   [AWS](https://aws.amazon.com/) - used for images for the site.
--   [Elephant SQL](https://www.elephantsql.com/) – deployed project on Heroku uses an Elephant SQL database. 
--   [Favicon.io](https://favicon.io) - for making the site favicon.
--   [Code Institute Python Linter](https://pep8ci.herokuapp.com/) - used to validate Python in Project.
-<!-- -   [Accesibility Test](https://accessibilitytest.org/) - free accessibility testing tool. -->
--   [Temp Email Site](https://temp-mail.org/en/) - used to test emails for registering and purchasing on site.
-<!-- -   [Page Speed Insights](https://pagespeed.web.dev/) - used to test speed and performance of website. -->
-<!-- -   [Image Resizer](https://imageresizer.com/) - Used to Compress & Resize Images. -->
--   [W3C Markup Validation Service](https://validator.w3.org/) - Used to validate HTML code.
--   [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input) - Used to validate CSS code.
--   [JSHint](https://jshint.com/) - Used to validate JS code.
-
-### Django Packages
-
-* [Gunicorn](https://gunicorn.org/) - As a server for Heroku.
-* [Dj_database_url 0.5.0](https://pypi.org/project/dj-database-url/) - To parse the database URL from the environment variables in Heroku.
-* [Psycopg2 2.9.6](https://pypi.org/project/psycopg2/) - As an adaptor for Python and PostgreSQL databases.
-* [Allauth](https://django-allauth.readthedocs.io/en/latest/) - For authentication, registration, account management.
-* [Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) - To style the forms used in the site.
-
- <br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-##User Stories
+## User Stories
 
 As a user, I would like to understand the purpose of the website and what it offers.<br>
 As a user, I would like to intuitively navigate through the website so I can see the required content.<br>
@@ -135,8 +78,10 @@ As a superuser, I would like to log in to see the product management page.<br>
 As a superuser, I would like to be able to add products to the database.<br>
 As a superuser, I would like to edit products in the database.<br> 
 As a superuser, I would like to delete products from the database.<br>
+<br>
+<br>
 
-##User Stories Testing
+## User Stories Testing
 
 As a user, I would like to understand the purpose of the website and what it offers
 - The main page contains a landing image that gives a user a clear idea of what the website is about
@@ -146,7 +91,8 @@ As a user, I would like to understand the purpose of the website and what it off
 Clicking on the website, a user instantly knows what the website is about and what offers
 <br>
 <br>
-As a user, I would like to intuitively navigate through the website so I can see the required content.
+
+As a user, I would like to intuitively navigate through the website so I can see the required content
 - header and footer are the same on each page
 - a user can find the most imporatnt links easily on each page
 - log in and register links accessed from each site as well as other links to various products and categories
@@ -155,45 +101,53 @@ As a user, I would like to intuitively navigate through the website so I can see
 Website is easy to navigate and a user can promply find the products they whish
 <br>
 <br>
+
 As a user, I would like to use the website and see the content clearly on any device.
 - all pages have been tested on devices of a different size
 - all content is clear and website is fully functional on all devices
 <br>
 <br>
+
 As a user, I would like to be informed of any changes I have made in order to fully understand what has been done; i.e notifications when adding items to a shopping bag or making payments.
 - a user is notified of changes on website by using info, success and error messages
 - adding a product to a shopping bag, removing a product from a shopping bag, adding a product to wishlist, remove a product from wishlist, clicking on links they have no access to, when sign up, sign in, log out, when send a contact form, add a review, add more then one review, processing an order, making payment
 All notifications tested and worked as expected
 <br>
 <br>
+
 As a user, I would like to see all of the products that are available for purchase.
 - all products are accessible for viewing by clicking on 'Shop now' button on the main page or via navbar links 
 - specific products could be find using navbar or links placed on the footer, using searching bart or sorting by option on the all  products site
 A user can find a product range promptly
 <br>
 <br>
+
 As a user, I would like to find detailed information about individual products.
 - clicking on the product image in all product site a user is navigated to a page with all product details
 - a user can find information about, product name, category, price, rating, detailed product description, customers reviews
 A user finds all product detail on an indivudual site to help them decide about the purchase
 <br>
 <br>
+
 As a user, I would like to have an option to see the products of a particular category for more efficient shopping.
 - a user can find links to a different product categories in a navbar or footer accessible from each page
 A user can shop efficiently by links to a specific products categories
 <br>
 <br>
+
 As a user, I would like to sort the products by price, rating and by alphabetical order.
 - on all products page, a user is able to sort products by price(ascending/descending) rating (acsending/descending)
 and by product name (alphabetically)
 A user can sort products by various criteria
 <br>
 <br>
+
 As a user, I would like to search products by key words.
 - a search bar in the header is accessible from each page and a user can search for products using key words in product description or name
 A user can search for products
 <br>
 <br>
+
 As a user, I would like to see a breakdown of my shopping cart and be able to make changes if necessary.
 - a user can see the following product info in a shopping bag: item description with sku, product image, price, quantity, subtotal
 - a user have also an option to update the quantity
@@ -201,34 +155,40 @@ As a user, I would like to see a breakdown of my shopping cart and be able to ma
 A user can see a breakdown in their shopping cart
 <br>
 <br>
+
 As a user, I would like to create an account and log in easily.
 - links for registering and logging into an account are in navbar and accessible from each page
 - a user is also prompted to create an account or log in for better shopping experience e.g saving products to wishlist, keeping records of their purchase history, or adding a review
 A user can easily sign up or log in 
 <br>
 <br>
+
 As a user, I would like to save products in a wishlist, if I need more time to make purchase decision.
 - a user have an option to save items into their wishlist when registered 
 - they can add or remove item from wishlist ot add items from wishlist to shopping bag
 A registered users can save items in a wishlist
 <br>
 <br>
+
 As a user, I would like to see my order history in my profile.
 - when registered, a user will have their profile with their order history
 A user can keep trach of their past purchases.
 <br>
 <br>
+
 As a user I would like to save my default shipping details so that I can save time making my next purchase.
 - a registered users have an option to save their shipping details in their profile
 For more efficient shopping, a user have an option to store their delivery details
 <br>
 <br>
+
 As a user, I would like to receive an order confirmation to make sure that my order was processed.
 - once an order has been processed successfully, a customer will be notified and the order confirmed on the website, the order will be saved in their profile, if they are registered
 - also an email notification will be sent to an email provided in the checkout 
 A user's order will be confirmed on website and by an email.
 <br>
 <br>
+
 As a user, I would like to process my order by making a secure payment by card.
 - a card payment is processed by secure Stripe payment method
 A user order is processed by secure payment by card
@@ -238,22 +198,26 @@ As a user I would like to purchase products without registering (as a guest).
 - a user can make a purchase without being registered
 <br>
 <br>
+
 As a user, I would like to rate and review products.
 - only registered users can add a review; they cannot add more than one for the same product
 - rating is a required field
 A registered user can add a review
 <br>
 <br>
+
 As a user, I would like to contact the shop customer service with the contact form.
 - all website users can contact the shop by fill in a contact form
 - after successfully submitting the contact form, a user will receive an email confirmation
 A user can send a query using a contact form
 <br>
 <br>
+
 As a superuser, I would like to log in to see the product management page.
 - log in with superuser credentials will give an access to Product management page
 <br>
 <br>
+
 As a superuser, I would like to be able to add products to the database.
 - a superuser can manipulate the data in the database, they can add a new product to the database via Product management page
 <br>
@@ -262,11 +226,182 @@ As a superuser, I would like to edit products in the database.
 - a superuser can also edit existing products in a database via Product management page
 <br>
 <br>
+
 As a superuser, I would like to delete products from the database. 
 - a superuser can delete products permanantly from the database
 
+<br>
+<br>
 
-## Home Page 
+## Design
+
+Blue is often associated with qualities such as trust, reliability, and professionalism. Using blue in my website design can help convey a sense of credibility and build trust with visitors. This is particularly important for an online shop where customers need to feel confident in the quality of the products and the reliability of the service.
+<br>
+<img src="readme_media/palette.png">
+<br>
+<br>
+
+### Existing Features
+
+- __Home Page__
+
+<br><br>
+    <p align="center">
+      <img src="readme_media/main-page.png">
+    </p>
+
+
+- The home page is the screen the end user is presented with on page load. <br>
+- The main colours of the website are dark blue and white. According to web design research, blue color has been shown to increase feelings of trust and means your consumers can put their faith in you. Font colours used: blue, white, black.
+
+- Base.html template has been used as a parent template; it includes the basic html structure with all important links for frameworks   and libraries needed for the website to function properly. 
+  The parent template also includes the navigation bar and footer that are consistent across all web pages.
+  This support the intuitiveness of the entire website and enhances the user experience and makes the website easy to use.
+
+- The home page has an image with the selling products, a catchy slogan and logo, all of which are strong indicators of the type of products available within the website. Also, there is some textual content describing the site's purpose in the footer. A user can start shopping just by clicking on 'Shop Now' button placed in the middle of the home page.
+  The aim is to make the website useble, effective, but also visually engaging to attract new and retain existing customers. 
+- Navbar and footer offers all important links for users to easily navigate throught the page. Links to products of a specific category, links to log in and register, links to user's cart, profile and wislist.
+
+- __Products Page__
+
+<br><br>
+    <p align="center">
+      <img src="readme_media/products-page.png">
+    </p>
+
+- Products page as default, displays all products range available for users to buy. Each product card contains a short product introduction (a name, price, rating and an image (very rarely without an image). Clicking on the product image, a user will be redirected to individual product page with all detailed information about the product. A user can sort the products alphabeticaly, by rating or price - this feature together with a searching bar in the header - helps improve customer's shopping experience and make shopping more effective and convinient.
+A user can search by typing keywords that are included in product name or product description. Enter keyword and search, the products displayed are those matching the search terms or none if there were no matches.
+How products are displayed on the Product page depends on the options the user has chosen from the menu bar, what category or sorting option has been selected. Category names of products displayed on the page are located at the top section, underneath the main title, so users can see what kind of products they have selected.
+For the superuser, there are additional links for editing and deleting a product.
+
+- __Individual_Product Page__
+
+<br><br>
+    <p align="center">
+      <img src="readme_media/indiv-page.png">
+    </p>
+
+Individual product page offers a user detailed information about the product they clicked on in the products page as well as customers reviews.
+This page plays a vital role for customers when making decision about purchase. 
+It promotes a particular product in a way to be the most attractive for customers.
+This page displays all important information and features that customers need before they buy the product: 
+The product image, product name, category (to see other products of the same category), price, detailed description, quantity selector with +/- buttons, a button to add a product to the shopping cart and customers reviews with rating.
+Rating and reviews offer customers an oportunity to share their product experience.
+Good reviews allow potential customers to trust your business and feel comfortable making a purchase from you because they know others have had pleasant experiences doing so. From the shop perspective, reviews can help better understand customers and improve customer and product experience.
+Star rating is required input for submitting a review, empty star rating cannot be submitted and customer is not allowed to submit more than one review for a product. Only log in user can add a review. 
+Customers review section shows shows existing reviews. 
+There is an wishlist icon to the right of the product title, when this is clicked, the product is saved to the user's wishlist. Any product which has been selected can be viewed in the wishlist page (can be accessed from the dropdown menu within the account icon when the user is logged in).
+
+- __Contact Us Page__
+
+<br><br>
+    <p align="center">
+      <img src="readme_media/contact-page.png">
+    </p>
+
+All users can send a message or query to the shop customer service via Contact Us form.
+This will aid communication between the user and Backpack Around onlineshop. This could include queries on the sales process, more information on specific properties of products or questions in relation to delivery issues. When a message is submitted a confirmation email will be sent to user's email address provided in the submitted form. 
+You do not have to be a logged in user to make an enquiry, as an unregistered user who wishes to send a message could be a potential customer and it would be important to ensure the communication lines are open for everyone. 
+All fiels in the Contact Us form are required: name, email address, subject and message. If any of these fileds are empty or not input correctly, validation is applied and the form will not be submitted. 
+
+
+- __Profile Page__
+
+<br><br>
+    <p align="center">
+      <img src="readme_media/profile-page.png">
+    </p>
+The Profile page is accessed only when a user is logged in. On the left hand side, it has a form to update the customer's default delivery information and on the right, it saves the user's order history. Delivery infomation can be saved as well as edited in case the customer's shipping details have changed. All, some or none of the fields from delivery details form can be saved on customer's profile. This makes the future payment/order process more effective. Order history shows: order number, date, items and order total. Order number is a link which redirects a user to the page with the whole past order confirmation. So a user can easily check all details of past purchases. 
+This is a great past order tracking tool offered to a registered customers. 
+
+
+- __Wishlist Page__
+
+<br><br>
+    <p align="center">
+      <img src="readme_media/wishlist-page.png">
+    </p>
+The Page shows a collection of products a user might consider to buy. The user can add a product to a wishlist by clicking on the wishlist icon on an individual_product page. The layout of the wishlist page is similar to the shopping cart page. It contains product image, item description with sku, price, remove icon as well as add to shopping cart icon. 
+If the user changed their mind and do not like the product anymore or they decided not to buy it. They can click on remove icon and remove the product from their wishlist. If a user decides to buy a product that is in their wishlist, instead of going back to individual product page, they can click on shopping cart icon and add the product directely to the shopping cart.
+
+
+- __Shopping Bag Page__
+
+<br><br>
+    <p align="center">
+      <img src="readme_media/cart-page.png">
+    </p>
+
+The Page shows the products that the user has currently in their shopping cart. This will initially display no products, but as products are added, they will be displayed on the page. Any products displayed will show an image, product name with sku, the price, a quantity selector for the number of items, the subtotal and the total price for all products in the cart. You can update the number of items or remove an item if neccessary. If the product amount exceeds £70 there is no delivery cost, but if it is lower a delivery cost will be applied. There is a keep shopping button and this allows the user to return to shop for more products. There is also a Continue to checkout button and this will send the user to the checkout page where they can complete the purchasing process.
+
+
+- __Checkout Page__
+
+<br><br>
+    <p align="center">
+      <img src="readme_media/checkout-page.png">
+    </p>
+The Checkout Page shows the form to complete the order and the order summary breakdown. If you have previously ticked the checkbox to save your delivery information to your profile, this information will be already populated. Full name, email, phone number, street address, city, post number, country and payment details are all required fields and if left empty or input incorrectly a validation will apply and the order will not be processed. A user has 2 options undeneath the checkout form; they can adjust their shopping cart by returning to the shopping cart page or they can complete their order. When the user has successfully entered all their details correctly, and click on the complete order button, a loading spinner will show while the purchase is being processed. 
+
+
+- __Checkout Confirmation Page__
+
+<br><br>
+    <p align="center">
+      <img src="readme_media/checkoutconf-page.png">
+    </p>
+The Page with the order confirmation is shown to the user when their order has been processed. It contains a Thank you message and includes the order details and delivery and payment information, and underneath the form, there is a link to the latest deals page. There is also a success message displayed informing the user that their order has been processed successfully and a confirmation email will be sent to the email address provided on the checkout form.
+
+
+- __Add Product Page__
+
+<br><br>
+    <p align="center">
+      <img src="readme_media/add-page.png">
+    </p>
+The Add Product page in Product Management accessed from dropdown menu when clicking on the account in the navbar is restricted only for the superuser. They can add a product in the frontend as well as in the admin panel. It can be accessed via the account icon This page has a form where the superuser can add product details and a product image, if an image is not added a generic image will be applied. Name, price and decription are required firnds for adding a new product. If these fields left empty of input incorrectly, the product will not be added. When the form fill in correctly, the product is added to the the user is redirected to the products page.
+
+
+- __Edit Product Page__
+
+<br><br>
+    <p align="center">
+      <img src="readme_media/edit-page.png">
+    </p>
+The same as Add product page, Edit product page is restricted only for the superuser. The page is accessed by clicking on the edit link in an image card in products page or in the individual product page.
+The Edit product page has a form which allows the superuser to edit product details for individual products. When clicking on edit link existing product information from the database will be populated in the form. When the product details have been edited and the form is submitted, the superuser will be redirected to the individual product page for that edited product.
+
+- __Sign Up Page__
+
+<br><br>
+    <p align="center">
+      <img src="readme_media/signup-page.png">
+    </p>
+On the Sign up page, a new user can sign up for the account by filling in and submitting the sign up form. All fields in the form are required and if any of these fields are left empty or input incorrectly a validation will apply and the form will not be submitted. Once successfully registered, a email verification message will be sent to the email address provided in the form. the user will be assigned a Profile for their account.
+
+- __Sign In Page__
+
+<br><br>
+    <p align="center">
+      <img src="readme_media/signin-page.png">
+    </p>
+A registered user can log in to their Backpack Around account by inputting their username/email and password. They will have full access to all the logged in features within the site. If they are logged in and are a superuser they will have an extra functionality for adding, editing and deleting products in the database. If the user forgets their email they can choose the forget password link and they will be sent an email to reset their password. They can then login with their new password. They can use the checkout box to be remembered, to make it easier for them to log in the next time.
+<br>
+<br>
+## Future Implementation
+There were a number of features that I would like to expand upon in the future.
+- I would like to create a blog with full CRUD functionality for registerd users and allow them to share product experience and backpack lifestyle
+- give the users an option to sign up for a newsletter
+- expand product managent page; I would like to allow the superuser to access the customers reviews on frontend without needing to access the admin panel 
+<br>
+<br>
+
+
+## Manual Testing
+<br>
+
+### Home Page 
+<br>
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -310,7 +445,8 @@ As a superuser, I would like to delete products from the database.
 | Privacy Policy (Footer)| click | redirect to Privacy Policy Page | Works as expected |
 <br>
 
-## Products Page 
+### Products Page 
+<br>
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -326,9 +462,10 @@ As a superuser, I would like to delete products from the database.
 | Edit link | click | only visible to superuser - redirect to Product management (Edit a Product) page | works as expected |
 | Delete link | click | only visible to superuser - delete confirmation (modal) + Close button (go back without deleting) /Delete button (delete the product) + info message (toast) | works as expected |
 
+<br>
 
-
-## Individual Product 
+### Individual Product 
+<br>
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -344,8 +481,10 @@ As a superuser, I would like to delete products from the database.
 | Quantity box | click | click on minus and plus, increase and decrease the product quantity  | works as expected |
 | Keep Shopping button | click | redirect to all products page | works as expected |
 | Add to cart | click | product added to shopping bag | works as expected |
+<br>
 
-## Individual Product 
+### Individual Product 
+<br>
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -355,15 +494,19 @@ As a superuser, I would like to delete products from the database.
 | Remove link | click | remove a product from the cart | works as expected |
 | Values | calculation | correct calculation of subtotal, order value, free delivery and final total  | works as expected |
 | Continue to checkout | click | redirect to checkout page | works as expected |
+<br>
 
-## Contact Form
+### Contact Form
+<br>
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | Send Message button | click | validation on all fields as all firlds required, not send without input | works as expected |
-| Send Message button | click | all fields filled in correctly - query sent + info message (toast) + email confirmation sent to a customer | works as expected |
+| Send Message button | click | all fields filled in correctly - query sent + confirmation + email confirmation sent to a customer | works as expected |
+<br>
 
-## Product Management (only superuser)
+### Product Management (only superuser)
+<br>
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -373,25 +516,30 @@ As a superuser, I would like to delete products from the database.
 | Select image button | click | redirect to internal folders to upload an image | works as expected |
 | Cancel button  | click | redirect to all products page | works as expected |
 | Update product button  | click |update added to the database and redirect to the updated product (individual product) + info message | works as expected |
+<br>
 
-
-## Profile (registered user)
+### Profile (registered user)
+<br>
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | Order number link | click | redirect to past order confirmation + info message (toast) | works as expected |
 | Back to Profile | click | redirect to profile page | works as expected |
 | Update information button | click | save/update users delivery information| works as expected |
+<br>
 
-## Wishlist (registered user)
+### Wishlist (registered user)
+<br>
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | Remove icon | click | remove product from a wishlist | works as expected |
 | Shopping cart icon | click | add the poduct to the shopping cart | works as expected |
 | Keep Shopping button | click | redirect to all products | works as expected |
+<br>
 
-## Registration & Log In
+### Registration & Log In
+<br>
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -400,7 +548,6 @@ As a superuser, I would like to delete products from the database.
 | Sign Up button | click | all fields correct - confirmation page, verification email, success message (toast) | works as expected |
 | Sign In link | click | redirect to Sign In page | works as expected |
 | Confirm link | click | confirm email + success message (toast) | works as expected |
-
 | Home link | click | redirect Home page | works as expected |
 | Sign In | click | both fields required, if one of the fields empty / or wrong details input - validation applied, not log in to an account | works as expected |
 | Sign Up link | click | redirect to Sign Up page | works as expected |
@@ -408,8 +555,10 @@ As a superuser, I would like to delete products from the database.
 | Change your password link | click | if criteria not met - validation applied | works as expected |
 | Change your password link | click | password meets criteria - password changed + success message  | works as expected |
 | Forgot your password link | click | email sent + link to change password page  | works as expected |
+<br>
 
-## Checkout
+### Checkout
+<br>
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -418,168 +567,95 @@ As a superuser, I would like to delete products from the database.
 | Complete Order link | click | required fields input correctly -  order/payment processed, order confirmation + summary, confirmation email, success message (toast| works as expected |
 | Latest deals link | click | redirect to all specials categories| works as expected |
 
+## Database
+<p align="center">
+      <img src="readme_media/Backpack_Around_Database.png">
+    </p>
 
 
-### Existing Features
+## Wireframes
 
-- __Home Page__
+- [Home Desktop](readme_media/wireframes/Home-Desktop.png)
+- [Home Tablet](readme_media/wireframes/Home-Tablet.png)
+- [Home Mobile](readme_media/wireframes/Home-Mobile.png)
+- [Products Desktop](readme_media/wireframes/IndividualProducts-Desktop.png)
+- [Products Tablet](readme_media/wireframes/IndividualProducts-Tablet.png)
+- [Products Mobile](readme_media/wireframes/IndividualProducts-Mobile.png)
+- [Individual Product Desktop](readme_media/wireframes/IndividualProduct-Desktop.png)
+- [Individual Product Tablet](readme_media/wireframes/IndividualProduct-Tablet.png)
+- [Individual Product Tablet](readme_media/wireframes/IndividualProduct-Mobile.png)
+- [Add Product Desktop](readme_media/wireframes/AddProduct-Desktop.png)
+- [Add Product Tablet](readme_media/wireframes/AddProduct-Tablet.png)
+- [Add Product Mobile](readme_media/wireframes/AddProduct-Mobile.png)
+- [Edit Product Desktop](readme_media/wireframes/EditProduct-Desktop.png)
+- [Edit Product Tablet](readme_media/wireframes/EditProduct-Tablet.png)
+- [Edit Product Mobile](readme_media/wireframes/EditProduct-Mobile.png)
+- [Profile Desktop](readme_media/wireframes/Profile-Desktop.png)
+- [Profile Tablet](readme_media/wireframes/Profile-Tablet.png)
+- [Profile Mobile](readme_media/wireframes/Profile-Mobile.png)
+- [Shop Cart Desktop](readme_media/wireframes/ShopCart-Desktop.png)
+- [Shop Cart Tablet](readme_media/wireframes/ShopCart-Tablet.png)
+- [Shop Cart Mobile](readme_media/wireframes/ShopCart-Mobile.png)
+- [Checkout Desktop](readme_media/wireframes/Checkout-Desktop.png)
+- [Checkout Tablet](readme_media/wireframes/Checkout-Tablet.png)
+- [Checkout Mobile](readme_media/wireframes/Checkout-Mobile.png)
+- [Contact Us Desktop](readme_media/wireframes/ContactUs-Desktop.png)
+- [Contact Us Tablet](readme_media/wireframes/ContactUs-Tablet.png)
+- [Contact Us Mobile](readme_media/wireframes/ContactUs-Mobile.png)
+- [Order Confirmation Desktop](readme_media/wireframes/OrderConfirmation-Desktop.png)
+- [Order Confirmation Tablet](readme_media/wireframes/OrderConfirmation-Tablet.png)
+- [Order Confirmation Mobile](readme_media/wireframes/OrderConfirmation-Mobile.png)
+- [SignUp Desktop](readme_media/wireframes/SignUp-Desktop.png)
+- [SignUp Tablet](readme_media/wireframes/SignUp-Tablet.png)
+- [SignUp Mobile](readme_media/wireframes/SignUp-Mobile.png)
+- [SignIn Desktop](readme_media/wireframes/SignIn-Desktop.png)
+- [SignIn Tablet](readme_media/wireframes/SignIn-Tablet.png)
+- [SignIn Mobile](readme_media/wireframes/SignIn-Mobile.png)
+- [Wishlist Desktop](readme_media/wireframes/Wishlist-Desktop.png)
+- [Wishlist Tablet](readme_media/wireframes/Wishlist-Tablet.png)
+- [Wishlist Mobile](readme_media/wireframes/Wishlist-Mobile.png)
 
-<br><br>
-    <!-- <p align="center">
-      <img src="static/img/Home-readme.png">
-    </p> -->
+## Tools and Technology 
 
+### Language Used:
 
-- The home page is the screen the end user is presented with on page load. <br>
-- The main colours of the website are dark blue and white. According to web design research, blue color has been shown to increase feelings of trust and means your consumers can put their faith in you. Font colours used: blue, white, black.
+-   [Python 3.8.11](https://www.python.org/)
+-   [HTML5](https://en.wikipedia.org/wiki/HTML5)    
+-   [CSS3](https://en.wikipedia.org/wiki/CSS)
+-   [jQuery 3.6.4](https://https://jquery.com/)
+-   [Django 3.2.18](https://www.python.org/)
 
-- Base.html template has been used as a parent template; it includes the basic html structure with all important links for frameworks   and libraries needed for the website to function properly. 
-  The parent template also includes the navigation bar and footer that are consistent across all web pages.
-  This support the intuitiveness of the entire website and enhances the user experience and makes the website easy to use.
+### Technology Used:
 
-- The home page has an image with the selling products, a catchy slogan and logo, all of which are strong indicators of the type of products available within the website. Also, there is some textual content describing the site's purpose in the footer. A user can start shopping just by clicking on 'Shop Now' button placed in the middle of the home page.
-  The aim is to make the website useble, effective, but also visually engaging to attract new and retain existing customers. 
-- Navbar and footer offers all important links for users to easily navigate throught the page. Links to products of a specific category, links to log in and register, links to user's cart, profile and wislist.
+-   [Am I Responsive](http://ami.responsivedesign.is/) 
+-   [Bootstrap v4.6.2](https://getbootstrap.com/) 
+-   [GitHub:](https://github.com/)
+-   [Gitpod](https://gitpod.io/) 
+-   [Heroku:](https://heroku.com) 
+-   [Stripe](https://stripe.com/en-ie) 
+-   [Google Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) 
+-   [AWS](https://aws.amazon.com/) 
+-   [Elephant SQL](https://www.elephantsql.com/) 
+-   [Favicon.io](https://favicon.io) 
+-   [Code Institute Python Linter](https://pep8ci.herokuapp.com/) 
+<!-- -   [Accesibility Test](https://accessibilitytest.org/) - free accessibility testing tool. -->
+-   [Temp Email Site](https://temp-mail.org/en/) 
+<!-- -   [Page Speed Insights](https://pagespeed.web.dev/) - used to test speed and performance of website. -->
+<!-- -   [Image Resizer](https://imageresizer.com/) - Used to Compress & Resize Images. -->
+-   [W3C Markup Validation Service](https://validator.w3.org/) 
+-   [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input) 
+-   [JSHint](https://jshint.com/) 
 
-- __Products Page__
+### Django Packages
 
-<br><br>
-    <!-- <p align="center">
-      <img src="static/img/Home-readme.png">
-    </p> -->
+* [Gunicorn](https://gunicorn.org/)
+* [Dj_database_url 0.5.0](https://pypi.org/project/dj-database-url/)
+* [Psycopg2 2.9.6](https://pypi.org/project/psycopg2/) 
+* [Allauth](https://django-allauth.readthedocs.io/en/latest/)
+* [Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) 
 
-- Products page as default, displays all products range available for users to buy. Each product card contains a short product introduction (a name, price, rating and an image (very rarely without an image). Clicking on the product image, a user will be redirected to individual product page with all detailed information about the product. A user can sort the products alphabeticaly, by rating or price - this feature together with a searching bar in the header - helps improve customer's shopping experience and make shopping more effective and convinient.
-A user can search by typing keywords that are included in product name or product description. Enter keyword and search, the products displayed are those matching the search terms or none if there were no matches.
-How products are displayed on the Product page depends on the options the user has chosen from the menu bar, what category or sorting option has been selected. Category names of products displayed on the page are located at the top section, underneath the main title, so users can see what kind of products they have selected.
-For the superuser, there are additional links for editing and deleting a product.
-
-- __Individual_Product Page__
-
-<br><br>
-    <!-- <p align="center">
-      <img src="static/img/Home-readme.png">
-    </p> -->
-
-Individual product page offers a user detailed information about the product they clicked on in the products page as well as customers reviews.
-This page plays a vital role for customers when making decision about purchase. 
-It promotes a particular product in a way to be the most attractive for customers.
-This page displays all important information and features that customers need before they buy the product: 
-The product image, product name, category (to see other products of the same category), price, detailed description, quantity selector with +/- buttons, a button to add a product to the shopping cart and customers reviews with rating.
-Rating and reviews offer customers an oportunity to share their product experience.
-Good reviews allow potential customers to trust your business and feel comfortable making a purchase from you because they know others have had pleasant experiences doing so. From the shop perspective, reviews can help better understand customers and improve customer and product experience.
-Star rating is required input for submitting a review, empty star rating cannot be submitted and customer is not allowed to submit more than one review for a product. Only log in user can add a review. 
-Customers review section shows shows existing reviews. 
-There is an wishlist icon to the right of the product title, when this is clicked, the product is saved to the user's wishlist. Any product which has been selected can be viewed in the wishlist page (can be accessed from the dropdown menu within the account icon when the user is logged in).
-
-- __Contact Us Page__
-
-<br><br>
-    <!-- <p align="center">
-      <img src="static/img/Home-readme.png">
-    </p> -->
-
-All users can send a message or query to the shop customer service via Contact Us form.
-This will aid communication between the user and Backpack Around onlineshop. This could include queries on the sales process, more information on specific properties of products or questions in relation to delivery issues. When a message is submitted a confirmation email will be sent to user's email address provided in the submitted form. 
-You do not have to be a logged in user to make an enquiry, as an unregistered user who wishes to send a message could be a potential customer and it would be important to ensure the communication lines are open for everyone. 
-All fiels in the Contact Us form are required: name, email address, subject and message. If any of these fileds are empty or not input correctly, validation is applied and the form will not be submitted. 
-
-
-- __Profile Page__
-
-<br><br>
-    <!-- <p align="center">
-      <img src="static/img/Home-readme.png">
-    </p> -->
-The Profile page is accessed only when a user is logged in. On the left hand side, it has a form to update the customer's default delivery information and on the right, it saves the user's order history. Delivery infomation can be saved as well as edited in case the customer's shipping details have changed. All, some or none of the fields from delivery details form can be saved on customer's profile. This makes the future payment/order process more effective. Order history shows: order number, date, items and order total. Order number is a link which redirects a user to the page with the whole past order confirmation. So a user can easily check all details of past purchases. 
-This is a great past order tracking tool offered to a registered customers. 
-
-
-- __Wishlist Page__
-
-<br><br>
-    <!-- <p align="center">
-      <img src="static/img/Home-readme.png">
-    </p> -->
-The Page shows a collection of products a user might consider to buy. The user can add a product to a wishlist by clicking on the wishlist icon on an individual_product page. The layout of the wishlist page is similar to the shopping cart page. It contains product image, item description with sku, price, remove icon as well as add to shopping cart icon. 
-If the user changed their mind and do not like the product anymore or they decided not to buy it. They can click on remove icon and remove the product from their wishlist. If a user decides to buy a product that is in their wishlist, instead of going back to individual product page, they can click on shopping cart icon and add the product directely to the shopping cart.
-
-
-- __Shopping Bag Page__
-
-<br><br>
-    <!-- <p align="center">
-      <img src="static/img/Home-readme.png">
-    </p> -->
-
-The Page shows the products that the user has currently in their shopping cart. This will initially display no products, but as products are added, they will be displayed on the page. Any products displayed will show an image, product name with sku, the price, a quantity selector for the number of items, the subtotal and the total price for all products in the cart. You can update the number of items or remove an item if neccessary. If the product amount exceeds £70 there is no delivery cost, but if it is lower a delivery cost will be applied. There is a keep shopping button and this allows the user to return to shop for more products. There is also a Continue to checkout button and this will send the user to the checkout page where they can complete the purchasing process.
-
-
-- __Checkout Page__
-
-<br><br>
-    <!-- <p align="center">
-      <img src="static/img/Home-readme.png">
-    </p> -->
-The Checkout Page shows the form to complete the order and the order summary breakdown. If you have previously ticked the checkbox to save your delivery information to your profile, this information will be already populated. Full name, email, phone number, street address, city, post number, country and payment details are all required fields and if left empty or input incorrectly a validation will apply and the order will not be processed. A user has 2 options undeneath the checkout form; they can adjust their shopping cart by returning to the shopping cart page or they can complete their order. When the user has successfully entered all their details correctly, and click on the complete order button, a loading spinner will show while the purchase is being processed. 
-
-
-- __Checkout Confirmation Page__
-
-<br><br>
-    <!-- <p align="center">
-      <img src="static/img/Home-readme.png">
-    </p> -->
-The Page with the order confirmation is shown to the user when their order has been processed. It contains a Thank you message and includes the order details and delivery and payment information, and underneath the form, there is a link to the latest deals page. There is also a success message displayed informing the user that their order has been processed successfully and a confirmation email will be sent to the email address provided on the checkout form.
-
-
-- __Add Product Page__
-
-<br><br>
-    <!-- <p align="center">
-      <img src="static/img/Home-readme.png">
-    </p> -->
-The Add Product page in Product Management accessed from dropdown menu when clicking on the account in the navbar is restricted only for the superuser. They can add a product in the frontend as well as in the admin panel. It can be accessed via the account icon This page has a form where the superuser can add product details and a product image, if an image is not added a generic image will be applied. Name, price and decription are required firnds for adding a new product. If these fields left empty of input incorrectly, the product will not be added. When the form fill in correctly, the product is added to the the user is redirected to the products page.
-
-
-- __Edit Product Page__
-
-<br><br>
-    <!-- <p align="center">
-      <img src="static/img/Home-readme.png">
-    </p> -->
-The same as Add product page, Edit product page is restricted only for the superuser. The page is accessed by clicking on the edit link in an image card in products page or in the individual product page.
-The Edit product page has a form which allows the superuser to edit product details for individual products. When clicking on edit link existing product information from the database will be populated in the form. When the product details have been edited and the form is submitted, the superuser will be redirected to the individual product page for that edited product.
-
-- __Sign Up Page__
-
-<br><br>
-    <!-- <p align="center">
-      <img src="static/img/Home-readme.png">
-    </p> -->
-On the Sign up page, a new user can sign up for the account by filling in and submitting the sign up form. All fields in the form are required and if any of these fields are left empty or input incorrectly a validation will apply and the form will not be submitted. Once successfully registered, a email verification message will be sent to the email address provided in the form. the user will be assigned a Profile for their account.
-
-- __Sign In Page__
-
-<br><br>
-    <!-- <p align="center">
-      <img src="static/img/Home-readme.png">
-    </p> -->
-A registered user can log in to their Backpack Around account by inputting their username/email and password. They will have full access to all the logged in features within the site. If they are logged in and are a superuser they will have an extra functionality for adding, editing and deleting products in the database. If the user forgets their email they can choose the forget password link and they will be sent an email to reset their password. They can then login with their new password. They can use the checkout box to be remembered, to make it easier for them to log in the next time.
-
-## Future Implementation
-There were a number of features that I would like to expand upon in the future.
-- I would like to create a blog with full CRUD functionality for registerd users and allow them to share product experience and backpack lifestyle
-- give the users an option to sign up for a newsletter
-- expand product managent page; I would like to allow the superuser to access the customers reviews on frontend without needing to access the admin panel 
-
-
-
-
-
-
-
-
-
+ <br>
+ <br>
 
 ## Deployment
 This project has been developed using:
@@ -723,7 +799,7 @@ The project has been deployed to Heroku and uses AWS S3 for hosting media and st
     ```
     Go to the Heroku app, in DEPLOY tab click on Github for 'Deployment method', then seach for your repository in 'Connect to Github' and click connect. 
     Enable automatic deploys
-    And now every time you push to github, the code will automatically be deployed to Heroku as well
+    And now every time you push to github, the code will automatically be deployed to Heroku as well<br>
 
 6. SECRET_KEY setting and DEBUG
     If you have not done it already at this stage you can create SECRET_KEY <br>
@@ -770,19 +846,20 @@ The project has been deployed to Heroku and uses AWS S3 for hosting media and st
           "ExposeHeaders": []
       }
     ]
-  ```
+  
+  <br>
     In 'Bucket policy' (still in 'Permission' tab) and select 'Policy generator'. 'Policy type' select 'S3 Bucket Policy', in 'Principal' input * to allow all principles and for'Action' select 'GetObject'.
     Now copy the ARN (Amazon resource name) from 'CORPS configuration' and paste it into the ARN box. Click on 'Add Statement' and then on 'Generate Policy'. Then copy this policy into the bucket policy editor.
     Add a slash star onto the end of the resource key to allow access to all resources in this bucket.
     Now I can click Save.
-    In 'Access Control LIst' click edit and enable 'List' for 'Everyone' (public access) and accept the warning box. If the edit button is disabled change the 'Object Ownership' section above to ACLs enabled.
+    In 'Access Control LIst' click edit and enable 'List' for 'Everyone' (public access) and accept the warning box. If the edit button is disabled change the 'Object Ownership' section above to ACLs enabled. <br>
     
 8. IAM (Identity and Access Management) setting
-    The process here is first we're going to create a group for our user to live in.
-    Then create an access policy giving the group access to the s3 bucket we created.
-    And finally, assign the user to the group so it can use the policy to access all our files.
-    Search for IAM, then 'User Groups' and click on 'Create New Group'. Input a group name (e.g. manage-backpack-shop).
-    Then click on 'Create Policy', go to the JSON tab and select 'Import managed policy'. Search for S3 and then import the 'AmazonS3 full access policy'. From the 'Bucket Policy' in S3 take ARN and paste it into JSON tab like this:
+  The process here is first we're going to create a group for our user to live in.
+  Then create an access policy giving the group access to the s3 bucket we created.
+  And finally, assign the user to the group so it can use the policy to access all our files.
+  Search for IAM, then 'User Groups' and click on 'Create New Group'. Input a group name (e.g. manage-backpack-shop).
+  Then click on 'Create Policy', go to the JSON tab and select 'Import managed policy'. Search for S3 and then import the 'AmazonS3 full access policy'. From the 'Bucket Policy' in S3 take ARN and paste it into JSON tab like this:
    ```
     {
         "Version": "2012-10-17",
@@ -797,7 +874,6 @@ The project has been deployed to Heroku and uses AWS S3 for hosting media and st
             }
         ]
     }
-  ```
 
   Then click on 'Review policy', give it a name and description then click on 'Create policy'.
   To attach the policy, on the sidebar click 'User Groups'. Select your group, go to the 'Permissions' tab,
