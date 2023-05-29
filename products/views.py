@@ -178,17 +178,9 @@ def submit_review(request, product_id):
     product = Product.objects.get(id=product_id)
     if request.method == "POST":
         form = ReviewForm(request.POST)
+        print('Form Errors:', form.errors)
 
-        if form.is_valid():
-            # if not rating:
-            #     messages.error(request, "Rating is required")
-            #     return redirect(reverse('individual_product', args=[product.id]))
-            # rating = form.save()
-            # review = form.save()
-            # review.product = product
-            # review.user = request.user
-            # review.save()
-
+        if 'rating' in request.POST and form.is_valid():
             user = request.user
             product = get_object_or_404(Product, pk=product_id)
             existing = Review.objects.filter(
@@ -209,6 +201,7 @@ def submit_review(request, product_id):
         else:
             messages.error(request, "Please rate the product.")
             return redirect(reverse('individual_product', args=[product.id]))
+
     else:
         form = ReviewForm()
 
