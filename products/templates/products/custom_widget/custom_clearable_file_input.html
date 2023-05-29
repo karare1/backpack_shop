@@ -1,6 +1,6 @@
 {% if widget.is_initial %}
     <p>{{ widget.initial_text }}:</p>
-    <a href="{{ widget.value.url }}">
+    <a href="{{ widget.value.url }}" aria-label="backpack images">
         <img max-width="96" height="96" class="rounded shadow-sm" alt="backpacks images" src="{{ widget.value.url }}">
     </a>
     {% if not widget.required %}
