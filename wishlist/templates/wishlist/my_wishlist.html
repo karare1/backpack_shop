@@ -58,8 +58,14 @@
                                         <i class="fa-solid fa-xmark fa-lg text-color"></i>
                                     </a>
                                 </div>
-                              
-
+                                <div>
+                                    <a href="{% url 'products' %}" class="btn btn-outline-secondary rounded-0 btn-lg float-left">
+                                        <span class="icon">
+                                            <i class="fas fa-chevron-left"></i>
+                                        </span>
+                                        <span class="text-uppercase btn-sm">Keep Shopping</span>
+                                    </a>
+                                </div>
                             </div>
                             <div class="row"><div class="col"><hr></div></div>
                     {% endfor %}
@@ -129,7 +135,7 @@
                 {% else %}
                     <p class="mt-1">Your wishlist is empty.</p>
                     <div class="col mt-4 pl-0">
-                    <a href="{% url 'products' %}" class="btn btn-black rounded-0 text-uppercase mt-1">
+                    <a href="{% url 'products' %}" class="btn btn-color rounded-0 text-uppercase mt-1">
                         <span class="icon">
                             <i class="fas fa-shopping-bag"></i>
                         </span>

@@ -31,6 +31,7 @@
                 <div class="product-details-container mb-5 mt-md-5">
                    <!-- Name -->
                     <p class="mb-3 h3"><strong lg>{{ product.name }}</strong lg></p>
+                    <!-- Category -->
                         {% if product.category %}
                         <p class="small mt-1 mb-1">
                             <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
@@ -38,39 +39,15 @@
                             </a>
                         </p>
                         {% endif %}  
-
-                    
-                        <!-- <div class="col pt-2 mr-5 d-inline">
-                            <p class="mb-1 wish-heart">
-                                <span class="pr-1">Wishlist: </span>
-                                <a href="{% url 'wishlist_on' product.id %}" aria-label="Add product to Wishlist">
-                                    <i class="fas fa-heart alt-text-muted"></i>
-                                    <i class="fa-solid fa-heart-circle-plus fa-2xl" style="color: #3b6181;"></i>
-                                </a>
-                            </p>
-                        </div> -->
                     <!-- Price -->
                     <span>
                     <p class="lead mb-3 text-left font-weight-bold d-inline ">£{{ product.price }}</p>
-                    <!-- <div class="col pt-2 mr-5 d-inline"> -->
                         <p class="mb-1 wish-heart d-inline">
-                            <!-- <span class="pr-1">Wishlist: </span> -->
                             <a href="{% url 'wishlist_on' product.id %}" aria-label="Add product to Wishlist">
-                                <!-- <i class="fas fa-heart alt-text-muted"></i> -->
                                 <i class="fa-solid fa-heart-circle-plus fa-2xl" style="color: #3b6181;"></i>
                             </a>
                         </p>
                     </span>
-                    <!-- </div> -->
-                    <!-- Category -->
-                    <!-- {% if product.category %}
-                    <p class="small mt-1 mb-1">
-                        <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
-                            <i class="fas fa-folder mr-1"></i>{{ product.category.friendly_name }}
-                        </a>
-                    </p>
-                    {% endif %} -->
-<!-- ---------------------------------------------------------------------------------------------- -->
                     <div class="rating-star mt-4">
                         <span>
                             {% if product.rating > 0 %}
@@ -81,7 +58,6 @@
                             <span>({{product.countReview}})</span>
                         </span>
                     </div>  
- <!-- ----------------------------------------------------------------------------------------------------                                    -->
                     {% if request.user.is_superuser %}
                     <small>
                         <button class="btn-light px-3 py-1 mt-3"><a href="{% url 'edit_product' product.id %}" class="text-decoration-none font-weight-bold text-color">EDIT</a></button> | 
@@ -104,7 +80,7 @@
                                 </div>
                                 <div class="modal-footer">
                                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                  <button type="button" class="btn btn-danger"><a href="{% url 'delete_product' product.id %}">Delete</a>
+                                  <button type="button" class="btn btn-danger"><a href="{% url 'delete_product' product.id %}" class="text-white">Delete</a>
                                   </button>
                                 </div>
                               </div>
@@ -159,7 +135,7 @@
         </div>
     </div>
 
-    <div class="row">
+    <div class="row w-100">
         <div class="col-md-8 ml-5">
             <form action="{% url 'submit_review' product.id %}" method="POST">
                 {% csrf_token %}

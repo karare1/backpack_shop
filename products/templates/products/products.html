@@ -76,28 +76,11 @@
                                         <!-- Price -->
                                         <p class="lead mb-0 text-left font-weight-bold">£{{ product.price }}</p>
 
-<!-- ---------------------------------------------------------------------------------------------------------------------------------------- -->
-
-                                        <!-- Rating -->
-
-                                        <!-- {% if product.averageReview > 0 %}
-                                            <span>{{product.averageReview}} / 5</span>&nbsp;&nbsp;
-                                        {% else %}
-                                             <small class="text-muted">No Rating</small>&nbsp;&nbsp;
-                                        {% endif %} -->
-
-
-
                                         {% if product.rating %}
                                         <span class="font-weight-bold"><i class="fa-solid fa-star" style="color: #ffb503;"></i>&nbsp; {{ product.rating }} / 5</span>&nbsp;&nbsp;
-                                            <!-- <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small> -->
                                         {% else %}
                                             <small class="text-muted">No Rating</small>
                                         {% endif %}
-
-<!-- ------------------------------------------------------------------------------------------------------------------------------------------ -->
-
-
 
                                         {% if request.user.is_superuser %}
                                         <small class="ml-3">
@@ -120,7 +103,7 @@
                                                     </div>
                                                     <div class="modal-footer">
                                                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                      <button type="button" class="btn btn-danger"><a href="{% url 'delete_product' product.id %}">Delete</a>
+                                                      <button type="button" class="btn btn-danger"><a href="{% url 'delete_product' product.id %}" class="text-white">Delete</a>
                                                       </button>
                                                     </div>
                                                   </div>
