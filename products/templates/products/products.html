@@ -42,7 +42,7 @@
                     <div class="col-12 col-md-6 order-md-first">
                         <p class="text-muted mt-3 text-center text-md-left">
                             {% if search_term or current_categories or actual_sorting != 'None_None' %}
-                                <span class="small"><a href="{% url 'products' %}">Products Home</a> | </span>
+                                <span class="font-weight-bold"><a href="{% url 'products' %}" class="text-color">Products Home</a> | </span>
                             {% endif %}
                             {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
                         </p>
@@ -101,16 +101,16 @@
 
                                         {% if request.user.is_superuser %}
                                         <small class="ml-3">
-                                            <a href="{% url 'edit_product' product.id %}">Edit</a>| 
-                                            <a type="button" class="text-danger" data-toggle="modal" data-target="#delete1Modal">
+                                            <a href="{% url 'edit_product' product.id %}" class="font-weight-bold text-color">Edit</a>| 
+                                            <a type="button" class="text-danger font-weight-bold" data-toggle="modal" data-target="#delete1Modal-{{ product.id}}">
                                                 Delete
                                             </a> 
                     
-                                              <div class="modal fade" id="delete1Modal" tabindex="-1" role="dialog" aria-labelledby="delete1ModalLabel" aria-hidden="true">
+                                              <div class="modal fade" id="delete1Modal-{{ product.id}}" tabindex="-1" role="dialog" aria-labelledby="delete1ModalLabel" aria-hidden="true">
                                                 <div class="modal-dialog" role="document">
                                                   <div class="modal-content">
                                                     <div class="modal-header">
-                                                      <h5 class="modal-title" id="delete1ModalLabel">Warning</h5>
+                                                      <h5 class="modal-title" id="delete1ModalLabel-{{ product.id}}">Warning</h5>
                                                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                         <span aria-hidden="true">&times;</span>
                                                       </button>
@@ -120,7 +120,7 @@
                                                     </div>
                                                     <div class="modal-footer">
                                                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                      <button type="button" class="btn btn-danger"><a href="{% url 'delete_product' product.id %}"></a>Delete
+                                                      <button type="button" class="btn btn-danger"><a href="{% url 'delete_product' product.id %}">Delete</a>
                                                       </button>
                                                     </div>
                                                   </div>

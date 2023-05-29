@@ -9,6 +9,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Welcome to Backpack Around, your premier online destination
+    for high-quality backpacks designed for travel, school, and daily commuting. Based in London, 
+    we offer a diverse range of backpacks that combine functionality, durability, and style to meet your specific needs.">
+    <meta name="keywords" content="ecommerce, London, backpacks, travel backpacks, school backpacks, 
+    commuting backpacks, high-quality backpacks, backpacks for travel, backpacks for school, backpacks for commuting, 
+    London backpack shop, online backpack store, backpack retailer, backpacks in London, affordable backpacks, 
+    stylish backpacks, durable backpacks, best backpacks, buy backpacks online, laptop backpacks, trendy backpacks, outdoor backpacks,
+    fashionable backpacks">
     {% endblock %}
 
     {% block extra_meta %}
@@ -60,7 +68,7 @@
                     <div class="input-group w-100">
                         <input class="form-control rounded-0 mr-sm-2" type="text" name="query" placeholder="Search">
                         <div class="input-group-append">
-                        <button style="color:#3b6181; background-color: white; border: #3b6181;" class="form-control rounded-0 btn my-2 my-sm-0" type="submit"> <i style="font-size: 1.3rem;" class="fa-solid fa-magnifying-glass"></i></button>
+                        <button style="color:#3b6181; background-color: white; border: #3b6181;" class="form-control rounded-0 btn my-2 my-sm-0" aria-label="search for products" type="submit"> <i style="font-size: 1.3rem;" class="fa-solid fa-magnifying-glass"></i></button>
                         </div>
                     </div>
                 </form>
@@ -119,7 +127,7 @@
         </div>
         <div id="delivery-banner" class="row text-center">
             <div class="col bg-color text-white">
-                <h5 class="logo-font my-1 delivery-ban"><i class="fa-solid fa-truck-fast"></i> Free delivery on orders over £{{ free_delivery_threshold }}!</h5>                
+                <p class="logo-font my-1 delivery-ban"><i class="fa-solid fa-truck-fast"></i> Free delivery on orders over £{{ free_delivery_threshold }}!</p>                
             </div>            
         </div>
     </header>

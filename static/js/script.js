@@ -66,3 +66,7 @@ $('.remove-item').click(function(e) {
 $('.btt-link').click(function(e) {
     window.scrollTo(0,0)
 })
+
+$('.up-link').click(function(e) {
+    window.scrollTo(0,0)
+})
