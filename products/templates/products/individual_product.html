@@ -73,8 +73,8 @@
 <!-- ---------------------------------------------------------------------------------------------- -->
                     <div class="rating-star mt-4">
                         <span>
-                            {% if product.averageReview > 0 %}
-                                <span class="font-weight-bold"><i class="fa-solid fa-star" style="color: #ffb503;"></i>&nbsp;{{product.averageReview}} / 5</span>&nbsp;&nbsp;
+                            {% if product.rating > 0 %}
+                                <span class="font-weight-bold"><i class="fa-solid fa-star" style="color: #ffb503;"></i>&nbsp;{{product.rating}} / 5</span>&nbsp;&nbsp;
                             {% else %}
                                 <small class="text-muted">No Rating</small>&nbsp;&nbsp;
                             {% endif %}
@@ -84,7 +84,7 @@
  <!-- ----------------------------------------------------------------------------------------------------                                    -->
                     {% if request.user.is_superuser %}
                     <small>
-                        <button class="btn-light px-3 py-1 mt-3"><a href="{% url 'edit_product' product.id %}" class="text-decoration-none font-weight-bold">EDIT</a></button> | 
+                        <button class="btn-light px-3 py-1 mt-3"><a href="{% url 'edit_product' product.id %}" class="text-decoration-none font-weight-bold text-color">EDIT</a></button> | 
                         
                         <button class="btn-light px-3 py-1 mt-3"><a type="button" class="text-danger text-decoration-none font-weight-bold" data-toggle="modal" data-target="#deleteModal">
                             DELETE
@@ -123,16 +123,16 @@
                                     <div class="input-group input-group-{{ product.id }}">
                                         <div class="input-group-prepend">
                                             <button class="decrement-qty btn btn-color rounded-0 decrement-qty_{{ product.id }}" 
-                                                data-item_id="{{ product.id }}">
+                                                data-item_id="{{ product.id }}" aria-label="quantity decrement">
                                                 <span class="icon">
                                                     <i class="fas fa-minus"></i>
                                                 </span>
                                             </button>
                                         </div>
-                                        <input class="form-control qty_input id_qty_{{ product.id }}" type="number" name="quantity" value="1" min="1" max="99" data-item_id="{{ product.id }}">
+                                        <input class="form-control qty_input id_qty_{{ product.id }}" type="number" name="quantity" value="1" min="1" max="99" aria-label="quantity input 1-99" data-item_id="{{ product.id }}">
                                         <div class="input-group-append">
                                             <button class="increment-qty btn btn-color rounded-0 increment-qty_{{ product.id }}"
-                                                data-item_id="{{ product.id }}">
+                                                data-item_id="{{ product.id }}" aria-label="quantity increment">
                                                 <span class="icon">
                                                     <i class="fas fa-plus"></i>
                                                 </span>
