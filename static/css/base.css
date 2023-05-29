@@ -31,8 +31,6 @@ body {
 }
 
 .shop-now-button {
-    /* background: black; */
-    /* color: white; */
     color: white;
     background:#3b6181;
     min-width: 240px;
@@ -51,7 +49,6 @@ body {
 .btn-color:active,
 .btn-color:focus {
     background:#0c3b61;
-    /* background: #222; */
     color: white;
 }
 
@@ -116,7 +113,7 @@ a.category-title > span.badge:hover {
 
 .btn-outline-color {
     background: white;
-    color:#3b6181  !important; /* use important to override link colors for <a> elements */
+    color:#3b6181  !important; 
     border: 1px solid black;
 }
 
@@ -133,13 +130,6 @@ a.category-title > span.badge:hover {
 .remove-item {
     cursor: pointer;
 }
-
-/* .btn-outline-black:hover,
-.btn-outline-black:active,
-.btn-outline-black:focus {
-    background: #3b6181;
-    color: white !important;
-} */
 
 .shop-now-button:hover,
 .shop-now-button:active,
@@ -239,7 +229,6 @@ input[name='query']::placeholder {
     overflow-y: auto;
 }
 
-/* _____________________________Contact */
 .msg-btn {
     background-color: #3b6181;
     color: white;
@@ -265,7 +254,6 @@ footer {
 }
 
 .useful-link a{
-    /* text-decoration: none; */
     font-size: 1.1rem;
     color:white;
     
@@ -289,23 +277,6 @@ footer {
     margin-left:60%;
 }
 
-
-
-
-/* .today {
-    border: #000 solid 1px;
-} */
-/* ____________________________________ */
-
-/* .index-links{
-    margin-top: 10rem;
-} */
-
-
-
-
-
-/* -------------------------------------------------- */
 /* Hide Radio button */
 .rate > input{
     display: none;
@@ -331,19 +302,16 @@ footer {
     cursor: pointer;
   }
   
-  /* Half star */
   .rate .half:before{
     content: "\f089";
     position: absolute;
     padding-right: 0;
   }
   
-  /* Click and hover */
   input:checked ~ label, label:hover ~ label{
     color: #ffb503;
   }
   
-  /* hover hightlight */
   input:checked + label:hover, input:checked ~ label:hover,input:checked ~ label:hover ~ label,
   label:hover ~ input:checked ~ label{
     color: #cc9000;
@@ -372,17 +340,8 @@ footer {
     margin-left: 10.5%;
   }
 
-/* ---------------------------------------------------------------------- */
-
-
-
-
-
-
 
 /* -------------------------------- Media Queries */
-
-/* Slightly larger container on xl screens */
 
 
 @media (min-width: 1200px) {
@@ -393,8 +352,8 @@ footer {
 /* Allauth form formatting */
 
 .allauth-form-inner-content p {
-    margin-top: 1.5rem; /* mt-4 */
-    color: #6c757d; /* text-secondary */
+    margin-top: 1.5rem; 
+    color: #6c757d; 
 }
 
 .allauth-form-inner-content input {
@@ -441,7 +400,7 @@ footer {
 }
 
 .allauth-form-inner-content a {
-	color: #17a2b8; /* text-info */
+	color: #17a2b8; 
 }
 
 .text-info {
@@ -477,6 +436,11 @@ footer {
 }
 
 }
+@media (min-width:1000px) and (max-width: 1200px){
+    .header-container {
+        padding-bottom: 3%;
+    } 
+}
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
@@ -492,6 +456,7 @@ footer {
         padding-top: 164px;
     }
 }
+
 
     /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
@@ -509,13 +474,8 @@ footer {
 
     .main-title {
         font-size: 2rem;
-        /* margin-bottom: 10px; */
-        /* margin-top: 10px; */
     }
 
-    footer {
-        margin-top: 0px; 
-    }
 
     .index-links-mob {
       margin-bottom: 0px!important;
@@ -562,9 +522,7 @@ footer {
         min-width: auto;
         font-size: 1rem;
     }
-    /* .navbar {
-        padding-right: 0.15rem;
-    } */
+   
     .dropdown-item {
         padding-right: 0.15rem;
         padding-left: 0.5rem;
@@ -573,30 +531,31 @@ footer {
         padding: .6rem .6rem;
         font-size: 1rem;
     }
+
     .custom-select {
         width: auto;
     }
+
     .h2, h2 {
         font-size: 1.3rem;
     }
+
     dl, ol, ul {
-        padding-left: 1.5rem;
+        padding-left: 0.2rem;
+        margin-right: 1.2rem;
 
     }
     .width-mob {
         width: auto!important;
     }
+
     .wish-heart {
         margin-left: 50%;
     }
+
     .ml-5, .mx-5 {
         margin-left: 1rem!important;
-        /* margin-right: 1rem; */
     }
-    /* .form-control {
-        width:80%;
-        margin: 0 !important;
-    } */
 
     .btn-pad {
         padding-top: 0.28em;
@@ -606,6 +565,7 @@ footer {
     .wish-cart {
         margin-top: 5%;
     }
+
     .wish-mar {
         margin-left: 60%;
         margin-top: 2%;
@@ -622,18 +582,16 @@ footer {
     .mobile-h1 {
         margin-top: 25%!important;
     }
+
     .index-main-font {
         margin-bottom: 5%;
     }
-    /* .container .check-mar {
-        padding-right: 0px!important;
-        
-    } */
-    /* .d-flex {
-        display:initial!important;
-        margin-left: 15%;
-    } */
-   
 
+    .quant-cart {
+        width:auto
+    }
 
+    .bg-white {
+        display:block;
+    }
 }

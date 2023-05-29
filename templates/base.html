@@ -9,6 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <meta name="description" content="Welcome to Backpack Around, your premier online destination
     for high-quality backpacks designed for travel, school, and daily commuting. Based in London, 
     we offer a diverse range of backpacks that combine functionality, durability, and style to meet your specific needs.">
@@ -66,7 +67,7 @@
             <div class="col-12 col-lg-5 my-auto py-1 py-lg-0">
                 <form method="GET" action="{% url 'products' %}">
                     <div class="input-group w-100">
-                        <input class="form-control rounded-0 mr-sm-2" type="text" name="query" placeholder="Search">
+                        <input class="form-control rounded-0 mr-sm-2" type="text" value="search" name="query" id="search" placeholder="Search">
                         <div class="input-group-append">
                         <button style="color:#3b6181; background-color: white; border: #3b6181;" class="form-control rounded-0 btn my-2 my-sm-0" aria-label="search for products" type="submit"> <i style="font-size: 1.3rem;" class="fa-solid fa-magnifying-glass"></i></button>
                         </div>
