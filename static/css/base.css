@@ -267,12 +267,12 @@ footer {
 .useful-link a{
     /* text-decoration: none; */
     font-size: 1.1rem;
-    color:#17a2b8;
+    color:white;
     
 }
 .useful-link a:hover {
     color:initial;
-    color:white
+    color:#17a2b8;
     
 }
 

@@ -47,7 +47,7 @@ $('.decrement-qty').click(function(e) {
  $('.update-link').click(function(e) {
     var form = $(this).prev('.update-form');
     form[0].requestSubmit();
-})
+});
 
 // Remove item and reload on click
 $('.remove-item').click(function(e) {
@@ -61,12 +61,12 @@ $('.remove-item').click(function(e) {
      .done(function() {
          location.reload();
      });
-})
+});
 
 $('.btt-link').click(function(e) {
-    window.scrollTo(0,0)
-})
+    window.scrollTo(0,0);
+});
 
 $('.up-link').click(function(e) {
-    window.scrollTo(0,0)
-})
+    window.scrollTo(0,0);
+});
