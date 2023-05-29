@@ -1,3 +1,11 @@
+
+<img src="readme_media/logo.JPG" width="150"  >
+<br>
+<br>
+<img src="readme_media/responsive_img.png">
+<br>
+
+
 ## Introduction 
 
 The Backpack Around website is an E-commerce platform developed using the Django Framework, Python, jQuery, CSS, and Bootstrap4. It integrates Stripe payments and incorporates user authentication and full CRUD functionality for product management accessible to the superuser. Please note that this website has been created solely for educational purposes.
@@ -90,7 +98,6 @@ As a user, I would like to understand the purpose of the website and what it off
 - the website title also gives an indication of what kind of products are sold on the website
 Clicking on the website, a user instantly knows what the website is about and what offers
 <br>
-<br>
 
 As a user, I would like to intuitively navigate through the website so I can see the required content
 - header and footer are the same on each page
@@ -100,12 +107,10 @@ As a user, I would like to intuitively navigate through the website so I can see
 - also 'sort by' option on all products site will help a user quickly find what they are looking for
 Website is easy to navigate and a user can promply find the products they whish
 <br>
-<br>
 
 As a user, I would like to use the website and see the content clearly on any device.
 - all pages have been tested on devices of a different size
 - all content is clear and website is fully functional on all devices
-<br>
 <br>
 
 As a user, I would like to be informed of any changes I have made in order to fully understand what has been done; i.e notifications when adding items to a shopping bag or making payments.
@@ -113,13 +118,11 @@ As a user, I would like to be informed of any changes I have made in order to fu
 - adding a product to a shopping bag, removing a product from a shopping bag, adding a product to wishlist, remove a product from wishlist, clicking on links they have no access to, when sign up, sign in, log out, when send a contact form, add a review, add more then one review, processing an order, making payment
 All notifications tested and worked as expected
 <br>
-<br>
 
 As a user, I would like to see all of the products that are available for purchase.
 - all products are accessible for viewing by clicking on 'Shop now' button on the main page or via navbar links 
 - specific products could be find using navbar or links placed on the footer, using searching bart or sorting by option on the all  products site
 A user can find a product range promptly
-<br>
 <br>
 
 As a user, I would like to find detailed information about individual products.
@@ -127,12 +130,10 @@ As a user, I would like to find detailed information about individual products.
 - a user can find information about, product name, category, price, rating, detailed product description, customers reviews
 A user finds all product detail on an indivudual site to help them decide about the purchase
 <br>
-<br>
 
 As a user, I would like to have an option to see the products of a particular category for more efficient shopping.
 - a user can find links to a different product categories in a navbar or footer accessible from each page
 A user can shop efficiently by links to a specific products categories
-<br>
 <br>
 
 As a user, I would like to sort the products by price, rating and by alphabetical order.
@@ -140,12 +141,10 @@ As a user, I would like to sort the products by price, rating and by alphabetica
 and by product name (alphabetically)
 A user can sort products by various criteria
 <br>
-<br>
 
 As a user, I would like to search products by key words.
 - a search bar in the header is accessible from each page and a user can search for products using key words in product description or name
 A user can search for products
-<br>
 <br>
 
 As a user, I would like to see a breakdown of my shopping cart and be able to make changes if necessary.
@@ -154,13 +153,11 @@ As a user, I would like to see a breakdown of my shopping cart and be able to ma
 - the cart summary includes: subtotal of order value excluding delivery, delivery charge, if applicable and the final total to be charged for the order
 A user can see a breakdown in their shopping cart
 <br>
-<br>
 
 As a user, I would like to create an account and log in easily.
 - links for registering and logging into an account are in navbar and accessible from each page
 - a user is also prompted to create an account or log in for better shopping experience e.g saving products to wishlist, keeping records of their purchase history, or adding a review
 A user can easily sign up or log in 
-<br>
 <br>
 
 As a user, I would like to save products in a wishlist, if I need more time to make purchase decision.
@@ -168,18 +165,15 @@ As a user, I would like to save products in a wishlist, if I need more time to m
 - they can add or remove item from wishlist ot add items from wishlist to shopping bag
 A registered users can save items in a wishlist
 <br>
-<br>
 
 As a user, I would like to see my order history in my profile.
 - when registered, a user will have their profile with their order history
 A user can keep trach of their past purchases.
 <br>
-<br>
 
 As a user I would like to save my default shipping details so that I can save time making my next purchase.
 - a registered users have an option to save their shipping details in their profile
 For more efficient shopping, a user have an option to store their delivery details
-<br>
 <br>
 
 As a user, I would like to receive an order confirmation to make sure that my order was processed.
@@ -187,16 +181,14 @@ As a user, I would like to receive an order confirmation to make sure that my or
 - also an email notification will be sent to an email provided in the checkout 
 A user's order will be confirmed on website and by an email.
 <br>
-<br>
 
 As a user, I would like to process my order by making a secure payment by card.
 - a card payment is processed by secure Stripe payment method
 A user order is processed by secure payment by card
 <br>
-<br>
+
 As a user I would like to purchase products without registering (as a guest).
 - a user can make a purchase without being registered
-<br>
 <br>
 
 As a user, I would like to rate and review products.
@@ -204,32 +196,27 @@ As a user, I would like to rate and review products.
 - rating is a required field
 A registered user can add a review
 <br>
-<br>
 
 As a user, I would like to contact the shop customer service with the contact form.
 - all website users can contact the shop by fill in a contact form
 - after successfully submitting the contact form, a user will receive an email confirmation
 A user can send a query using a contact form
 <br>
-<br>
 
 As a superuser, I would like to log in to see the product management page.
 - log in with superuser credentials will give an access to Product management page
-<br>
 <br>
 
 As a superuser, I would like to be able to add products to the database.
 - a superuser can manipulate the data in the database, they can add a new product to the database via Product management page
 <br>
-<br>
+
 As a superuser, I would like to edit products in the database. 
 - a superuser can also edit existing products in a database via Product management page
-<br>
 <br>
 
 As a superuser, I would like to delete products from the database. 
 - a superuser can delete products permanantly from the database
-
 <br>
 <br>
 
@@ -242,10 +229,10 @@ Blue is often associated with qualities such as trust, reliability, and professi
 <br>
 
 ### Existing Features
-
+<br>
 - __Home Page__
 
-<br><br>
+<br>
     <p align="center">
       <img src="readme_media/main-page.png">
     </p>
@@ -261,10 +248,11 @@ Blue is often associated with qualities such as trust, reliability, and professi
 - The home page has an image with the selling products, a catchy slogan and logo, all of which are strong indicators of the type of products available within the website. Also, there is some textual content describing the site's purpose in the footer. A user can start shopping just by clicking on 'Shop Now' button placed in the middle of the home page.
   The aim is to make the website useble, effective, but also visually engaging to attract new and retain existing customers. 
 - Navbar and footer offers all important links for users to easily navigate throught the page. Links to products of a specific category, links to log in and register, links to user's cart, profile and wislist.
-
+<br>
+<br>
 - __Products Page__
 
-<br><br>
+<br>
     <p align="center">
       <img src="readme_media/products-page.png">
     </p>
@@ -273,10 +261,11 @@ Blue is often associated with qualities such as trust, reliability, and professi
 A user can search by typing keywords that are included in product name or product description. Enter keyword and search, the products displayed are those matching the search terms or none if there were no matches.
 How products are displayed on the Product page depends on the options the user has chosen from the menu bar, what category or sorting option has been selected. Category names of products displayed on the page are located at the top section, underneath the main title, so users can see what kind of products they have selected.
 For the superuser, there are additional links for editing and deleting a product.
-
+<br>
+<br>
 - __Individual_Product Page__
 
-<br><br>
+<br>
     <p align="center">
       <img src="readme_media/indiv-page.png">
     </p>
@@ -291,10 +280,11 @@ Good reviews allow potential customers to trust your business and feel comfortab
 Star rating is required input for submitting a review, empty star rating cannot be submitted and customer is not allowed to submit more than one review for a product. Only log in user can add a review. 
 Customers review section shows shows existing reviews. 
 There is an wishlist icon to the right of the product title, when this is clicked, the product is saved to the user's wishlist. Any product which has been selected can be viewed in the wishlist page (can be accessed from the dropdown menu within the account icon when the user is logged in).
-
+<br>
+<br>
 - __Contact Us Page__
 
-<br><br>
+<br>
     <p align="center">
       <img src="readme_media/contact-page.png">
     </p>
@@ -303,99 +293,109 @@ All users can send a message or query to the shop customer service via Contact U
 This will aid communication between the user and Backpack Around onlineshop. This could include queries on the sales process, more information on specific properties of products or questions in relation to delivery issues. When a message is submitted a confirmation email will be sent to user's email address provided in the submitted form. 
 You do not have to be a logged in user to make an enquiry, as an unregistered user who wishes to send a message could be a potential customer and it would be important to ensure the communication lines are open for everyone. 
 All fiels in the Contact Us form are required: name, email address, subject and message. If any of these fileds are empty or not input correctly, validation is applied and the form will not be submitted. 
-
+<br>
+<br>
 
 - __Profile Page__
 
-<br><br>
+<br>
     <p align="center">
       <img src="readme_media/profile-page.png">
     </p>
 The Profile page is accessed only when a user is logged in. On the left hand side, it has a form to update the customer's default delivery information and on the right, it saves the user's order history. Delivery infomation can be saved as well as edited in case the customer's shipping details have changed. All, some or none of the fields from delivery details form can be saved on customer's profile. This makes the future payment/order process more effective. Order history shows: order number, date, items and order total. Order number is a link which redirects a user to the page with the whole past order confirmation. So a user can easily check all details of past purchases. 
 This is a great past order tracking tool offered to a registered customers. 
-
+<br>
+<br>
 
 - __Wishlist Page__
 
-<br><br>
+<br>
     <p align="center">
       <img src="readme_media/wishlist-page.png">
     </p>
 The Page shows a collection of products a user might consider to buy. The user can add a product to a wishlist by clicking on the wishlist icon on an individual_product page. The layout of the wishlist page is similar to the shopping cart page. It contains product image, item description with sku, price, remove icon as well as add to shopping cart icon. 
 If the user changed their mind and do not like the product anymore or they decided not to buy it. They can click on remove icon and remove the product from their wishlist. If a user decides to buy a product that is in their wishlist, instead of going back to individual product page, they can click on shopping cart icon and add the product directely to the shopping cart.
-
+<br>
+<br>
 
 - __Shopping Bag Page__
 
-<br><br>
+<br>
     <p align="center">
       <img src="readme_media/cart-page.png">
     </p>
 
 The Page shows the products that the user has currently in their shopping cart. This will initially display no products, but as products are added, they will be displayed on the page. Any products displayed will show an image, product name with sku, the price, a quantity selector for the number of items, the subtotal and the total price for all products in the cart. You can update the number of items or remove an item if neccessary. If the product amount exceeds £70 there is no delivery cost, but if it is lower a delivery cost will be applied. There is a keep shopping button and this allows the user to return to shop for more products. There is also a Continue to checkout button and this will send the user to the checkout page where they can complete the purchasing process.
-
+<br>
+<br>
 
 - __Checkout Page__
 
-<br><br>
+<br>
     <p align="center">
       <img src="readme_media/checkout-page.png">
     </p>
 The Checkout Page shows the form to complete the order and the order summary breakdown. If you have previously ticked the checkbox to save your delivery information to your profile, this information will be already populated. Full name, email, phone number, street address, city, post number, country and payment details are all required fields and if left empty or input incorrectly a validation will apply and the order will not be processed. A user has 2 options undeneath the checkout form; they can adjust their shopping cart by returning to the shopping cart page or they can complete their order. When the user has successfully entered all their details correctly, and click on the complete order button, a loading spinner will show while the purchase is being processed. 
-
+<br>
+<br>
 
 - __Checkout Confirmation Page__
 
-<br><br>
+<br>
     <p align="center">
       <img src="readme_media/checkoutconf-page.png">
     </p>
 The Page with the order confirmation is shown to the user when their order has been processed. It contains a Thank you message and includes the order details and delivery and payment information, and underneath the form, there is a link to the latest deals page. There is also a success message displayed informing the user that their order has been processed successfully and a confirmation email will be sent to the email address provided on the checkout form.
-
+<br>
+<br>
 
 - __Add Product Page__
 
-<br><br>
+<br>
     <p align="center">
       <img src="readme_media/add-page.png">
     </p>
 The Add Product page in Product Management accessed from dropdown menu when clicking on the account in the navbar is restricted only for the superuser. They can add a product in the frontend as well as in the admin panel. It can be accessed via the account icon This page has a form where the superuser can add product details and a product image, if an image is not added a generic image will be applied. Name, price and decription are required firnds for adding a new product. If these fields left empty of input incorrectly, the product will not be added. When the form fill in correctly, the product is added to the the user is redirected to the products page.
-
+<br>
+<br>
 
 - __Edit Product Page__
 
-<br><br>
+<br>
     <p align="center">
       <img src="readme_media/edit-page.png">
     </p>
 The same as Add product page, Edit product page is restricted only for the superuser. The page is accessed by clicking on the edit link in an image card in products page or in the individual product page.
 The Edit product page has a form which allows the superuser to edit product details for individual products. When clicking on edit link existing product information from the database will be populated in the form. When the product details have been edited and the form is submitted, the superuser will be redirected to the individual product page for that edited product.
-
+<br>
+<br>
 - __Sign Up Page__
 
-<br><br>
+<br>
     <p align="center">
       <img src="readme_media/signup-page.png">
     </p>
 On the Sign up page, a new user can sign up for the account by filling in and submitting the sign up form. All fields in the form are required and if any of these fields are left empty or input incorrectly a validation will apply and the form will not be submitted. Once successfully registered, a email verification message will be sent to the email address provided in the form. the user will be assigned a Profile for their account.
-
+<br>
+<br>
 - __Sign In Page__
 
-<br><br>
+<br>
     <p align="center">
       <img src="readme_media/signin-page.png">
     </p>
 A registered user can log in to their Backpack Around account by inputting their username/email and password. They will have full access to all the logged in features within the site. If they are logged in and are a superuser they will have an extra functionality for adding, editing and deleting products in the database. If the user forgets their email they can choose the forget password link and they will be sent an email to reset their password. They can then login with their new password. They can use the checkout box to be remembered, to make it easier for them to log in the next time.
 <br>
 <br>
+
 ## Future Implementation
 There were a number of features that I would like to expand upon in the future.
 - I would like to create a blog with full CRUD functionality for registerd users and allow them to share product experience and backpack lifestyle
 - give the users an option to sign up for a newsletter
 - expand product managent page; I would like to allow the superuser to access the customers reviews on frontend without needing to access the admin panel 
+- generate actual rating instead of adding them via admin; (in my project I have added rating via admin for 'sorting by rate' purposes as I do not have many reviews)
 <br>
 <br>
-
 
 ## Manual Testing
 <br>
@@ -566,12 +566,27 @@ There were a number of features that I would like to expand upon in the future.
 | Complete Order link | click | required fields empty or not input correctly - validation applied | works as expected |
 | Complete Order link | click | required fields input correctly -  order/payment processed, order confirmation + summary, confirmation email, success message (toast| works as expected |
 | Latest deals link | click | redirect to all specials categories| works as expected |
+<br>
+<br>
+
+- Further testing has been done with Chrome DevTools, making sure that responsiveness works correctly on all devices.
+  After the deployment, I tested the website link focusing on website functionality, CRUD operations and toasts if all important features work as expected. No issues were detected. 
+
+- The website was assessed in various browsers: Mozilla Firefox, Google Chrome and Microsoft Edge.
+  Live link was tested on Huawei P30, Samsung A50 to test smaller screen sizes, on a small display laptop - HP ProBook 430 and also on a larger display laptop - Dell Latitude 5580. <br>
+  Each of the pages functioned well.
+
+
+### Fixed Bugs
+- when submitting empty star rating no message appeared; required attribute in input has been removed 
+
+There is an issue with Favicon, sometimes not displaying properly. Last time I resolved it by adding the crossorigin attribute.
+However, it seems to be another isssue this time. 
 
 ## Database
 <p align="center">
       <img src="readme_media/Backpack_Around_Database.png">
     </p>
-
 
 ## Wireframes
 
@@ -614,6 +629,67 @@ There were a number of features that I would like to expand upon in the future.
 - [Wishlist Desktop](readme_media/wireframes/Wishlist-Desktop.png)
 - [Wishlist Tablet](readme_media/wireframes/Wishlist-Tablet.png)
 - [Wishlist Mobile](readme_media/wireframes/Wishlist-Mobile.png)
+
+
+## Validation
+CI Python Linter
+- [Setting](readme_media/CLpython-linter/CL-valid-sett.PNG)
+- [Cart](readme_media/CLpython-linter/CL-valid-cart1.JPG)
+- [Cart](readme_media/CLpython-linter/CL-valid-cart2.JPG)
+- [Wishlist](readme_media/CLpython-linter/CL-valid-wishlist1.JPG)
+- [Wishlist](readme_media/CLpython-linter/CL-valid-wishlist2.JPG)
+- [Wishlist](readme_media/CLpython-linter/CL-valid-wishlist3.JPG)
+- [Profile](readme_media/CLpython-linter/CL-valid-profile1.JPG)
+- [Profile](readme_media/CLpython-linter/CL-valid-profile2.JPG)
+- [Profile](readme_media/CLpython-linter/CL-valid-profile3.JPG)
+- [Product](readme_media/CLpython-linter/CL-valid-product1.JPG)
+- [Product](readme_media/CLpython-linter/CL-valid-product2.JPG)
+- [Product](readme_media/CLpython-linter/CL-valid-product3.JPG)
+- [Product](readme_media/CLpython-linter/CL-valid-product4.JPG)
+- [Product](readme_media/CLpython-linter/CL-valid-product5.JPG)
+- [Product](readme_media/CLpython-linter/CL-valid-product6.JPG)
+- [Contact](readme_media/CLpython-linter/CL-valid-contact1.JPG)
+- [Contact](readme_media/CLpython-linter/CL-valid-contact2.JPG)
+- [Contact](readme_media/CLpython-linter/CL-valid-contact3.JPG)
+- [Contact](readme_media/CLpython-linter/CL-valid-contact4.JPG)
+- [Checkout](readme_media/CLpython-linter/CL-valid-check1.JPG)
+- [Checkout](readme_media/CLpython-linter/CL-valid-check2.JPG)
+- [Checkout](readme_media/CLpython-linter/CL-valid-check3.JPG)
+- [Checkout](readme_media/CLpython-linter/CL-valid-check4.JPG)
+- [Checkout](readme_media/CLpython-linter/CL-valid-check5.JPG)
+- [Checkout](readme_media/CLpython-linter/CL-valid-check6.JPG)
+- [Checkout](readme_media/CLpython-linter/CL-valid-check7.JPG)
+- [Checkout](readme_media/CLpython-linter/CL-valid-check8.JPG)
+
+JSHint
+- [JS validation](readme_media/JShint/js-validation.JPG)
+
+Lighthouse
+ - [Lighthouse report Home](readme_media/lighthouse/lighthouse-home.JPG) <br>
+ - [Lighthouse report Add Product](readme_media/lighthouse/lighthouse-add.JPG) <br>
+ - [Lighthouse report Edit Product](readme_media/lighthouse/lighthouse-edit.JPG) <br>
+ - [Lighthouse report Order History](readme_media/lighthouse/lighthouse-order.JPG) <br>
+ - [Lighthouse report Checkout](readme_media/lighthouse/lighthouse-checkout.JPG) <br>
+ - [Lighthouse report Contact Us](readme_media/lighthouse/lighthouse-contact.JPG) <br>
+ - [Lighthouse report Cart](readme_media/lighthouse/lighthouse-cart.JPG) <br>
+ - [Lighthouse report Products](readme_media/lighthouse/lighthouse-products.JPG) <br>
+ - [Lighthouse report Individual Product](readme_media/lighthouse/lighthouse-product-ind.JPG) <br>
+ - [Lighthouse report Sign Up](readme_media/lighthouse/lighthouse-signup.JPG) <br>
+ - [Lighthouse report SignIn](readme_media/lighthouse/lighthouse-signin.JPG) <br>
+ - [Lighthouse report Wishlist](readme_media/lighthouse/lighthouse-wishlist.JPG) <br>
+<br>
+<br>
+
+- HTML
+  The W3C Validator has been used to validate the HTML of the website. <br>
+  All errors are not applicable. <br>
+  [W3C validator](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fbackpack-shop.herokuapp.com%2F)
+
+- CSS
+  The W3C Jigsaw Validator was used to validate the CSS of the website. <br>
+  No errors detected. <br>
+  [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fbackpack-shop.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
 
 ## Tools and Technology 
 
@@ -847,13 +923,16 @@ The project has been deployed to Heroku and uses AWS S3 for hosting media and st
       }
     ]
   
-  <br>
-    In 'Bucket policy' (still in 'Permission' tab) and select 'Policy generator'. 'Policy type' select 'S3 Bucket Policy', in 'Principal' input * to allow all principles and for'Action' select 'GetObject'.
+
+<br>
+    In 'Bucket policy' (still in 'Permission' tab) and select 'Policy generator'. 'Policy type' select 'S3 Bucket Policy', in 'Principal'
+    input * to allow all principles and for'Action' select 'GetObject'.
     Now copy the ARN (Amazon resource name) from 'CORPS configuration' and paste it into the ARN box. Click on 'Add Statement' and then on 'Generate Policy'. Then copy this policy into the bucket policy editor.
     Add a slash star onto the end of the resource key to allow access to all resources in this bucket.
     Now I can click Save.
-    In 'Access Control LIst' click edit and enable 'List' for 'Everyone' (public access) and accept the warning box. If the edit button is disabled change the 'Object Ownership' section above to ACLs enabled. <br>
-    
+    In 'Access Control LIst' click edit and enable 'List' for 'Everyone' (public access) and accept the warning box. If the edit button is disabled change the 'Object Ownership' section above to ACLs enabled.
+  <br>
+
 8. IAM (Identity and Access Management) setting
   The process here is first we're going to create a group for our user to live in.
   Then create an access policy giving the group access to the s3 bucket we created.
@@ -950,7 +1029,7 @@ The project has been deployed to Heroku and uses AWS S3 for hosting media and st
 
   Go to s3 and create a new folder called media. (click on 'Create folder', add name and save)
   Inside it, click 'Upload', 'Add files'and then select images you want.
-  Click 'Next' and 'Under manage public permissions' select 'Grant public read access to this object(s)'and then click 'Next' and 'Upload'.
+  Click 'Next' and 'Under manage public permissions' select 'Grant public read access to this object(s)'and then click 'Next' and 'Upload'. <br>
 
 10. Stripe (Payment)
     Go to https://stripe.com  
@@ -987,609 +1066,41 @@ Clone a repository:
   ```
   pip3 install -r requirements.txt
   ```
-
-
-
-
-
-
-
-
-<!-- 
-  For this project, I have used Gitpod as the IDE and the repository has been stored on GitHub. 
-  The web application has been deployed on Heroku.
-- There are two ways how to deploy an app on Heroku: <br> 
-  a) Using Heroku command-line interface (CLI) /Heroku toolbelt
-  b) Setting up automatic deployments from GitHub
-  For this project,  the second option - Automatic Deployment - from my GitHub repository has been used:
-
-- Setting up automatic deployments from GitHub: <br>
-  1) Create an account on Heroku and once signed up click on the "Create New App" button.
-       The app name must be unique - something that nobody else currently has and without spaces (use dash or minus instead of spaces) and all lowercase letters.
-       Then select a region closest to you. 
-  2) Go to Heroku 'Settings' Tab, click 'Reveal Config Vars' and input the following variables (do not include any quotes): 
-        | **KEY** | **VALUE** | 
-        |-------------|------------|  
-        |IP  | 0.0.0.0 |
-        |PORT  | 5000 |
-        |SECRET_KEY | your_secret_key|
-        |MONGO_URI | mongodb+srv://coffee:<password>@cluster3.jhm4r33.mongodb.net/?retryWrites=true&w=majority
-        |MONGO_DBNAME |	<database_name>|
-  3) Go to Gitpod workspace and create a 'requirements.txt' file, which will install the dependencies 
-        for the project, and tell Heroku that Python language is using.
-        To create a requirements.txt file, type the following command in the terminal: <br>
-        <strong>pip3 freeze --local > requirements.txt</strong>
-        Then Add, commit and push the file into Github:
-        + git add -A or git add requirements.txt
-        + git commit -m "Add requirements.txt".
-        + git push 
-  4) Create a Procfile. The Procfile tells Heroku how to run the application.
-     To create Procfile, type the following command in the terminal: 
-     <strong>echo web: python app.py > Procfile</strong>
-     Then Add, commit and push the file into GitHub:
-     + git add -A or git add Procfile
-     + git commit -m "Add Procfile".
-     + git push 
-  5) Make sure all your code is pushed to your GitHub repository.
-     + git add -A 
-     + git commit -m "insert your message here"
-     + git push 
-  6) Go to the Heroku Deploy Tab and click 'GitHub (Connect to GitHub)' for 'Deployment Method'
-  7) Make sure your GitHub profile is displayed, then provide your Github repository name and then click Search.
-     Once it finds your repository, click to 'Connect' to this app.
-  8) Click 'Enable Automatic Deploys'
-  9) Choose a branch to deploy 'main' and then click 'Deploy Branch' on Heroku
-  10) You will see a message: "Your app has been succesfully deployed"
-      Click 'View' to lauch your new app.
-
-  My deployed app: <br>
-    https://coffee-book-project.herokuapp.com/
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-![Logo](static/img/coffee-time.png)
-# be home barista 
-
-<br><br>
-    <p align="center">
-      <img src="static/img/responsive-img.png">
-    </p>
-
-
-Whether you prefer your coffee black or with a little more milk and sugar, there are so many ways to prepare it that you can’t help but fall in love with this flavourable beverage all over again.
-Be home barista is a web application developed for coffee lovers as well as for all occasional coffee drinkes that would like to share their coffee experience and delicious recipes online.  
-It also provides a great opportunity for coffee drinkers to share their local recipes with others from around the world.
-This application makes it easy for users to create and save their coffee-recipes online, as well as search for recipes and save them in their profile (coffee book).
-Be home barista was designed with a user experience in mind and provides the functionalities a coffee-recipe sharing web application should have. Users benefit from having convenient access to the data provided by all other app members.
-
-
-## User Experience (UX)
-
-### User Stories 
-
-New User / non-registered 
 <br>
-- As a user, I would like to understand the purpose of the website and what the website offers.
-- As a user, I would like to use the website and see the content clearly on any device.
-- As a user, I would like to be able to easily navigate through the website.
-- As a user, I would like to search for recipes.
-- As a user, I would like to explore all shared recipes .
-- As a user, I would like to see a full recipe version without having to register.
-- As a user, I would like to have an option to sign up and create my own coffee book.
-- As a user, I would like to navigate intuitively and spot the Sign-Up button and all other important links right away.
-- As s user, I would like to find contact details in case I need to aproach a website creator.
-
-Returning User
-- As a user, I would like to easily spot a Log In button. 
-- As a user, I would like to easily navigate to my profile and other pages available to me.
-- As a user, I would like to be able to create and share my recipes with other users.
-- As a user, I would like to edit recipes I have created.
-- As a user, I would like to delete recipes I have created.
-- As a user, I would like to save my favourite recipes to my profile.
-- As a user, I would like to have an option to remove the saved recipes from my coffee book.
-
-Admin
-- As an admin, I would like to edit existing recipes created by any user.
-- As an admin, I would like to delete existing recipes created by any user.
-- As an admin, I would like to remove any inappropriate or other offensive content shared in a user recipe.
-- As an admin, I would like to have an option to create, edit or delete a category.
-
-
-### Implementation 
-
-- Used a layout with a coffee background image and coffee theme colours as well as an initial message to give users an 
-  early sense of what the website is about.
-- Made the website responsive, visible and easy to read on desktops, laptops, tablets and smartphones.
-- Implement a search bar for a user to find a recipe based on name, ingredients and recipe intro.
-- For registered users, a profile page has been created with two tabs - for recipes they created themselves and recipes
-  they added to their favourites.
-- If a user has created/added a recipe, two additional buttons appear on a full recipe page for them to modify or delete 
-  their recipes if they wish.
-- Registered users are also provided with an extra Add/remove favourites button so they can add the recipes they like to
-  their coffee book.
-- Users can find an email address in footer section if they wish to contact admin.
-- The same layout and navigation bar/footer are used throughout the whole website for effective manipulation.
-- Sign Up and Log In buttons are easy to spot and Sign Up process is very simple and straightforward.
-- Adding and editing recipies are very simple as well. When editing a recipe all fields are populated with your original
-  input so it is easy to make changes. 
-- Even for users who do not intend to sign up, this website could be helpful and informative.
-
-
-### Existing Features
-
-- __Home Page__
-
-<br><br>
-    <p align="center">
-      <img src="static/img/Home-readme.png">
-    </p>
-   
-
-- The home page is the screen the end user is presented with on page load. <br>
-  All webpages have the same gray-colour background with white navigation bar and pale brown footer. Two colors have been used for fonts: brown and blue. The whole project is using warm brownish (coffee) design to fit the purpose of the website.
-
-  Base.html template has been used as a parent template; it includes the basic html structure with all important links for frameworks and libraries needed for the website to function properly. 
-  The parent template also includes the navigation bar and footer that are consistent across all web pages.
-  This support the intuitiveness of the entire website and enhances the user experience and makes the website easy to use.
-  
-  Home Page includes a theme picture that fits the overall layout of the website. This coffee image has been used to attract potential users and give them a hint on what the website is about. The aim is also to make the website useful and interesting for the users that are already signed up to come back and share their new delicious coffee recipes. 
-  The home page also contains a message attached to the background image that explains why a user should register and the benefits they receive.
-  The main purposure of this website is to share coffee recipies but it also gives sign-up users the opportunity to create their own online coffee book - and save the recipes they like. 
-  Overall the Home page has been created to give a pleasant first impression and encourage a new visitors to click on sign up button and contribute with their coffee recipes.
-
-
-    <br><br>
-    <p align="center">
-      <img src="static/img/recipes-readme.png">
-    </p>
-
-- __Recipe Page__
-
-- On the Recipe page, a user can find any recipes shared by others or themselves. They also have the opportunity
-  to search for a recipe if they are looking for a particular recipe or ingredients. 
-  The website mostly consists of recipe cards with an image and a brief recipe description (recipe intro).
-  If one of the shared recipes catches users' attention, they can click the Discover Recipes button on the bottom of the recipe card and open the entire recipe.
-  The full recipe page includes all the details and instructions necessary to prepare a coffee drink, such as:
-  recipe name, recipe brief description, preparation time and serving information as well as difficulty, and two most important sections - ingredients and method.
-  It also shows a creator's username, category and a recipe image. 
-  Overall the full-recipe is divided into 4 sections for bettter readability and user experience. In the ingredients section, every single ingredient is underlined and every step in the method section in numbered.
-  Preparation time, difficulty and serves also have Icon prefixes for a better UX and layout.
-
-    <br><br>
-    <p align="center">
-      <img src="static/img/signup-readme.png">
-    </p>
-
- __Sign Up / Log In Page__
-- Signing Up to the website is very simple and straightforward. The aim was to keep it as simple as possible for users
-  not to get discouraged by tedious registration process.
-  Sign Up form includes Icon Prefixes for a better user experience and layout.
-  All three fields: username, email and password need to be input in order to sign up.
-  There are some restrictions when creating a username and password; username needs to have a minimum of 5 and maximum of 20 characters - all alphanumeric without spaces. Password needs to be at least 8 characters long and maximum of 20 - all alphanumeric and without spaces. 
-  If a user input the correct details into the sign up form and the inputed username does not already exists, then they will be informed, they have been succesfully registered. Otherwise they will get a message asking them to fill in the form again. 
-  All three fields have validation applied so if username, password or email do not meet criteria for signing up, red underline will appear. Green underline will indicate that all fields have been filled in correctly and the form is ready for submission. 
-  Werkzeug "generate_password_hash" and "check_password_hash" method has been used for converting a user's password. 
-
-  Log In Page includes two input fields that need to be filled in by a registered user in order to Log-In.
-  Again, both have validation applied and will indicate if the criteria have been met. If the correct username and password have been used and they match the details on mongodb, a flash message will inform the user that they have been successfully logged in, otherwise a message will prompt the user to input the correct log-in details. 
-
- <br><br>
-    <p align="center">
-      <img src="static/img/profile-readme.png">
-    </p>
-
-
- __Profile Page__
-
- Profile Page is only available for registered users; here they can create their own coffee book. 
- It consists of a personalized greeting with a welcome message, 'Add new recipe' button to encourage a registered user to add a new recipe and share it with the coffee community as well as the most important part: tabs for created recipes and favourite recipes. In 'created recipes' tab are stored all recipies that the user has added and shared on the website. In 'favourite recipes' tab are stored all recipies saved to the coffeebook by the logged-in user. All created recipes can be edit or deleted and all favourite recipies can be removed from favouries and add to favouries again, if a user wish to. If no recipes created or added to favourites, messages will be displayed to prompt a user to create or save recipes. 
- A logged-in user can create their personalized coffee book that contains both their own recipes as well as recipes they discover and like while searching on recipes page. 
- 
-<br><br>
-    <p align="center">
-      <img src="static/img/add-recipe-readme.png">
-    </p>
-
-
-__Adding and Editing Recipes Page__
-
-'Add recipe' form will appear on screen once clicked on 'Add new recipe' button in the profile page.
-Again, the adding form is simple and straightforward. It includes input fields for: recipe name, recipe image url, category, difficulty, preparation time, serves and the most important input fields: ingredients and method. 
-Ingredients and method have a button to add extra fields to input ingredients or step of preparation separately in new lines (or paragraphs). All fields are required to fill in apart from recipe image url; if the recipe image url is not provided, a general image will be displayed instead.
-All fields have validation applied or pre-populated format make it easy for a user to fill in the form and provide a correct details. 
-
-'Edit recipe' form will appear on screen if a user click the 'Edit' button on full recipe page. All original input will be retrieved in input fields for better and more effective editing. If a user does not want to proceed and change the recipe, they can click on 'Cancel' button to go back to full recipe. If a user want to delete the recipe they created, they will click on 'Delete' button and a confirmation pop-up block will be displayed to verify if they would like to proceed with an action.
-
-
- <br><br>
-    <p align="center">
-      <img src="static/img/category-readme.png">
-    </p>
-
-
-__Coffee Category Page__
-Coffee Category is displayed only for an admin and provides them with an option to create, edit or delete a category. An admin also have access to edit and delete all recipes on website in case of any inappropriate or offensive content has been shared. Coffee category page includes a category cards with an image and 'Edit' as well as 'Delete' buttons. It has a 'Add coffee category' button that will redirect an admin to 'Add coffee category' form. 
-'Add coffee category' form has two input fields for a category name and category image url, but the latter one is optional. When clicking on 'Edit' button, 'Edit coffee category' form will appear on the screen with the original input for simple and effective editing. If an admin does not want to modify the category, they have an option to click on 'Cancel' button and return to 'Coffee Category' page.
-
-
-### Features Left to Implement
-
-  - implement users comments for recipes;  users can share their experience
-  - promote some items on the website e.g. new coffee brands or coffee machines
-  
-
-
-## Testing 
-
-Manual Testing of implemented features: <br><br>
-
-
- - HOME PAGE Testing
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| LOGO link  | Click on Logo | It will redirect a user from any page back to the Home page | Works as expected |
-| NAV BAR - HOME | Click on Home | It will redirect a user from any page back to the Home page | Works as expected |
-| NAV BAR - RECIPES| Click on Recipes| It will redirect a user from any page to the Recipes page and it is available even for non-registered users| Works as expected |
- | NAV BAR - SIGN UP| Click on Sign Up| It will redirect a user to the Sign Up form and it is available for all users| Works as expected |
- | NAV BAR - LOG IN| Click on Log In| It will redirect a user to the Log In form and it is available for all users| Works as expected |
- | NAV BAR - PROFILE|Click on Profile |Profile is available only for registed users, once registered, clicking on it will redirect a registered user to the Profile page from any other page | Works as expected |
- | NAV BAR - LOG OUT|Click on Log out |Log out is available only for logged-in users, once logged in, clicking on it will log out the user from their account and redirect them to Log In page| Works as expected |
- | NAV BAR - COFFEE CATEGORIES|Click on Coffee Categories |It is available only to admin, and will redirect the admin from any other page to Coffee Categories| Works as expected |
- | FOOTER - HOME link|Click on Home link|It will redirect a user from any page back to the Home page and if on Home page it will take a user back to the top of the page| Works as expected |
- | FOOTER - RECIPES link|Click on Recipes link|It will redirect a user from any page to the Recipes page and if on Recipe page it will take a user back to the top of the page| Works as expected |
- | FOOTER -  SIGN UP link|Click on Sign Up link|It will redirect a user from any page to the Sign Up page and if on Sign Up page it will take a user back to the top of the page| Works as expected |
- | FOOTER -  LOG IN link|Click on Log In link|It will redirect a user from any page to the Log In page and if on Log In page it will take a user back to the top of the page| Works as expected |
-| FOOTER -  TikTok link|Click on TikTok link|It will open a new window with TikTok website| Works as expected |
-| FOOTER -  FACEBOOK link|Click on FACEBOOK link|It will open a new window with Facebook website| Works as expected |
-| FOOTER -  INSTAGRAM link|Click on Instagram link|It will open a new window with Instagram website| Works as expected |
-| FOOTER -  TWITTER link|Click on Twitter link|It will open a new window with Twitter website| Works as expected |
-| SIGN UP button|Click on Sign Up button|It will redirect a user to a Sign Up page | Works as expected |
- <br><br>
-
-
-- SIGN UP Page Testing
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| USERNAME  | Input a username | Username needs to have min.5 and max.20 characters, no spaces and must be unique, if the same username already exists, a flash message will prompt the user to create another username. It is a required field, validation and pattern applied | Works as expected |
-| EMAIL ADDRESS | Input an email address | It is required, validation and email pattern applied | Works as expected |
-| PASSWORD | Input a password | Password needs to have min.8 and max.20 characters, no spaces. It is a required field, validation and pattern applied | Works as expected |
-| SUBMIT button| Click on Submit button| If all input fields are filled in correctly, a flash message will appear to confirm the registration and a user will be redirected to their profile page, otherwise they will be prompted to complete a form again.| Works as expected |
-| LOG IN link | Click on the link| If a user is already registered, they will click on Log in link to get to the Log in page  | Works as expected |
- <br><br>
-
-
-- LOG IN  Page Testing
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| USERNAME / PASSWORD | Input username / password | A user needs to input their username and password that meet all requirements  | Works as expected |
-| LOG IN button| Click on Log In button| If both username and password are correct, a flash message will confirm they are logged in and a user will be redirected to their profile page. Otherwise, a flash message will prompt a user to input the correct details | Works as expected |
-| SIGN UP link | Click on the link| If a user is not registered yet, they will click on the Sign Up link to get to the Sign Up page   | Works as expected |
- <br><br>
-
-
-- RECIPE PAGE Testing
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| SEARCH bar  | Input text into the Search bar | Validation applied; minlength 3 characters, if no input or less then 3 characters - red undelined | Works as expected |
-| RESET (Search) button | Click on Reset button| It will remove all input from the Search bar and revert the bar into the initial position | Works as expected |
-| FIND (Search) button  | Input text into Search bar and click on 'Find' button | Input a key word from recipe name, intro or ingredients and it will find the searching recipes | Works as expected |
-| DISCOVER RECIPE button | Click on Discover Recipe button | It will open a full recipe | Works as expected |
-<br><br>
-
-- FULL RECIPE PAGE Testing
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| A user not logged in | Automatic feature | No buttons displayed (Edit, Delete, Favourites) if a user is not logged in | Works as expected |
-| User logged in | Automatic feature| It will display edit and delete buttons for recipes created by the user and add/remove favourites button for other recipes  | Works as expected |
-| Logged in as an admin | Automatic feature  | Both edit and delete  buttons for all recipes + add/remove favourites for recipes not created by admin | Works as expected |
-| EDIT (recipe) button | Click on Edit button | It will populate the 'edit recipe' form with the original input | Works as expected |
-| DELETE (recipe) button | Click on Delete button | It will display a message for a user to confirm they wish to delete a recipe  | Works as expected |
-|CANCEL (confirmation) button | Click on Cancel button | It will redirect a user back to a full recipe  | Works as expected |
-|DELETE (confirmation) button | Click on Delete button | It will delete a recipe (flash message) and redirect a user back to full recipe | Works as expected |
-| ADD TO FAVOURITES button | Click on 'Add to favourites' button | It will send a copy of the recipe into a user's profile, button will change to 'Remove from favourites' | Works as expected |
-| REMOVE FROM FAVOURITES button | Click on Remove from favourites button | It will remove a recipe from user's profile and button will change back to 'Add to favourites' | Works as expected |
-<br><br>
-
-- ADD RECIPE PAGE Testing
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| ADD NEW RECIPE button  | Click on Add new recipe | It is in profile page and available only for registered users and redirect a user to 'Add a new recipe' form | Works as expected |
-| RECIPE NAME  | Input text into 'recipe name' field | Validation applied; min.5 and max.40 characters, if no input or less then 5 characters - red undelined; it will not let a user to input more then 40 characters | Works as expected |
-| RECIPE IMAGE URL  | Input url into the Recipe Image Url | It is optional to add Image URL, if not provided, alternative image will be displayed | Works as expected |
-| RECIPE INTRODUCTION | Input text into the Recipe Introduction | This field is required, validation applied; min. 5 max.125 characters| Works as expected |
-| CATEGORY | Dropdown selection | This field is required, validation applied| Works as expected |
-| DIFFICULTY | Dropdown selection | This field is required, validation applied| Works as expected |
-| PREPARATION TIME | Input text into Preparation Time | It is required, validation applied, max.15 characters | Works as expected |
-| SERVES | Pick a number from options | It is required, validation applied, min.1 max.30 | Works as expected |
-| INGREDIENTS | Input text into Ingredients | It is required to input at least one line, validation applied, min.5 max.200 characters; max.20 inputs allowed | Works as expected |
-| METHOD | Input text into Method | It is required to input at least one line, validation applied, min.5 max.750 characters; max.20 inputs allowed | Works as expected |
-| ADD RECIPE button  | Click on Add recipe | It will display a flash message that recipe has been successfully added, it will be automatically shared with others in 'recipes page' and also will appear in user's 'created recipes' tab | Works as expected |
-<br><br>
-
-
-- EDIT RECIPE PAGE Testing
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| CANCEL button  | Click on cancel button | Once in 'Edit recipe form', if a user does not want to submit any changes, clicking on Cancel button, they will be redirected to their profile page  | Works as expected |
-| EDIT YOUR RECIPE button  | Click on 'Edit your recipe' button | Clicking on the button, changes will be stored and the updated recipe version will be displayed in 'recipes' page as well as in user's profile. | Works as expected |
-
-
-<br><br>
-All original content has been checked - if retrieved properly - works as expected
 <br>
-All input fields validation and requirements - works as expected 
-<br><br>
 
-- PROFILE PAGE Testing
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| GREETING | automatic feature | Once logged in, a user will see a flash message and a personalized greeting | Works as expected |
-| TABS (CREATED/FAVOURITE RECIPES)  | click on the tabs | Clicking on 'created recipes' tab, all recipes created by the user will be displayed; clicking on 'favourite recipes' tab all saved favourite recipes will be displayed. If no recipies created or saved, message will appear to prompt the user to create or save recipes | Works as expected |
-| ADD NEW RECIPE button  | Click on Add new recipe | It will redirect a user to 'Add a new recipe' form | Works as expected |
-<br><br>
-
-- COFFEE CATEGORY / ADD COFFEE CATEGORY / EDIT COFFEE CATEGORY PAGE Testing
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| ADD NEW COFFEE CATEGORY button | click on the button | Only admin has access to 'Coffee Category' page. Clicking on the button, the admin will be redirected to 'Add coffee category' form | Works as expected |
-| EDIT (CATEGORY) button  | click on the button |  It will populate 'edit coffee category' form with the original input| Works as expected |
-| DELETE (CATEGORY) BUTTON  | Click on the button | It will display a message for an admin to confirm they wish to delete a recipe  | Works as expected |
-|DELETE (confirmation) button | Click on the button | It will delete a category (flash message) and redirect an admin back to coffee category page| Works as expected |
-| CATEGORY NAME  | Input text into category name field | Validation applied; min.4 and max.30 characters, if no input or less then 4 characters - red undelined; it will not let an admin to input more then 30 characters | Works as expected |
-| CATEGORY IMAGE URL  | Input url into the Category Image Url | It is optional to add Image URL | Works as expected |
-| ADD COFFEE CATEGORY button  | Click on the button | It will display flash message (confirmation)  and redirect an admin to 'coffee category' page. New category will be added on 'Coffee Category' page | Works as expected |
-| EDIT COFFEE CATEGORY button  | Click on the button | It will display flash message (confirmation) about update and redirect an admin to 'Coffee Category' page. The updated category will be displayed on 'Coffee Category' Page | Works as expected |
-
-
-
-<br><br>
-All original content has been checked - if retrieved properly - works as expected
+My deployed site: 
+[Heroku](https://backpack-shop.herokuapp.com/)
 <br>
-All input fields validation and requirements - works as expected 
-
-
-### Validator Testing 
-
-- HTML
-  The W3C Validator has been used to validate the HTML of the website. <br>
-  All errors have been corrected. <br>
-  [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcoffee-book-project.herokuapp.com)
-
-- CSS
-  The W3C Jigsaw Validator was used to validate the CSS of the website. <br>
-  No errors detected. <br>
-  [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator)
-   [(Jigsaw) validator result](static/testing/CSS-validator.png)
-
-- CI Python Linter was used as a Python validator
-  No errors detected
-  [CI Python Linter](static/testing/cl_python_linter.png)
-
-
-- JSHint Services were used to validate Javascript <br>
-   No errors detected<br>
-  [script.js](static/testing/js-valid.png) <br>
-  
-
-- The WAVE Web Accessibility Evaluation Tool was used to check accessibility of the website: <br>
-  One error had been detected - it is a nav bar code from materialize that includes an empty link 
-  [Wave Web report](static/testing/wave-evaluation.png)
-
-- Lighthouse reports: <br><br>
-  [Lighthouse report Home](static/testing/lighthouse-home.png) <br>
-  [Lighthouse report Recipes](static/testing/lighthouse-recipe.png) <br>
-  [Lighthouse report Log In](static/testing/lighthouse-login.png) <br>
-  [Lighthouse report Sign Up](static/testing/lighthouse-signup.png) <br>
-  [Lighthouse report Add recipe](static/testing/lighthouse-add-recipe.png) <br>
-  [Lighthouse report Add category](static/testing/lighthouse-add-category.png) <br>
-  [Lighthouse report Edit recipe](static/testing/lighthouse-edit-recipe.png) <br>
-  [Lighthouse report Edit category](static/testing/lighthouse-edit-category.png) <br>
-  [Lighthouse report Full recipe](static/testing/lighthouse-full-recipe.png) <br>
-  [Lighthouse report Category](static/testing/lighthouse-category.png) <br>
-
-
-- Further testing has been done with Chrome DevTools, making sure that responsiveness works correctly on all devices.
-  After the deployment, I tested the website link focusing on website functionality and CRUD operations and if all important features work as expected. No issues were detected. 
-
-- The website was assessed in various browsers: Mozilla Firefox, Google Chrome and Microsoft Edge.
-  Live link was tested on Huawei P30, Samsung A50 to test smaller screen sizes, on a small display laptop - HP ProBook 430 and also on a larger display laptop - Dell Latitude 5580. <br>
-  Each of the pages functioned well.
-
-
-### Fixed Bugs
-- Recipes in favourites did not display the content and showed blank - the issue has been resoved by converting array into strings. 
-
-### Unfixed Bugs
-There is an issue with Favicon, sometimes not displaying properly. Last time I resolved it by adding the crossorigin attribute.
-However, it seems to be another isssue this time. 
-
-
-### Wireframes 
-- [Home Desktop](static/wireframes/Home_Desktop.png)
-- [Home Tablet](static/wireframes/Home_Laptop.png)
-- [Home Mobile](static/wireframes/Home_Mobile.png)
-- [Recipes Desktop](static/wireframes/Recipes_Desktop.png)
-- [Recipes Laptop](static/wireframes/Recipes_Laptop.png)
-- [Recipes Mobile](static/wireframes/Recipes_Mobile.png)
-- [Sign Up Desktop](static/wireframes/Sign_Up_Desktop.png)
-- [Sign Up Laptop](static/wireframes/Sign_Up_Laptop.png)
-- [Sign Up Mobile](static/wireframes/Sign_Up_Mobile.png)
-- [Log In Desktop](static/wireframes/Log_In_Desktop.png)
-- [Log In Laptop](static/wireframes/Log_In_Laptop.png)
-- [Log In Mobile](static/wireframes/Log_In_Mobile.png)
-- [Profile Desktop](static/wireframes/Profile_Desktop.png)
-- [Profile Laptop](static/wireframes/Profile_Laptop.png)
-- [Profile Mobile](static/wireframes/Profile_Mobile.png)
-- [Add Recipe Desktop](static/wireframes/Add_Recipe_Desktop.png)
-- [Add Recipe Laptop](static/wireframes/Add_Recipe_Laptop.png)
-- [Add Recipe Mobile](static/wireframes/Add_Recipe_Mobile.png)
-- [Edit Recipe Desktop](static/wireframes/Edit_Recipe_Desktop.png)
-- [Edit Recipe Laptop](static/wireframes/Edit_Recipe_Laptop.png)
-- [Edit Recipe Mobile](static/wireframes/Edit_Recipe_Mobile.png)
-- [Full Recipe Desktop](static/wireframes/Full_Recipe_Desktop.png)
-- [Full Recipe Laptop](static/wireframes/Full_Recipe_Laptop.png)
-- [Full Recipe Mobile](static/wireframes/Full_Recipe_Mobile.png)
-- [Categories Desktop](static/wireframes/Categories_Desktop.png)
-- [Categories Laptop](static/wireframes/Categories_Laptop.png)
-- [Categories Mobile](static/wireframes/Categories_Mobile.png)
-- [Add Category Desktop](static/wireframes/Add_Category_Desktop.png)
-- [Add Category Laptop](static/wireframes/Add_Category_Laptop.png)
-- [Add Category Mobile](static/wireframes/Add_Category_Mobile.png)
-- [Edit Category Desktop](static/wireframes/Edit_Category_Desktop.png)
-- [Edit Category Laptop](static/wireframes/Edit_Category_Laptop.png)
-- [Edit Category Mobile](static/wireframes/Edit_Category_Mobile.png)
-
-
-  ## Technologies Used 
-- [HTML](https://en.wikipedia.org/wiki/HTML)
-- [CSS](https://en.wikipedia.org/wiki/CSS)
-- [Javascript](https://en.wikipedia.org/wiki/JavaScript)
-- [Python](https://www.python.org/)
-
-Also made use of:
-- [jQuery 3.6.3](https://jquery.com/)
-- [Materialize CSS](https://materializecss.com/) responsive front-end framework
-- [Flask](https://flask.palletsprojects.com/en/2.2.x/)
-- [Jinja](https://jinja.palletsprojects.com/en/3.1.x/)
-- [Werkzeug](https://werkzeug.palletsprojects.com/en/2.2.x/)
-- [pymongo](https://pypi.org/project/pymongo/)
-- [Font Awesome](https://fontawesome.com/)
-- [favicon.io](https://favicon.io/favicon-generator/)
-- [HTML Validator](https://validator.w3.org/)
-- [CSS Validator](https://jigsaw.w3.org/css-validator/)
-- [Javascript Validator](https://jshint.com/)
-- [Chrome DevTools](https://developer.chrome.com/docs/devtools/open/)
-- [Balsamiq](https://en.wikipedia.org/wiki/Balsamiq)
-
-Database Management
-- [MongoDB](https://www.mongodb.com/)
-  MongoDB was used as an open source database to store the data for the application.
-<br><br>
-   
-  <img src="static/img/mongo1.png">
-  <img src="static/img/mongodb2.png">
-  <img src="static/img/mongodb3.png">
-  <img src="static/img/mongodb4.png">
-
-
-## Deployment
-  For this project, I have used Gitpod as the IDE and the repository has been stored on GitHub. 
-  The web application has been deployed on Heroku.
-- There are two ways how to deploy an app on Heroku: <br> 
-  a) Using Heroku command-line interface (CLI) /Heroku toolbelt
-  b) Setting up automatic deployments from GitHub
-  For this project,  the second option - Automatic Deployment - from my GitHub repository has been used:
-
-- Setting up automatic deployments from GitHub: <br>
-  1) Create an account on Heroku and once signed up click on the "Create New App" button.
-       The app name must be unique - something that nobody else currently has and without spaces (use dash or minus instead of spaces) and all lowercase letters.
-       Then select a region closest to you. 
-  2) Go to Heroku 'Settings' Tab, click 'Reveal Config Vars' and input the following variables (do not include any quotes): 
-        | **KEY** | **VALUE** | 
-        |-------------|------------|  
-        |IP  | 0.0.0.0 |
-        |PORT  | 5000 |
-        |SECRET_KEY | your_secret_key|
-        |MONGO_URI | mongodb+srv://coffee:<password>@cluster3.jhm4r33.mongodb.net/?retryWrites=true&w=majority
-        |MONGO_DBNAME |	<database_name>|
-  3) Go to Gitpod workspace and create a 'requirements.txt' file, which will install the dependencies 
-        for the project, and tell Heroku that Python language is using.
-        To create a requirements.txt file, type the following command in the terminal: <br>
-        <strong>pip3 freeze --local > requirements.txt</strong>
-        Then Add, commit and push the file into Github:
-        + git add -A or git add requirements.txt
-        + git commit -m "Add requirements.txt".
-        + git push 
-  4) Create a Procfile. The Procfile tells Heroku how to run the application.
-     To create Procfile, type the following command in the terminal: 
-     <strong>echo web: python app.py > Procfile</strong>
-     Then Add, commit and push the file into GitHub:
-     + git add -A or git add Procfile
-     + git commit -m "Add Procfile".
-     + git push 
-  5) Make sure all your code is pushed to your GitHub repository.
-     + git add -A 
-     + git commit -m "insert your message here"
-     + git push 
-  6) Go to the Heroku Deploy Tab and click 'GitHub (Connect to GitHub)' for 'Deployment Method'
-  7) Make sure your GitHub profile is displayed, then provide your Github repository name and then click Search.
-     Once it finds your repository, click to 'Connect' to this app.
-  8) Click 'Enable Automatic Deploys'
-  9) Choose a branch to deploy 'main' and then click 'Deploy Branch' on Heroku
-  10) You will see a message: "Your app has been succesfully deployed"
-      Click 'View' to lauch your new app.
-
-  My deployed app: <br>
-    https://coffee-book-project.herokuapp.com/
-  
-
-
+<br>
 
 ## Credits 
 
-- Code Institute's video on Task Manager App was used as the main reference point to set up a project using MongoDB, 
-  flask, and jinja template, also build the core CRUD (Create, Read, Update, and Delete) functionalities in this project.
-  [Code Institute Task Manager](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+NRDB_L5+2022_Q3/
-  courseware/9e2f12f5584e48acb3c29e9b0d7cc4fe/054c3813e82e4195b5a4d8cd8a99ebaa/)
+- Code Institute's Boutique Ado Project was used as the main reference point to set up a project using Django, elephantSQL, Stripec and AWS for static.<br>
+  [Code Institute Boutique Ado](https://codeinstitute.net/)
 
-- Code for users to submit ingredients and method steps when creating a recipe was modified from Cookle Cookbook
-  [github.com](https://github.com/dissyulina/cookle-cookbook)
+- Star rating has been created using this video:<br>
+  [star rating](https://www.youtube.com/watch?v=Gofpnh-LIAg)<br>
 
-- Search for ingredients(array) has been created with advice from Tutorial support.  
+- [django models]https://docs.djangoproject.com/en/4.2/ref/models/fields/<br>
 
-- Materialize was used for styling and responsivness
-  [Materialize CSS](https://materializecss.com/)
-
+- Bootstrap4 was used for styling and responsivness<br>
+  [Bootstrap4](https://getbootstrap.com/docs/4.6/getting-started/introduction/)<br>
+<br>
 
 ### Content and Media
 
-
-- Recipes and recipe images taken from:  <br>
-  [www.bbcgoodfood.com](https://www.bbcgoodfood.com/recipes/collection/coffee-recipes)<br>
-- Background image on Home page taken from: 
-  [www.pexels.com] (https://www.pexels.com/photo/beverage-breakfast-brewed-coffee-caffeine-374885/)<br>
-  Photo by Burst<br>
-- Alternative image with coffee beans<br>
-- Background image on Home page taken from: <br>
-  [pixabay.com](https://cdn.pixabay.com/photo/2022/04/11/16/29/coffee-beans-7126154_960_720.jpg)<br>
-  Image by Jens from Pixabay (jensphotography)
-- Category images taken from: <br> 
-  [www.pexels.com](https://www.pexels.com/photo/photo-of-coffee-mug-on-top-of-book-3216564/)<br>
-  by lil artsy<br>
-  [www.pexels.com](https://www.pexels.com/photo/brown-liquid-pouring-into-a-glass-8605853/)<br>
-  Photo by solod_sha <br>
-  [www.myrecipes.com](https://www.myrecipes.com/recipe/chocolate-cappuccino) <br>
-  [pixabay.com] (https://pixabay.com/photos/winter-background-coffee-3876098/) <br>
-  by Ylanite Koppens<br>
-  <br><br>
-- Icons taken from: [Font Awesome](https://fontawesome.com/)
-- Favicon taken from: [favicon.io](https://favicon.io/favicon-generator/)
-- Logo created on Flaticon 
-  [www.flaticon.com](https://www.flaticon.com/free-icons/coffee-time)
-  Coffee time icons created by manshagraphics - Flaticon
+- All product images and content:<br>
+  [www.thebackpacker.com](https://thebackpacker.co.uk/)<br>
+- Privacy Policy generated:<br>
+  [www.privacypolicygenerator] (https://www.privacypolicygenerator.info/)<br>
+- Background image on Home page taken from:<br>
+  [www.pexels.com] (https://www.pexels.com/photo/a-man-and-woman-wearing-backpacks-standing-on-brown-grass-field-7350875/)<br>
+  Photo by Arina Krasnikova <br>
+- Icons taken from: [Font Awesome](https://fontawesome.com/)<br>
+- Favicon taken from: [favicon.io](https://favicon.io/favicon-generator/)<br>
+- Logo created on Flaticon<br>
+  [www.flaticon.com](<a href="https://www.flaticon.com/free-icons/backpack" title="backpack icons">Backpack icons created by justicon - Flaticon</a>)<br>
 
 
 
@@ -1603,111 +1114,20 @@ Database Management
 
 
 
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome karare1,
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-To log into the Heroku toolbelt CLI:
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
-------
 
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding! -->
