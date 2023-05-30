@@ -444,9 +444,17 @@ footer {
 }
 @media (min-width:1000px) and (max-width: 1200px){
     .header-container {
-        padding-bottom: 4%;
+        padding-bottom: 5%;
     } 
+    .sign {
+        margin-top:5%;
+    } 
+
+    button.btn-pad.btn-color {
+        padding: 0.9% 1% 1.1% 1%;
+    }
 }
+
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
@@ -605,5 +613,9 @@ footer {
         padding-top: 5%;
         padding-left:0px;
         padding-right:0px;
+    }
+
+    .wish-btn {
+        font-size: small;
     }
 }
