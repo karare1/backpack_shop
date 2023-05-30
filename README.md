@@ -1098,14 +1098,14 @@ My deployed site:
 - All product images and content:<br>
   [www.thebackpacker.com](https://thebackpacker.co.uk/)<br>
 - Privacy Policy generated:<br>
-  [www.privacypolicygenerator] (https://www.privacypolicygenerator.info/)<br>
+  [www.privacypolicygenerator](https://www.privacypolicygenerator.info/)<br>
 - Background image on Home page taken from:<br>
-  [www.pexels.com] (https://www.pexels.com/photo/a-man-and-woman-wearing-backpacks-standing-on-brown-grass-field-7350875/)<br>
+  [www.pexels.com](https://www.pexels.com/photo/a-man-and-woman-wearing-backpacks-standing-on-brown-grass-field-7350875/)<br>
   Photo by Arina Krasnikova <br>
 - Icons taken from: [Font Awesome](https://fontawesome.com/)<br>
 - Favicon taken from: [favicon.io](https://favicon.io/favicon-generator/)<br>
 - Flaticon<br>
-  [www.flaticon.com](<a href="https://www.flaticon.com/free-icons/backpack" title="backpack icons">Backpack icons created by justicon - Flaticon</a>)<br>
+- <a href="https://www.flaticon.com/free-icons/backpack" title="backpack icons">Backpack icons created by justicon - Flaticon</a>
 
 
 
