@@ -373,6 +373,7 @@ The same as Add product page, Edit product page is restricted only for the super
 The Edit product page has a form which allows the superuser to edit product details for individual products. When clicking on edit link existing product information from the database will be populated in the form. When the product details have been edited and the form is submitted, the superuser will be redirected to the individual product page for that edited product.
 <br>
 <br>
+
 - __Sign Up Page__
 
 <br>
@@ -382,6 +383,7 @@ The Edit product page has a form which allows the superuser to edit product deta
 On the Sign up page, a new user can sign up for the account by filling in and submitting the sign up form. All fields in the form are required and if any of these fields are left empty or input incorrectly a validation will apply and the form will not be submitted. Once successfully registered, a email verification message will be sent to the email address provided in the form. the user will be assigned a Profile for their account.
 <br>
 <br>
+
 - __Sign In Page__
 
 <br>
@@ -713,9 +715,9 @@ Lighthouse
 
 -   [Am I Responsive](http://ami.responsivedesign.is/) 
 -   [Bootstrap v4.6.2](https://getbootstrap.com/) 
--   [GitHub:](https://github.com/)
+-   [GitHub](https://github.com/)
 -   [Gitpod](https://gitpod.io/) 
--   [Heroku:](https://heroku.com) 
+-   [Heroku](https://heroku.com) 
 -   [Stripe](https://stripe.com/en-ie) 
 -   [Google Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) 
 -   [AWS](https://aws.amazon.com/) 
@@ -1081,14 +1083,12 @@ My deployed site:
 
 ## Credits 
 
-- Code Institute's Boutique Ado Project was used as the main reference point to set up a project using Django, elephantSQL, Stripec and AWS for static.<br>
+- Code Institute's Boutique Ado Project was used as the main reference point to set up a project using Django, ElephantSQL, Stripe and AWS for static.<br>
   [Code Institute Boutique Ado](https://codeinstitute.net/)
-
 - Star rating has been created using this video:<br>
   [star rating](https://www.youtube.com/watch?v=Gofpnh-LIAg)<br>
-
-- [django models]https://docs.djangoproject.com/en/4.2/ref/models/fields/<br>
-
+- [django models](https://docs.djangoproject.com/en/4.2/ref/models/fields/)<br>
+- [django docs](https://docs.djangoproject.com/en/4.2/)<br>
 - Bootstrap4 was used for styling and responsivness<br>
   [Bootstrap4](https://getbootstrap.com/docs/4.6/getting-started/introduction/)<br>
 <br>
@@ -1104,7 +1104,7 @@ My deployed site:
   Photo by Arina Krasnikova <br>
 - Icons taken from: [Font Awesome](https://fontawesome.com/)<br>
 - Favicon taken from: [favicon.io](https://favicon.io/favicon-generator/)<br>
-- Logo created on Flaticon<br>
+- Flaticon<br>
   [www.flaticon.com](<a href="https://www.flaticon.com/free-icons/backpack" title="backpack icons">Backpack icons created by justicon - Flaticon</a>)<br>
 
 
