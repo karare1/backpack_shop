@@ -1,6 +1,6 @@
 
-<img src="readme_media/logo.JPG" width="150"  >
-<br>
+<img src="readme_media/logo.JPG" width="250"  >
+
 <br>
 <img src="readme_media/responsive_img.png">
 <br>
@@ -230,6 +230,7 @@ Blue is often associated with qualities such as trust, reliability, and professi
 
 ### Existing Features
 <br>
+
 - __Home Page__
 
 <br>
@@ -250,6 +251,7 @@ Blue is often associated with qualities such as trust, reliability, and professi
 - Navbar and footer offers all important links for users to easily navigate throught the page. Links to products of a specific category, links to log in and register, links to user's cart, profile and wislist.
 <br>
 <br>
+
 - __Products Page__
 
 <br>
@@ -263,6 +265,7 @@ How products are displayed on the Product page depends on the options the user h
 For the superuser, there are additional links for editing and deleting a product.
 <br>
 <br>
+
 - __Individual_Product Page__
 
 <br>
@@ -282,6 +285,7 @@ Customers review section shows shows existing reviews.
 There is an wishlist icon to the right of the product title, when this is clicked, the product is saved to the user's wishlist. Any product which has been selected can be viewed in the wishlist page (can be accessed from the dropdown menu within the account icon when the user is logged in).
 <br>
 <br>
+
 - __Contact Us Page__
 
 <br>
@@ -393,7 +397,7 @@ There were a number of features that I would like to expand upon in the future.
 - I would like to create a blog with full CRUD functionality for registerd users and allow them to share product experience and backpack lifestyle
 - give the users an option to sign up for a newsletter
 - expand product managent page; I would like to allow the superuser to access the customers reviews on frontend without needing to access the admin panel 
-- generate actual rating instead of adding them via admin; (in my project I have added rating via admin for 'sorting by rate' purposes as I do not have many reviews)
+- generate actual rating instead of adding them via admin panel; (in my project I have added rating via admin for 'sorting by rate' purposes as I do not have many reviews)
 <br>
 <br>
 
@@ -570,7 +574,7 @@ There were a number of features that I would like to expand upon in the future.
 <br>
 
 - Further testing has been done with Chrome DevTools, making sure that responsiveness works correctly on all devices.
-  After the deployment, I tested the website link focusing on website functionality, CRUD operations and toasts if all important features work as expected. No issues were detected. 
+  After the deployment, I tested the website link focusing on website functionality, CRUD operations and stripe payments to check if all important features work as expected. No issues were detected. 
 
 - The website was assessed in various browsers: Mozilla Firefox, Google Chrome and Microsoft Edge.
   Live link was tested on Huawei P30, Samsung A50 to test smaller screen sizes, on a small display laptop - HP ProBook 430 and also on a larger display laptop - Dell Latitude 5580. <br>
@@ -578,10 +582,14 @@ There were a number of features that I would like to expand upon in the future.
 
 
 ### Fixed Bugs
-- when submitting empty star rating no message appeared; required attribute in input has been removed 
+- when submitting empty star rating no message appeared; 'required' attribute in input had to be removed
+- favicon caused 3 errors in console - the manifest file has been removed
+- automatic deployment failed due to Collectstatic; first Collectstatic was set to 1 and then removed from Heroku, manual deployment
 
-There is an issue with Favicon, sometimes not displaying properly. Last time I resolved it by adding the crossorigin attribute.
-However, it seems to be another isssue this time. 
+### Unfixed Bugs
+For this project I have just added rating via admin to be able to use 'sort by rating' filter (I have just limited reviews submited) In future however, it would be beneficial to generate the actual rating 
+
+
 
 ## Database
 <p align="center">
@@ -682,7 +690,7 @@ Lighthouse
 
 - HTML
   The W3C Validator has been used to validate the HTML of the website. <br>
-  All errors are not applicable. <br>
+  All major errors fixed. <br>
   [W3C validator](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fbackpack-shop.herokuapp.com%2F)
 
 - CSS
@@ -714,10 +722,7 @@ Lighthouse
 -   [Elephant SQL](https://www.elephantsql.com/) 
 -   [Favicon.io](https://favicon.io) 
 -   [Code Institute Python Linter](https://pep8ci.herokuapp.com/) 
-<!-- -   [Accesibility Test](https://accessibilitytest.org/) - free accessibility testing tool. -->
 -   [Temp Email Site](https://temp-mail.org/en/) 
-<!-- -   [Page Speed Insights](https://pagespeed.web.dev/) - used to test speed and performance of website. -->
-<!-- -   [Image Resizer](https://imageresizer.com/) - Used to Compress & Resize Images. -->
 -   [W3C Markup Validation Service](https://validator.w3.org/) 
 -   [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input) 
 -   [JSHint](https://jshint.com/) 

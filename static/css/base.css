@@ -103,6 +103,7 @@ a.category-title > span.badge:hover {
     position: fixed;
     bottom: 10px;
     right: 10px;
+    z-index: 2;
 }
 
 .up-btn-click,
@@ -251,6 +252,11 @@ footer {
 
 .foot-sub {
     margin-left: 100px;
+}
+
+.footer-p {
+    padding-left: 4%;
+    padding-right: 4%;
 }
 
 .useful-link a{
@@ -438,7 +444,7 @@ footer {
 }
 @media (min-width:1000px) and (max-width: 1200px){
     .header-container {
-        padding-bottom: 3%;
+        padding-bottom: 4%;
     } 
 }
 
@@ -593,5 +599,11 @@ footer {
 
     .bg-white {
         display:block;
+    }
+
+    .hist-p {
+        padding-top: 5%;
+        padding-left:0px;
+        padding-right:0px;
     }
 }
